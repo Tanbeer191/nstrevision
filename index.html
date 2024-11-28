@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Exam Simulator</h1>
+        <nav>
+            <ul class="subject-tabs">
+                <li><button class="tab active" onclick="showSubject('cells')">IA Biology of Cells</button></li>
+                <li><button class="tab" onclick="showSubject('psych')">IA Experimental Psychology</button></li>
+                <li><button class="tab" onclick="showSubject('physiology')">IA Physiology of Organisms</button></li>
+                <li><button class="tab" onclick="showSubject('mathsbio')">IA Mathematical Biology</button></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <div id="cells" class="subject-content active">
+        <div class="exam-section">
+            <h2>IA Biology of Cells</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Best Score</th>
+                        <th>Last Attempt</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="btn custom-exam">Build Custom Exam</button>
+    </div>    
+    <div id="psych" class="subject-content active">
+        <div class="exam-section">
+            <h2>IA Experimental Psychology</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Best Score</th>
+                        <th>Last Attempt</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="btn custom-exam">Build Custom Exam</button>
+    </div>
+    <div id="physiology" class="subject-content active">
+        <div class="exam-section">
+            <h2>IA Physiology of Organisms</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Best Score</th>
+                        <th>Last Attempt</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="btn custom-exam">Build Custom Exam</button>
+    </div>
+    <div id="mathsbio" class="subject-content active">
+        <div class="exam-section">
+            <h2>IA Mathematical Biology</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Best Score</th>
+                        <th>Last Attempt</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>
+                            <button class="btn take-exam">Take Exam</button>
+                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn download-pdf">Download PDF</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="btn custom-exam">Build Custom Exam</button>
+    </div>
+</main>
+<footer>
+    <p>© 2024 Exam Simulator</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
