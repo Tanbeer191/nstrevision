@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exam Instructions</title>
+</head>
+<body>
+    <header class="exam-header">
+        <h1 id="exam-name">Exam Name</h1>
+        <p id="exam-date">Exam Date</p>
+    </header>
+    <main class="exam-container">
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <table class="instructions-table">
+                <tr>
+                    <th>Time</th>
+                </tr>
+                <td id="time">-</td>
+                </tr>
+            </table>
+            <div id="instruction-text">
+            </div>
+        </div>
+    </main>
+    <footer class="exam-footer">
+        <button class="exam-btn" id="end-exam" onclick="endExam()">End Exam</button>
+        <button class="exam-btn" id="next">Next</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

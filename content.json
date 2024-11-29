@@ -1,0 +1,26 @@
+{
+    "types": {
+        "cells": {
+            "instructions": {
+                "table": {
+                    "Time": "3 hours"
+            },
+                "text": [
+                    "Answer <strong>Question 1</strong> (Section A) <strong>and three questions</strong> from Section B.",
+                    "Section A carries 33% of the marks and Section B carries 67% of the marks for this paper.",
+                    "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
+                    "<br>",
+                    "<strong>Diagrams or other handwritten material:</strong>",
+                    "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
+                    "<strong>Candidates should not copy and paste figures or content from any other documents.</strong"
+            ]
+        },
+            "exams": {
+                "2024p": {
+                    "name": "BOC/1: Biology of Cells - Theory",
+                    "date": "Tuesday 4 June 2024"
+                    }
+                }
+            }
+        }
+}
