@@ -1,3 +1,6 @@
+let currentQuestionIndex = 0;
+let timerInterval;
+
 function showSubject(subjectId) {
     document.querySelectorAll('.subject-content').forEach(content => {
         content.classList.remove('active');
@@ -7,25 +10,94 @@ function showSubject(subjectId) {
         tab.classList.remove('active');
     });
 
-    if (document.getElementById(subjectId)) {
-        document.getElementById(subjectId).classList.add('active');
+    const subjectElement = document.getElementById(subjectId);
+    if (subjectElement) {
+        subjectElement.classList.add('active');
     }
-    document.querySelector(`.tab[onclick="showSubject('${subjectId}')"]`).classList.add('active');
+
+    const tabElement = document.querySelector(`.tab[onclick="showSubject('${subjectId}')"]`);
+    if (tabElement) {
+        tabElement.classList.add('active');
+    }
 }
+
 
 function endExam() {
     const confirmEnd = confirm("Are you sure you want to end the exam?");
     if (confirmEnd) {
+        clearInterval(timerInterval);
         window.location.href = "index.html";
     }
 }
 
+function loadQuestion(data, examType, examName) {
+    const exam = data.types[examType]?.exams[examName]
+    const question = exam.questions[currentQuestionIndex];
+
+    document.getElementById("question-number").textContent = question.displayNumber;
+    document.getElementById("question-content").textContent = question.content;
+
+    const solutionDiv = document.getElementById("solution");
+    solutionDiv.textContent = "";
+    solutionDiv.classList.add("hidden");
+
+    const nextButton = document.getElementById("next-button");
+    if (currentQuestionIndex === exam.questions.length - 1) {
+        nextButton.textContent = "Finish";
+        nextButton.onclick = () => {
+            window.location.href = "index.html";
+        };
+    } else {
+        nextButton.textContent = "Next";
+        nextButton.onclick = () => {
+            currentQuestionIndex++;
+            loadQuestion(data, examType, examName);
+        };
+    }
+
+    const prevButton = document.getElementById("prev-button");
+    if (currentQuestionIndex > 0) {
+        prevButton.classList.remove("hidden");
+        prevButton.onclick = () => {
+            currentQuestionIndex--;
+            loadQuestion(data, examType, examName);
+        };
+    } else {
+        prevButton.classList.add("hidden");
+    }
+}
+
+function toggleSolution(data, examType, examName) {
+    const solutionDiv = document.getElementById("solution");
+    const exam = data.types[examType]?.exams[examName]
+    const question = exam.questions[currentQuestionIndex];
+
+    if (solutionDiv.classList.contains("hidden")) { 
+        solutionDiv.textContent = question.solution;
+        solutionDiv.classList.remove("hidden");
+    } else {
+        solutionDiv.textContent = "";
+        solutionDiv.classList.add("hidden");
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    const defaultSubjectID = "cells";
-    showSubject(defaultSubjectID);
+    const currentPage = window.location.pathname;
+
+    if (currentPage.includes("index.html")) {
+        const defaultSubjectID = "cells";
+        if (document.getElementById(defaultSubjectID)) {
+            showSubject(defaultSubjectID);
+        } else {
+            console.error(`Element with id '${defaultSubjectID}' not found.`);
+        }
+    }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+    const currentPage = window.location.pathname
+
+    if (currentPage.includes("exam.html")) {
     const urlParams = new URLSearchParams(window.location.search);
     const examType = urlParams.get("type");
     const examName = urlParams.get("name");
@@ -36,16 +108,12 @@ document.addEventListener("DOMContentLoaded", () => {
             const instructions = data.types[examType]?.instructions;
             const exam = data.types[examType]?.exams[examName];
 
-            console.log("Hello")
-            console.log(instructions)
-            console.log(exam)
-            
             if (exam) {
                 document.getElementById("exam-name").textContent = exam.name;
                 document.getElementById("exam-date").textContent = exam.date;
 
                 const tableData = instructions.table;
-                document.getElementById("time").textContent = tableData["Time"];
+                document.getElementById("time").textContent = tableData["displaytime"];
 
                 const instuctionText = instructions.text;
                 const instructionDiv = document.getElementById("instruction-text");
@@ -55,11 +123,32 @@ document.addEventListener("DOMContentLoaded", () => {
                     p.innerHTML = line;
                     instructionDiv.appendChild(p);
                 });
-                
+
+                document.getElementById("next").addEventListener("click", function() {
+                    document.getElementById("instructions-page").style.display = "none";  
+                    document.getElementById("exam-page").style.display = "block";  
+
+                    let timeRemaining = parseInt(tableData["time"]); 
+                    let timerInterval = setInterval(() => {
+                        const minutes = Math.floor(timeRemaining / 60);
+                        const seconds = timeRemaining % 60;
+                        document.getElementById("timer").textContent = `${minutes}:${seconds.toString().padStart(2, "0")}`;
+                        timeRemaining--;
+                        
+                        if (timeRemaining < 0) {
+                            clearInterval(timerInterval); 
+                        }
+                    }, 1000);
+
+                    loadQuestion(data, examType, examName);  
+
+                    document.getElementById("view-solution").onclick = () => toggleSolution(data, examType, examName);
+                });
+
             } else {
                 console.error("Exam not found in content.json");
             }
         })
         .catch(error => console.error("Error loading content.json:", error));
+    }
 });
-

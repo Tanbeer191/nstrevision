@@ -164,9 +164,109 @@ th, td {
     color: white;
 }
 
+#solution.hidden {
+    display: none;
+}
+
+#solution {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+/* Buttons Section */
+.controls {
+    display: flex;
+    justify-content: space-between; /* Align buttons across the container */
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px; /* Add padding for spacing */
+}
+
+.controls button {
+    padding: 0.7em 1.5em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.controls button#prev-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Center "View Solution" Button */
+.controls button#view-solution {
+    margin: 0 auto;
+    background-color: #17a2b8;
+    color: white;
+}
+
+.controls button#next-button {
+    background-color: #0073e6;
+    color: white;
+}
+
+.controls button:hover {
+    background-color: #005bb5;
+    color: white;
+}
+
+#end-exam-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#end-exam-container button#end-exam {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.7em 1.5em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#end-exam-container button#end-exam:hover {
+    background-color: #b02a37;
+    color: white;
+}
+
 footer {
     text-align: center;
     padding: 1em;
     background-color: #333;
+    color: white;
+}
+
+footer.exam-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    margin: 0; /* Ensure no extra margins */
+    background-color: #0073e6;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+footer.exam-footer .exam-btn {
+    background-color: white;
+    color: #0073e6;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer.exam-footer .exam-btn:hover {
+    background-color: #005bb5;
     color: white;
 }

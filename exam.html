@@ -12,23 +12,45 @@
         <p id="exam-date">Exam Date</p>
     </header>
     <main class="exam-container">
-        <div class="instructions">
-            <h2>Instructions</h2>
-            <table class="instructions-table">
-                <tr>
-                    <th>Time</th>
-                </tr>
-                <td id="time">-</td>
-                </tr>
-            </table>
-            <div id="instruction-text">
+        <!-- Instructions section-->
+        <div id="instructions-page">
+            <div class="instructions">
+                <h2>Instructions</h2>
+                <table class="instructions-table">
+                    <tr>
+                        <th>Time</th>
+                        <td id="time">-</td>
+                    </tr>
+                </table>
+                <div id="instruction-text">
+                    <!-- Instruction text from JS-->
+                </div>
             </div>
         </div>
+
+        <!-- Exam section -->
+        <div id="exam-page" style="display: none;">
+            <div class="header">
+                <div id="timer">40:00</div>
+            </div>
+            <div id="question">
+                <h2>Question <span id="question-number"></span></h2>
+                <p id="question-content"></p>
+            </div>
+            <div id="solution" class="hidden"></div>
+        </div>
+
+        <footer class="exam-footer">
+            <div class="controls">
+                <button id="prev-button" class="hidden">Previous</button>
+                <button id="view-solution">View Solution</button>
+                <button id="next-button">Next</button>
+                <div id="end-exam-container">
+                    <button id="end-exam" onclick="endExam()">End Exam</button>
+                </div>
+            </div>
+        </footer>
     </main>
-    <footer class="exam-footer">
-        <button class="exam-btn" id="end-exam" onclick="endExam()">End Exam</button>
-        <button class="exam-btn" id="next">Next</button>
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>

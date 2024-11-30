@@ -3,7 +3,8 @@
         "cells": {
             "instructions": {
                 "table": {
-                    "Time": "3 hours"
+                    "time": 10800,
+                    "displaytime": "3 hours"
             },
                 "text": [
                     "Answer <strong>Question 1</strong> (Section A) <strong>and three questions</strong> from Section B.",
@@ -18,7 +19,21 @@
             "exams": {
                 "2024p": {
                     "name": "BOC/1: Biology of Cells - Theory",
-                    "date": "Tuesday 4 June 2024"
+                    "date": "Tuesday 4 June 2024",
+                    "questions": [
+                        {
+                            "number": 1,
+                            "displayNumber": "1a",
+                            "content": "What bonds stabilize alpha-helices and beta-sheets and what is the consequence of these bonds for protein structure?",
+                            "solution": ""
+                        },
+                        {
+                            "number": 2,
+                            "displayNumber": "1b",
+                            "content": "Explain what makes cellulose better suited as a structural element than glycogen.",
+                            "solution": ""
+                        }
+                    ]
                     }
                 }
             }
