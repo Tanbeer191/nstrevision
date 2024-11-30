@@ -15,7 +15,7 @@
         <!-- Instructions section-->
         <div id="instructions-page">
             <div class="instructions">
-                <h2>Instructions</h2>
+                    <h2>Instructions</h2>
                 <table class="instructions-table">
                     <tr>
                         <th>Time</th>
@@ -34,7 +34,9 @@
                 <div id="timer">40:00</div>
             </div>
             <div id="question">
-                <h2>Question <span id="question-number"></span></h2>
+                <div id="question-display">
+                    <h2>Question <span id="question-number"></span></h2>
+                </div>
                 <p id="question-content"></p>
             </div>
             <div id="solution" class="hidden"></div>
@@ -43,7 +45,7 @@
         <footer class="exam-footer">
             <div class="controls">
                 <button id="prev-button" class="hidden">Previous</button>
-                <button id="view-solution">View Solution</button>
+                <button id="view-solution" class="hidden">View Solution</button>
                 <button id="next-button">Next</button>
                 <div id="end-exam-container">
                     <button id="end-exam" onclick="endExam()">End Exam</button>
