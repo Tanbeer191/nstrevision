@@ -33,10 +33,15 @@ function endExam() {
 function loadQuestion(data, examType, examName) {
     const exam = data.types[examType]?.exams[examName]
     const question = exam.questions[currentQuestionIndex];
-    
-    document.getElementById("question-number").textContent = question.displayNumber;
-    document.getElementById("question-content").textContent = question.content;
 
+    document.getElementById("question-number").textContent = question.displayNumber;
+    
+
+    const contentText = question.content;
+    const contentDiv = document.getElementById("question-content");
+    contentDiv.innerHTML = "";
+    contentDiv.innerHTML = contentText.join('');
+    
     const solutionDiv = document.getElementById("solution");
     solutionDiv.textContent = "";
     solutionDiv.classList.add("hidden");
@@ -60,6 +65,7 @@ function loadQuestion(data, examType, examName) {
         prevButton.classList.remove("hidden");
         prevButton.onclick = () => {
             currentQuestionIndex--;
+            document.getElementById("view-solution").textContent = "View Solution";
             loadQuestion(data, examType, examName);
         };
     } else {
@@ -72,9 +78,15 @@ function toggleSolution(data, examType, examName) {
     const solutionDiv = document.getElementById("solution");
     const exam = data.types[examType]?.exams[examName]
     const question = exam.questions[currentQuestionIndex];
+    const solutionText = question.solution;
 
     if (solutionDiv.classList.contains("hidden")) { 
-        solutionDiv.textContent = question.solution;
+        solutionDiv.innerHTML = "";
+        solutionText.forEach(line => {
+            const p = document.createElement("p");
+            p.innerHTML = line;
+            solutionDiv.appendChild(p);
+        });
         solutionDiv.classList.remove("hidden");
         viewSolutionButton.textContent = "Hide Solution";
     } else {
@@ -152,6 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         const viewSolutionButton = document.getElementById("view-solution");
                         viewSolutionButton.classList.remove("hidden");
+                        viewSolutionButton.textContent = "View Solution";
                         viewSolutionButton.onclick = () => toggleSolution(data, examType, examName);
                     });
                 } else {

@@ -23,15 +23,143 @@
                     "questions": [
                         {
                             "number": 1,
-                            "displayNumber": "1a",
-                            "content": "What bonds stabilize alpha-helices and beta-sheets and what is the consequence of these bonds for protein structure?",
-                            "solution": ""
+                            "displayNumber": "Question 1a",
+                            "content": [
+                                "What bonds stabilize alpha-helices and beta-sheets and what is the consequence of these bonds for protein structure?"
+                            ],
+                            "solution": [
+                                "Hydrogen bonds.",
+                                "Yes."
+                            ]
                         },
                         {
                             "number": 2,
-                            "displayNumber": "1b",
-                            "content": "Explain what makes cellulose better suited as a structural element than glycogen.",
-                            "solution": ""
+                            "displayNumber": "Question 1b",
+                            "content": [
+                                "Explain what makes cellulose better suited as a structural element than glycogen."
+                            ],
+                            "solution": []
+                        },
+                        {
+                            "number": 3,
+                            "displayNumber": "Question 1c",
+                            "content": [
+                                "How can ion channel function be regulated?"
+                            ],
+                            "solution": []
+                        },
+                        {
+                            "number": 4,
+                            "displayNumber": "Question 1d",
+                            "content": [
+                                "Explain how transporters enable glucose to traverse the intestinal epithelium."
+                            ],
+                            "solution": []
+                        },
+                        {
+                            "number": 5,
+                            "displayNumber": "Question 1e",
+                            "content": [
+                                "Why is the use of carbon skeletons from the TCA cycle for amino acid synthesis an issue, and how is it solved?"
+                            ],
+                            "solution": []
+                        },
+                        {
+                            "number": 6,
+                            "displayNumber": "Question 1f",
+                            "content": [
+                                "How are fatty acids taken up by the mitochondria?"
+                            ],
+                            "solution": []
+                        },
+                        {
+                            "number": 7,
+                            "displayNumber": "Question 1g",
+                            "content": [
+                                "Draw the main structural components of ATP synthase and outline ways in which it is regulated."
+                            ],
+                            "solution": []
+                        },
+                        {
+                            "number": 8,
+                            "displayNumber": "Question 1h",
+                            "content": ["What are ketone bodies, and why do they form?"
+                        ],
+                            "solution": []
+                        },
+                        {
+                            "number": 9,
+                            "displayNumber": "Question 1i",
+                            "content": [
+                                "How did Benzer identify discrete units of recombination using bacteriophage T4?"
+                            ],
+                            "solution": []
+                        },
+                        {
+                            "number": 10,
+                            "displayNumber": "Question 1j",
+                            "content": [
+                                "What three technologies first came together to make gene cloning a reality in the 1970s? Briefly describe the experimental steps needed to clone a gene using these technologies."
+                            ],
+                            "solution": []
+                        },
+                        {
+                            "number": 11,
+                            "displayNumber": "Question 1k",
+                            "content": ["Draw a diagram of a prokaryotic replication fork to explain how DNA replication is semi-discontinuous."
+                        ],
+                            "solution": []
+                        },
+                        {
+                            "number": 12,
+                            "displayNumber": "Question 1l",
+                            "content": [
+                                "When can meiotic chromosomal nondisjunction occur and what are the consequences for gametes? Name a human syndrome that results from nondisjunction."
+                        ],
+                            "solution": []
+                        },
+                        {
+                            "number": 13,
+                            "displayNumber": "Question 1m",
+                            "content": ["What is the APC/C and what is its molecular role in triggering the metaphase to anaphase transition?"
+                        ],
+                            "solution": []
+                        },
+                        {
+                            "number": 14,
+                            "displayNumber": "Question 1n",
+                            "content": [
+                                "Why is the calcium ion a ubiquitous second messenger?"
+                            ],
+                            "solution": []
+                        },
+                        {
+                            "number": 15,
+                            "displayNumber": "Question 1o",
+                            "content": [
+                                "What happens at the Mid-Blastula Transition (MBT) and how can the timing of this event be altered experimentally?"
+                            ],
+                            "solution": []
+                        },
+                        {
+                            "number": 15,
+                            "displayNumber": "Question 1o",
+                            "content": [
+                                "What happens at the Mid-Blastula Transition (MBT) and how can the timing of this event be altered experimentally?"
+                            ],
+                            "solution": []
+                        },
+                        {
+                            "number": 16,
+                            "displayNumber": "Section B",
+                            "content": [
+                                "<strong>Answer three questions.</strong> All questions carry equal marks. Suggested total time for this section: 2 hours",
+                                "<ol start=\"2\">",
+                                "<li>Describe how enzymes increase the rates of reactions voer what occurs spontaenously.</li>",
+                                "<li>Discuss, with examples, the importance of vesicle fuison in cell biology.</li>",
+                                "</ol>"
+                            ],
+                            "solution": []
                         }
                     ]
                     }
