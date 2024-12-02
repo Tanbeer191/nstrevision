@@ -237,6 +237,18 @@ th, td {
     color: white;
 }
 
+#marks-display {
+    position: absolute;
+    bottom: 80px;
+    right: 2em;
+    font-weight: bold;
+    background-color: #fff;
+    color: #333; /* Ensure the font color is readable */
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
 #end-exam-container {
     position: fixed;
     top: 20px;

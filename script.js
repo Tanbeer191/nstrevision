@@ -31,12 +31,11 @@ function endExam() {
 }
 
 function loadQuestion(data, examType, examName) {
-    const exam = data.types[examType]?.exams[examName]
+    const exam = data.types[examType]?.exams[examName];
     const question = exam.questions[currentQuestionIndex];
 
     document.getElementById("question-number").textContent = question.displayNumber;
     
-
     const contentText = question.content;
     const contentDiv = document.getElementById("question-content");
     contentDiv.innerHTML = "";
@@ -45,6 +44,14 @@ function loadQuestion(data, examType, examName) {
     const solutionDiv = document.getElementById("solution");
     solutionDiv.textContent = "";
     solutionDiv.classList.add("hidden");
+
+    const marksDisplay = document.getElementById("marks-display");
+    if (question.marks) {
+        marksDisplay.textContent = `Marks: ${question.marks}`;
+        marksDisplay.style.display = "block";
+    } else {
+        marksDisplay.style.display = "none";
+    }
 
     const nextButton = document.getElementById("next-button");
     if (currentQuestionIndex === exam.questions.length - 1) {
@@ -122,15 +129,15 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch("content.json")
             .then(response => response.json())
             .then(data => {
-                const instructions = data.types[examType]?.instructions;
                 const exam = data.types[examType]?.exams[examName];
 
                 if (exam) {
                     document.getElementById("exam-name").textContent = exam.name;
                     document.getElementById("exam-date").textContent = exam.date;
 
+                    const instructions = exam.instructions;
                     const tableData = instructions.table;
-                    document.getElementById("time").textContent = tableData["displaytime"];
+                    document.getElementById("time").textContent = exam.displayTime;
 
                     const instructionText = instructions.text;
                     const instructionDiv = document.getElementById("instruction-text");
@@ -140,6 +147,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         p.innerHTML = line;
                         instructionDiv.appendChild(p);
                     });
+                    
+                    document.getElementById("marks-display").style.display = "none"; // Hide marks display initially
 
                     document.getElementById("next-button").addEventListener("click", function () {
                         document.getElementById("instructions-page").style.display = "none";  
@@ -147,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         if (!timerInitialized) { // Start the timer only if it hasn't been started
                             timerInitialized = true;
-                            let timeRemaining = parseInt(tableData["time"]); 
+                            let timeRemaining = parseInt(exam.time); 
                             const timerInterval = setInterval(() => {
                                 const minutes = Math.floor(timeRemaining / 60);
                                 const seconds = timeRemaining % 60;

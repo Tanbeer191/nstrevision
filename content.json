@@ -1,25 +1,26 @@
 {
     "types": {
         "cells": {
-            "instructions": {
-                "table": {
-                    "time": 10800,
-                    "displaytime": "3 hours"
+            "table": {
             },
-                "text": [
-                    "Answer <strong>Question 1</strong> (Section A) <strong>and three questions</strong> from Section B.",
-                    "Section A carries 33% of the marks and Section B carries 67% of the marks for this paper.",
-                    "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
-                    "<br>",
-                    "<strong>Diagrams or other handwritten material:</strong>",
-                    "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
-                    "<strong>Candidates should not copy and paste figures or content from any other documents.</strong"
-            ]
-        },
             "exams": {
-                "2024p": {
+                "2024t": {
                     "name": "BOC/1: Biology of Cells - Theory",
                     "date": "Tuesday 4 June 2024",
+                    "time": 10800,
+                    "displayTime": "3 hours",
+                    "instructions": {
+                        "table": {},
+                        "text": [
+                            "Answer <strong>Question 1</strong> (Section A) <strong>and three questions</strong> from Section B.",
+                            "Section A carries 33% of the marks and Section B carries 67% of the marks for this paper.",
+                            "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
+                            "<br>",
+                            "<strong>Diagrams or other handwritten material:</strong>",
+                            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
+                            "<strong>Candidates should not copy and paste figures or content from any other documents.</strong"
+                        ]
+                    },
                     "questions": [
                         {
                             "number": 1,
@@ -186,7 +187,149 @@
                             "solution": []
                         }
                     ]
-                    }
+                    },
+                "2024p": {
+                    "name": "BOC/WP: Biology of Cells - Written Practical",
+                    "date": "Saturday 8 June 2024",
+                    "time": 10800,
+                    "displayTime": "3 hours",
+                    "instructions": {
+                        "table": {},
+                        "text": [
+                            "Answer <strong>all questions</strong>.",
+                            "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
+                            "<strong>Diagrams or other handwritten material:</strong>",
+                            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
+                            "<strong>Candidates should not copy and paste figures or content from any other documents.</strong",
+                            "<strong>SPECIAL REQUIREMENTS:</strong><br><em>Approved calculators</em><br><em>A ruler</em>"
+                        ]
+                    },
+                    "questions": [
+                        {
+                            "number": 1,
+                            "displayNumber": "Question 1a) i)",
+                            "type": "prac",
+                            "marks": 3,
+                            "content": [
+                                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
+                                "<br>",
+                                "For each specimen state which microscopical technique you could use:",
+                                "<br>",
+                                "<em>Note: The marks are given for the entire question.</em>",
+                                "<br>",
+                                "<br>",
+                                "<center>Cells of the giant algae, Chara, to determine the speed of cytoplasmic streaming.</center>"
+                            ],
+                            "solution": [
+                                "Dark field light microscopy."
+                            ]
+                        },
+                        {
+                            "number": 2,
+                            "displayNumber": "Question 1a) ii)",
+                            "type": "prac",
+                            "marks": 3,
+                            "content": [
+                                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
+                                "<br>",
+                                "For each specimen state which microscopical technique you could use:",
+                                "<br>",
+                                "<br>",
+                                "<center>Mammalian hepatocytes, to estimate the width of the lumen of the rough endoplasmic reticulum.</center>"
+                            ],
+                            "solution": [
+                                "Transmission electron microscopy."
+                            ]
+                        },
+                        {
+                            "number": 3,
+                            "displayNumber": "Question 1a) iii)",
+                            "type": "prac",
+                            "marks": 3,
+                            "content": [
+                                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
+                                "<br>",
+                                "For each specimen state which microscopical technique you could use:",
+                                "<br>",
+                                "<br>",
+                                "<center>Rat pancreatic cells, to assess the distribution of nucleic acids.</center>"
+                            ],
+                            "solution": [
+                                ""
+                            ]
+                        },
+                        {
+                            "number": 4,
+                            "displayNumber": "Question 1a) iv)",
+                            "type": "prac",
+                            "marks": 3,
+                            "content": [
+                                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
+                                "<br>",
+                                "For each specimen state which microscopical technique you could use:",
+                                "<br>",
+                                "<br>",
+                                "<center>Chara cells, to study the localisation of the protein myosin fused to green fluorescent protein.</center>"
+                            ],
+                            "solution": [
+                                ""
+                            ]
+                        },
+                        {
+                            "number": 5,
+                            "displayNumber": "Question 1a) v)",
+                            "type": "prac",
+                            "marks": 3,
+                            "content": [
+                                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
+                                "<br>",
+                                "For each specimen state which microscopical technique you could use:",
+                                "<br>",
+                                "<br>",
+                                "<center>Living buccal epithelial cells, to estimate the number of cells in a sample of saliva.</center>"
+                            ],
+                            "solution": [
+                                ""
+                            ]
+                        },
+                        {
+                            "number": 6,
+                            "displayNumber": "Question 1a) vi)",
+                            "type": "prac",
+                            "marks": 3,
+                            "content": [
+                                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
+                                "<br>",
+                                "For each specimen state which microscopical technique you could use:",
+                                "<br>",
+                                "<br>",
+                                "<center>An unknown virus, to determine its morphology.</center>"
+                            ],
+                            "solution": [
+                                ""
+                            ]
+                        },
+                        {
+                            "number": 7,
+                            "displayNumber": "Question 1b) i)",
+                            "type": "prac",
+                            "content": [
+                                "Briefly describe how the Chara samples in (i) and hepatocyte samples in (ii) would be prepared for the respective microscopy techniques." 
+                            ],
+                            "solution": [
+                                ""
+                            ]
+                        },
+                        {
+                            "number": 8,
+                            "displayNumber": "Question 1c",
+                            "type": "prac",
+                            "content": [
+                                "When would you use scanning electron microscopy and when would you use transmission electron microscopy to analyse a sample? For each method give an example of a specimen that could be examined."
+                            ]
+                        }
+                    ]
+                }
                 }
             }
         }
