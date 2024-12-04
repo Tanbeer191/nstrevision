@@ -150,7 +150,7 @@ function toggleSolution(data, examType, examName) {
 document.addEventListener("DOMContentLoaded", () => {
     const currentPage = window.location.pathname;
 
-    if (currentPage.includes("../index.html")) {
+    if (currentPage.includes("index.html")) {
         const defaultSubjectID = "cells";
         if (document.getElementById(defaultSubjectID)) {
             showSubject(defaultSubjectID);
@@ -311,19 +311,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 try {
                     const allQuestions = [];
-                    const response = await fetch(`../content/${subjectType}/`);
-                    const text = await response.text();
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(text, 'text/html');
-                    const files = Array.from(doc.querySelectorAll('a'))
-                        .map(link => link.getAttribute('href'))
-                        .filter(href => href.endsWith('.json'));
+                    const response = await fetch(`../content/${subjectType}/questions.json`);
+                    const data = await response.json();
+                    const files = data.files;
 
                     for (const file of files) {
-                        const fileResponse = await fetch(file);
+                        const fileResponse = await fetch(`../content/${subjectType}/${file}`);
                         if (fileResponse.ok) {
-                            const data = await fileResponse.json();
-                            allQuestions.push(...data.questions);
+                            const fileData = await fileResponse.json();
+                            allQuestions.push(...fileData.questions);
                         }
                     }
 
@@ -357,7 +353,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         name: "Custom Exam",
                         date: new Date().toLocaleDateString(),
                         time: 0,
-                        displayTime: "Unlimited",
+                        displayTime: "Custom",
                         instructions: {
                             table: {},
                             text: ["Answer all questions."]
