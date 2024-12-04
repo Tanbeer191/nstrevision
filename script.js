@@ -211,17 +211,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (!timerInitialized) { // Start the timer only if it hasn't been started
                     timerInitialized = true;
-                    let timeRemaining = parseInt(exam.time);
-                    const timerInterval = setInterval(() => {
-                        const minutes = Math.floor(timeRemaining / 60);
-                        const seconds = timeRemaining % 60;
-                        document.getElementById("timer").textContent = `${minutes}:${seconds.toString().padStart(2, "0")}`;
-                        timeRemaining--;
+                    if (parseInt(exam.time) === 0) {
+                        document.getElementById("timer").style.display = "none";
+                    } else {
+                        document.getElementById("timer").style.display = "block";
+                        let timeRemaining = parseInt(exam.time);
+                        const timerInterval = setInterval(() => {
+                            const minutes = Math.floor(timeRemaining / 60);
+                            const seconds = timeRemaining % 60;
+                            document.getElementById("timer").textContent = `${minutes}:${seconds.toString().padStart(2, "0")}`;
+                            timeRemaining--;
 
-                        if (timeRemaining < 0) {
-                            clearInterval(timerInterval);
-                        }
-                    }, 1000);
+                            if (timeRemaining < 0) {
+                                clearInterval(timerInterval);
+                            }
+                        }, 1000);
+                    }
                 }
 
                 loadQuestion(data, examType, examName);
@@ -339,8 +344,8 @@ document.addEventListener("DOMContentLoaded", () => {
                                     custom: {
                                         name: "Custom Exam",
                                         date: new Date().toLocaleDateString(),
-                                        time: 10800,
-                                        displayTime: "3 hours",
+                                        time: 0,
+                                        displayTime: "Custom",
                                         instructions: {
                                             table: {},
                                             text: ["Answer all questions."]
