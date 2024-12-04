@@ -26,7 +26,7 @@ function endExam() {
     const confirmEnd = confirm("Are you sure you want to end the exam?");
     if (confirmEnd) {
         clearInterval(timerInterval);
-        window.location.href = "/index.html";
+        window.location.href = "../index.html";
     }
 }
 
@@ -102,7 +102,7 @@ function loadQuestion(data, examType, examName) {
     if (currentQuestionIndex === data.questions.length - 1) {
         nextButton.textContent = "Finish";
         nextButton.onclick = () => {
-            window.location.href = "/index.html";
+            window.location.href = "../index.html";
         };
     } else {
         nextButton.textContent = "Next";
@@ -150,7 +150,7 @@ function toggleSolution(data, examType, examName) {
 document.addEventListener("DOMContentLoaded", () => {
     const currentPage = window.location.pathname;
 
-    if (currentPage.includes("/index.html")) {
+    if (currentPage.includes("../index.html")) {
         const defaultSubjectID = "cells";
         if (document.getElementById(defaultSubjectID)) {
             showSubject(defaultSubjectID);
@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 } else {
                     console.error("Custom exam data not found.");
                     alert("Custom exam data not found. Please create a custom exam first.");
-                    window.location.href = "/index.html";
+                    window.location.href = "../index.html";
                 }
             } else {
                 let contentUrl = `../content/${examType}/${examName}.json`;
