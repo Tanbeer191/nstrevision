@@ -1,6 +1,6 @@
 let currentQuestionIndex = 0;
 let timerInterval;
-let timerInitialized = false; // Define timerInitialized at the appropriate scope
+let timerInitialized = false;
 
 function showSubject(subjectId) {
     document.querySelectorAll('.subject-content').forEach(content => {
@@ -31,10 +31,9 @@ function endExam() {
 }
 
 function loadQuestion(data, examType, examName) {
-    const exam = data.types[examType]?.exams[examName];
-    const question = exam.questions[currentQuestionIndex];
+    const question = data.questions[currentQuestionIndex];
 
-    if (examName === "custom") {
+    if (examType === "custom") {
         const questionTypeCounts = {
             saq: 0,
             mcq: 0,
@@ -42,30 +41,30 @@ function loadQuestion(data, examType, examName) {
             prac: 0
         };
 
-        exam.questions.forEach(q => {
+        data.questions.forEach(q => {
             questionTypeCounts[q.type]++;
         });
 
-        const questionTypeIndex = {
-            saq: 0,
-            mcq: 0,
-            essay: 0,
-            prac: 0
-        };
-
-        for (let i = 0; i <= currentQuestionIndex; i++) {
-            questionTypeIndex[exam.questions[i].type]++;
+        let questionIndex = 1;
+        let questionTypeIndex = 1;
+        for (const q of data.questions) {
+            if (q.type === question.type) {
+                if (q === question) {
+                    break;
+                }
+                questionTypeIndex++;
+            }
+            questionIndex++;
         }
 
-        const questionTypeName = {
+        const questionTypeNames = {
             saq: "SAQ",
             mcq: "MCQ",
             essay: "Essay",
             prac: "Practical"
         };
 
-        const displayNumber = `${questionTypeName[question.type]} ${questionTypeIndex[question.type]}/${questionTypeCounts[question.type]}`;
-        document.getElementById("question-number").textContent = displayNumber;
+        document.getElementById("question-number").textContent = `${questionTypeNames[question.type]} ${questionTypeIndex}/${questionTypeCounts[question.type]}`;
     } else {
         document.getElementById("question-number").textContent = question.displayNumber;
     }
@@ -74,6 +73,18 @@ function loadQuestion(data, examType, examName) {
     const contentDiv = document.getElementById("question-content");
     contentDiv.innerHTML = "";
     contentDiv.innerHTML = contentText.join('');
+
+    if (examType !== "custom") {
+        const subInstructionText = question["sub-instructions"];
+        const subInstructionDiv = document.getElementById("sub-instructions");
+        subInstructionDiv.innerHTML = "";
+        if (Array.isArray(subInstructionText)) {
+            subInstructionDiv.innerHTML = subInstructionText.join('');
+        } else {
+            subInstructionDiv.innerHTML = subInstructionText;
+        }
+        subInstructionDiv.style.display = subInstructionText ? "block" : "none"; // Hide if no sub instructions
+    }
 
     const solutionDiv = document.getElementById("solution");
     solutionDiv.textContent = "";
@@ -88,7 +99,7 @@ function loadQuestion(data, examType, examName) {
     }
 
     const nextButton = document.getElementById("next-button");
-    if (currentQuestionIndex === exam.questions.length - 1) {
+    if (currentQuestionIndex === data.questions.length - 1) {
         nextButton.textContent = "Finish";
         nextButton.onclick = () => {
             window.location.href = "/index.html";
@@ -117,8 +128,7 @@ function loadQuestion(data, examType, examName) {
 function toggleSolution(data, examType, examName) {
     const viewSolutionButton = document.getElementById("view-solution");
     const solutionDiv = document.getElementById("solution");
-    const exam = data.types[examType]?.exams[examName];
-    const question = exam.questions[currentQuestionIndex];
+    const question = data.questions[currentQuestionIndex];
     const solutionText = question.solution;
 
     if (solutionDiv.classList.contains("hidden")) { 
@@ -158,40 +168,39 @@ document.addEventListener("DOMContentLoaded", () => {
         const examType = urlParams.get("type");
         const examName = urlParams.get("name");
 
-        let contentUrl = "/content/content.json";
-        if (examType === "cells" && examName === "custom") {
-            const tempContent = localStorage.getItem("tempContent");
-            if (tempContent) {
-                loadExam(JSON.parse(tempContent));
-                return;
+        if (examType && examName) {
+            if (examType === "custom") {
+                const customExamData = JSON.parse(localStorage.getItem("customExamData"));
+                if (customExamData) {
+                    customExamData.questions.sort((a, b) => a.type.localeCompare(b.type));
+                    loadExam(customExamData, examType, examName);
+                } else {
+                    console.error("Custom exam data not found.");
+                    alert("Custom exam data not found. Please create a custom exam first.");
+                    window.location.href = "/index.html";
+                }
             } else {
-                console.error("Custom exam data not found in localStorage.");
-                alert("An error occurred while loading the custom exam. Please try again.");
-                return;
-            }
-        }
+                let contentUrl = `/content/${examType}/${examName}.json`;
 
-        fetch(contentUrl)
-            .then(response => response.json())
-            .then(data => {
-                loadExam(data);
-            })
-            .catch(error => console.error("Error loading content.json:", error));
+                fetch(contentUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        loadExam(data, examType, examName);
+                    })
+                    .catch(error => console.error("Error loading exam JSON:", error));
+            }
+        } else {
+            console.error("Invalid exam type or name.");
+        }
     }
 
-    function loadExam(data) {
-        const urlParams = new URLSearchParams(window.location.search);
-        const examType = urlParams.get("type");
-        const examName = urlParams.get("name");
-
-        const exam = data.types[examType]?.exams[examName];
-
+    function loadExam(data, examType, examName) {
+        const exam = data;
         if (exam) {
             document.getElementById("exam-name").textContent = exam.name;
             document.getElementById("exam-date").textContent = exam.date;
 
             const instructions = exam.instructions;
-            const tableData = instructions.table;
             document.getElementById("time").textContent = exam.displayTime;
 
             const instructionText = instructions.text;
@@ -216,7 +225,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     } else {
                         document.getElementById("timer").style.display = "block";
                         let timeRemaining = parseInt(exam.time);
-                        const timerInterval = setInterval(() => {
+                        timerInterval = setInterval(() => {
                             const minutes = Math.floor(timeRemaining / 60);
                             const seconds = timeRemaining % 60;
                             document.getElementById("timer").textContent = `${minutes}:${seconds.toString().padStart(2, "0")}`;
@@ -265,21 +274,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 questionTypeCheckboxes.forEach(checkbox => {
                     if (checkbox.checked) {
-                        const label = document.createElement("label");
-                        label.textContent = `Number of ${questionTypeNames[checkbox.value]}: `;
-                        questionDetailsDiv.appendChild(label);
-
-                        const input = document.createElement("input");
-                        input.type = "number";
-                        input.name = `${checkbox.value}-count`;
-                        input.min = "1";
-                        input.max = "100";
-                        input.required = true;
-                        input.value = questionCounts[checkbox.value] || '';
-                        input.addEventListener("input", () => {
-                            questionCounts[checkbox.value] = input.value;
-                        });
-                        questionDetailsDiv.appendChild(input);
+                        const div = document.createElement("div");
+                        div.classList.add("form-group");
+                        div.innerHTML = `
+                            <label for="${checkbox.value}-count">Number of ${questionTypeNames[checkbox.value]}:</label>
+                            <input type="number" id="${checkbox.value}-count" name="${checkbox.value}-count" min="1">
+                        `;
+                        questionDetailsDiv.appendChild(div);
                     }
                 });
             });
@@ -295,13 +296,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 for (const checkbox of questionTypeCheckboxes) {
                     if (checkbox.checked) {
-                        const count = parseInt(questionCounts[checkbox.value], 10);
-                        if (isNaN(count) || count <= 0) {
-                            alert(`Please enter a valid number of ${questionTypeNames[checkbox.value]}`);
-                            return;
+                        const count = parseInt(document.getElementById(`${checkbox.value}-count`).value);
+                        if (count > 0) {
+                            selectedQuestions[checkbox.value] = count;
+                            totalQuestions += count;
                         }
-                        selectedQuestions[checkbox.value] = count;
-                        totalQuestions += count;
                     }
                 }
 
@@ -311,58 +310,65 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 try {
-                    const response = await fetch("/content/content.json");
-                    const data = await response.json();
-                    const subjectExams = data.types[subjectType].exams;
-
                     const allQuestions = [];
-                    for (const exam of Object.values(subjectExams)) {
-                        allQuestions.push(...exam.questions);
+                    const response = await fetch(`/content/${subjectType}/`);
+                    const text = await response.text();
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(text, 'text/html');
+                    const files = Array.from(doc.querySelectorAll('a'))
+                        .map(link => link.getAttribute('href'))
+                        .filter(href => href.endsWith('.json'));
+
+                    for (const file of files) {
+                        const fileResponse = await fetch(file);
+                        if (fileResponse.ok) {
+                            const data = await fileResponse.json();
+                            allQuestions.push(...data.questions);
+                        }
                     }
 
                     const selectedSet = [];
+                    const alertMessages = [];
                     for (const [type, count] of Object.entries(selectedQuestions)) {
                         const questionsOfType = allQuestions.filter(q => q.type === type);
                         if (questionsOfType.length < count) {
-                            alert(`Not enough ${questionTypeNames[type]} available. Please reduce the number.`);
-                            return;
+                            alertMessages.push(`Not enough ${questionTypeNames[type]} available. Requested: ${count}, Available: ${questionsOfType.length}`);
                         }
-                        const shuffled = questionsOfType.sort(() => 0.5 - Math.random());
-                        selectedSet.push(...shuffled.slice(0, count));
+                    }
+
+                    if (alertMessages.length > 0) {
+                        alert(alertMessages.join('\n'));
+                        return;
+                    }
+
+                    for (const [type, count] of Object.entries(selectedQuestions)) {
+                        const questionsOfType = allQuestions.filter(q => q.type === type);
+                        while (selectedSet.filter(q => q.type === type).length < count) {
+                            const randomIndex = Math.floor(Math.random() * questionsOfType.length);
+                            selectedSet.push(questionsOfType.splice(randomIndex, 1)[0]);
+                        }
                     }
 
                     // Sort questions by type
-                    selectedSet.sort((a, b) => {
-                        const typeOrder = ["saq", "mcq", "prac", "essay"];
-                        return typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type);
-                    });
+                    selectedSet.sort((a, b) => a.type.localeCompare(b.type));
 
-                    const tempContent = {
-                        types: {
-                            [subjectType]: {
-                                exams: {
-                                    custom: {
-                                        name: "Custom Exam",
-                                        date: new Date().toLocaleDateString(),
-                                        time: 0,
-                                        displayTime: "Custom",
-                                        instructions: {
-                                            table: {},
-                                            text: ["Answer all questions."]
-                                        },
-                                        questions: selectedSet
-                                    }
-                                }
-                            }
-                        }
+                    // Redirect to custom exam page with selected questions
+                    const customExamData = {
+                        name: "Custom Exam",
+                        date: new Date().toLocaleDateString(),
+                        time: 0,
+                        displayTime: "Unlimited",
+                        instructions: {
+                            table: {},
+                            text: ["Answer all questions."]
+                        },
+                        questions: selectedSet
                     };
 
-                    localStorage.setItem("tempContent", JSON.stringify(tempContent));
-
-                    window.location.href = `exam.html?type=${subjectType}&name=custom`;
+                    localStorage.setItem("customExamData", JSON.stringify(customExamData));
+                    window.location.href = "/html/exam.html?type=custom&name=custom";
                 } catch (error) {
-                    console.error("Error fetching or processing content.json:", error);
-                    alert("An error occurred while building the exam. Please try again.");
+                    console.error("Error building custom exam:", error);
                 }
             });
         }
