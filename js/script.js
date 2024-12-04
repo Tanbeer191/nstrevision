@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     window.location.href = "/index.html";
                 }
             } else {
-                let contentUrl = `/content/${examType}/${examName}.json`;
+                let contentUrl = `../content/${examType}/${examName}.json`;
 
                 fetch(contentUrl)
                     .then(response => response.json())
@@ -311,7 +311,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 try {
                     const allQuestions = [];
-                    const response = await fetch(`/content/${subjectType}/`);
+                    const response = await fetch(`../content/${subjectType}/`);
                     const text = await response.text();
                     const parser = new DOMParser();
                     const doc = parser.parseFromString(text, 'text/html');
