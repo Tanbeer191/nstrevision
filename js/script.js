@@ -362,7 +362,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     };
 
                     localStorage.setItem("customExamData", JSON.stringify(customExamData));
-                    window.location.href = "/html/exam.html?type=custom&name=custom";
+                    window.location.href = "../html/exam.html?type=custom&name=custom";
                 } catch (error) {
                     console.error("Error building custom exam:", error);
                 }
