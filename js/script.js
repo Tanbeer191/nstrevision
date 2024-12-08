@@ -156,7 +156,7 @@ function toggleSolution(data, examType, examName) {
 document.addEventListener("DOMContentLoaded", () => {
     const currentPage = window.location.pathname;
 
-    if (currentPage.includes("index.html") || currentPage === "/") {
+    if (document.querySelector(".exam-section")) {
         const defaultSubjectID = "cells";
         if (document.getElementById(defaultSubjectID)) {
             showSubject(defaultSubjectID);
