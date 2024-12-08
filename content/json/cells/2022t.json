@@ -1,0 +1,276 @@
+{
+    "name": "BOC/1: Biology of Cells - Theory",
+    "date": "Tuesday 7th June 2022",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "Answer <strong>Question 1</strong> (Section A) <strong>and three questions</strong> from Section B.",
+            "Section A carries 33% of the marks and Section B carries 67% of the marks for this paper.",
+            "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
+            "<br>",
+            "<strong>Diagrams or other handwritten material:</strong>",
+            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
+            "<strong>Candidates should not copy and paste figures or content from any other documents.</strong"
+        ] 
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question 1a",
+            "type": "saq",
+            "topic": "cell-structure",
+            "sub-instructions": [
+                "<strong>Answer all parts (a-o) of Question 1. Each part carries equal marks. Suggested total time: not more than 1 hour. As a guideline, we suggest average answers should be approximately 100 words long.</strong>"
+            ],
+            "content": [
+                "Describe three key differences between eukaryotic and prokaryotic cells."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question 1b",
+            "type": "saq",
+            "topic": "macromolecules",
+            "content": [
+                "How does RNA differ from DNA? How do these differences contribute to their suitability as molecules for either short- or long-term information storage?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question 1c",
+            "type": "saq",
+            "topic": "macromolecules",
+            "content": [
+                "The primary sequence of a protein is always the same, but this is not true for polysaccharides. Explain why this is the case."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 1d",
+            "type": "saq",
+            "topic": "membranes",
+            "content": [
+                "How is structural diversity of phosphoglycerides achieved in cells?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 1e",
+            "type": "saq",
+            "topic": "metabolism-atp",      
+            "content": [
+                "Why does ATP have such a high free energy of hydrolysis?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 1f",
+            "type": "saq",
+            "topic": "metabolism",
+            "content": [
+                "Give two examples of when electron transport chains do not conform to a linear path in which electrons are supplied by compound X to compound Y."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question 1g",
+            "type": "saq",
+            "topic": "metabolism-respiration",
+            "content": [
+                "What is the Cori Cycle, and why is it important during exercise?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question 1h",
+            "type": "saq",
+            "content": [
+                "Explain the principles of the screen for cell division cycle (cdc) mutations in yeast. Provide two examples of classes of proteins that were identified in this screen."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 1i",
+            "type": "saq",
+            "content": [
+                "Name and briefly describe three mechanisms of horizontal gene transfer (HGT) that operate among bacteria. Which of these processes is potentially reduced in efficiency by the action of restriction endonucleases?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 10,
+            "displayNumber": "Question 1j",
+            "type": "saq",
+            "content": [
+                "What is the “end replication problem” for linear chromosomes and how is this problem overcome?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 11,
+            "displayNumber": "Question 1k",
+            "type": "saq",
+            "content": [
+                "Aristotle’s theory of human reproduction stated that the male provides the information, while the female provides the raw materials. Use your knowledge of Mendel’s pea breeding experiments to explain why this idea is not generally true. Describe one example of inheritance in eukaryotes where information is indeed transmitted from the male alone."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 12,
+            "displayNumber": "Question 1l",
+            "type": "saq",
+            "content": [
+                "What are the three main RNA processing steps that are needed to generate mRNA from RNA Polymerase II primary transcripts, and why are they needed?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 13,
+            "displayNumber": "Question 1m",
+            "type": "saq",
+            "content": [
+                "What is the role of the inositol (1,4,5) tris phosphate receptor (IP3R) in the fertilisation of star fish eggs?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 14,
+            "displayNumber": "Question 1n",
+            "type": "saq",
+            "content": [
+                "How is ubiquitin important in plant hormone signalling?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 15,
+            "displayNumber": "Question 1o",
+            "type": "saq",
+            "content": [
+                "Briefly describe how the myogenic differentiation (MyoD) gene was discovered."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 16,
+            "displayNumber": "Section B - Essay 1",
+            "type": "essay",
+            "topic": "macromolecules",
+            "sub-instructions": [
+                "<strong>Answer three questions from the following nine.</strong> All questions carry equal marks. Suggested total time for this section: 2 hours"
+            ],
+            "content": [
+                "Most enzymes are made of polypeptides, rather than polysaccharides or polynucleotides. Explain why proteins are better suited than the other molecules as catalysts in the cell, by comparing their properties."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 17,
+            "displayNumber": "Section B - Essay 2",
+            "type": "essay",
+            "topic": "metabolism-photosynthesis",
+            "content": [
+                "Why is water an unlikely source of electrons in cells? What systems and mechanisms in photosynthetic cells allow it to be used as an electron donor?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 18,
+            "displayNumber": "Section B - Essay 3",
+            "type": "essay",
+            "topic": "metabolism-glycolysis",
+            "content": [
+                "How is the flux of carbon through glycolysis and gluconeogenesis co-ordinated?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 19,
+            "displayNumber": "Section B - Essay 4",
+            "type": "essay",
+            "content": [
+                "Describe how you would generate and assemble the genome sequence of a newly discovered primate species. Outline the approaches you would take for subsequent annotation."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 20,
+            "displayNumber": "Section B - Essay 5",
+            "type": "essay",
+            "content": [
+                "Viruses display a range of strategies to exploit host cellular processes for viral replication. Why is in-depth knowledge of these mechanisms important? Discuss with examples."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 21,
+            "displayNumber": "Section B - Essay 6",
+            "type": "essay",
+            "content": [
+                "Using specific examples, describe how gene expression in prokaryotes is regulated."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 22,
+            "displayNumber": "Section B - Essay 7",
+            "type": "essay",
+            "content": [
+                "Discuss the discovery of genetic linkage and explain how it has led to advances in genetics and genomics."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 23,
+            "displayNumber": "Section B - Essay 8",
+            "type": "essay",
+            "content": [
+                "With respect to signal transduction, is kinase or phosphatase activity more important? Provide examples to support your argument."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 24,
+            "displayNumber": "Section B - Essay 9",
+            "type": "essay",
+            "content": [
+                "Model organisms are essential to research in developmental biology. Discuss."
+            ],
+            "solution": [
+            ]
+        }
+    ]
+}
