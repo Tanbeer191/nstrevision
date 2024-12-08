@@ -99,7 +99,7 @@
             "displayNumber": "Question 1h",
             "type": "saq",
             "content": [
-                "What is the role of the endoplasmic reticulum in the synthesis of lipids?"
+                "Why is it appropriate to refer to dominant and recessive phenotypes, but not to dominant and recessive alleles of genes? Illustrate your answer with one specific example."
             ],
             "solution": [
             ]
@@ -109,7 +109,7 @@
             "displayNumber": "Question 1i",
             "type": "saq",
             "content": [
-                "Describe the role of the lysosome in the degradation of cellular components."
+                "What is a sigma factor and how is it important for the initiation of transcription in bacteria such as E. coli?."
             ],
             "solution": [
             ]
@@ -119,7 +119,7 @@
             "displayNumber": "Question 1j",
             "type": "saq",
             "content": [
-                "What is the role of the mitochondrion in the generation of ATP?"
+                "Name, and briefly describe, the characteristics and functions of three types of RNA involved in the process of protein translation."
             ],
             "solution": [
             ]
@@ -129,7 +129,7 @@
             "displayNumber": "Question 1k",
             "type": "saq",
             "content": [
-                "Describe the role of the peroxisome in the metabolism of reactive oxygen species."
+                "Briefly describe the main challenges in annotating eukaryotic genome sequence and how they can be overcome?"
             ],
             "solution": [
             ]
@@ -139,10 +139,134 @@
             "displayNumber": "Question 1l",
             "type": "saq",
             "content": [
-                "What is the role of the cytoskeleton in the maintenance of cell shape?"
+                "Name and briefly contrast two alternative cycles of viral replication."
             ],
             "solution": [
-
+            ]
+        },
+        {
+            "number": 13,
+            "displayNumber": "Question 1m",
+            "type": "saq",
+            "content": [
+                "Describe how the membrane phospholipid phosphatidylinositol 4,5- bisphosphate is used to generate second messengers."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 14,
+            "displayNumber": "Question 1n",
+            "type": "saq",
+            "content": [
+                "How could you experimentally test if the sequence responsible for the localisation of an mRNA to the anterior of the developing Drosophila egg (oocyte) is in the 3’UTR (untranslated region)? Briefly describe one experiment and one control."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 15,
+            "displayNumber": "Question 1o",
+            "type": "saq",
+            "content": [
+                "What sets the apico-basal axis of the plant embryo, for example in Arabidopsis?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 16,
+            "displayNumber": "Section B - Essay 1",
+            "type": "essay",
+            "topic": "macromolecules",
+            "sub-instructions": [
+                "<strong>Answer three questions from the following nine.</strong> All questions carry equal marks. Suggested total time for this section: 2 hours"
+            ],
+            "content": [
+                "Macromolecular polymers enable enormous functional diversity of molecules to be created. Discuss this statement in relation to the properties of polysaccharides, nucleic acids and proteins, and give examples of how functional diversity is achieved in each."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 17,
+            "displayNumber": "Section B - Essay 2",
+            "type": "essay",
+            "topic": "membranes",
+            "content": [
+                "Using examples, explain how ionic gradients are formed then dissipated across the cell membrane and why these processes are important for transport of small molecules across membranes."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 18,
+            "displayNumber": "Section B - Essay 3",
+            "type": "metabolism",
+            "content": [
+                "With examples, outline the principles and main components that underpin the functioning of electron transfer chains in biology."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 19,
+            "displayNumber": "Section B - Essay 4",
+            "type": "metabolism",
+            "content": [
+                "What role does the NAD+/NADH ratio play in regulating metabolism across the cell?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 20,
+            "displayNumber": "Section B - Essay 5",
+            "type": "essay",
+            "content": [
+                "What were the main contributions of bacteriophages to progress in genetics and molecular biology during the second half of the 20th century?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 21,
+            "displayNumber": "Section B - Essay 6",
+            "type": "essay",
+            "content": [
+                "Describe two common approaches for genome sequencing and discuss how the development of next generation sequencing approaches have impacted on our understanding of the human genome."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 22,
+            "displayNumber": "Section B - Essay 7",
+            "type": "essay",
+            "content": [
+                "Describe the molecular events in the mitotic spindle checkpoint and what happens once the checkpoint has been satisfied to allow the cell cycle to progress."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 23,
+            "displayNumber": "Section B - Essay 8",
+            "type": "essay",
+            "content": [
+                "How does fertilisation of a vertebrate egg by a sperm begin the development of the embryo and establish polarity."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 24,
+            "displayNumber": "Section B - Essay 9",
+            "type": "essay",
+            "content": [
+                "Imagine you have been awarded unlimited funding to address the research question of \"how do multicellular organism develop\". However, you are restricted to the use of a single species for experimentation. Which species would you choose and why?"
+            ],
+            "solution": [
             ]
         }
     ]
