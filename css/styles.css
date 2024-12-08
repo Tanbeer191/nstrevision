@@ -199,6 +199,7 @@ th, td {
     align-items: center;
     background-color: #0073e6;
     box-sizing: border-box;
+    justify-content: space-between;
 }
 
 .controls button {
@@ -329,6 +330,45 @@ th, td {
 #question-details label,
 #question-details input {
     margin-bottom: 0.5em;
+}
+
+.custom-topic-container {
+    margin: 20px;
+}
+
+.topic-list {
+    margin-bottom: 20px;
+}
+
+.topic-item {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.topic-item label {
+    flex: 1;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.topic-item input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#question-dropdown {
+    margin-top: 0.4em;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    padding: 0.5em;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it is above other elements */
 }
 
 footer {

@@ -33,6 +33,13 @@ function endExam() {
 function loadQuestion(data, examType, examName) {
     const question = data.questions[currentQuestionIndex];
 
+    // Clear previous content
+    document.getElementById("question-number").textContent = "";
+    document.getElementById("question-content").innerHTML = "";
+    document.getElementById("sub-instructions").innerHTML = "";
+    document.getElementById("solution").textContent = "";
+    document.getElementById("solution").classList.add("hidden");
+
     if (examType === "custom") {
         const questionTypeCounts = {
             saq: 0,
@@ -86,10 +93,6 @@ function loadQuestion(data, examType, examName) {
         subInstructionDiv.style.display = subInstructionText ? "block" : "none"; // Hide if no sub instructions
     }
 
-    const solutionDiv = document.getElementById("solution");
-    solutionDiv.textContent = "";
-    solutionDiv.classList.add("hidden");
-
     const marksDisplay = document.getElementById("marks-display");
     if (question.marks) {
         marksDisplay.textContent = `Marks: ${question.marks}`;
@@ -123,6 +126,9 @@ function loadQuestion(data, examType, examName) {
     } else {
         prevButton.classList.add("hidden");
     }
+
+    // Update the dropdown selection
+    document.getElementById("question-dropdown").value = currentQuestionIndex;
 }
 
 function toggleSolution(data, examType, examName) {
@@ -172,21 +178,16 @@ document.addEventListener("DOMContentLoaded", () => {
             if (examType === "custom") {
                 const customExamData = JSON.parse(localStorage.getItem("customExamData"));
                 if (customExamData) {
-                    customExamData.questions.sort((a, b) => a.type.localeCompare(b.type));
                     loadExam(customExamData, examType, examName);
                 } else {
                     console.error("Custom exam data not found.");
-                    alert("Custom exam data not found. Please create a custom exam first.");
-                    window.location.href = "../index.html";
                 }
             } else {
                 let contentUrl = `../content/${examType}/${examName}.json`;
 
                 fetch(contentUrl)
                     .then(response => response.json())
-                    .then(data => {
-                        loadExam(data, examType, examName);
-                    })
+                    .then(data => loadExam(data, examType, examName))
                     .catch(error => console.error("Error loading exam JSON:", error));
             }
         } else {
@@ -214,9 +215,54 @@ document.addEventListener("DOMContentLoaded", () => {
 
             document.getElementById("marks-display").style.display = "none"; // Hide marks display initially
 
+            const questionDropdown = document.getElementById("question-dropdown");
+            questionDropdown.innerHTML = "";
+            data.questions.forEach((question, index) => {
+                const option = document.createElement("option");
+                option.value = index;
+                if (examType === "custom") {
+                    const questionTypeNames = {
+                        saq: "SAQ",
+                        mcq: "MCQ",
+                        essay: "Essay",
+                        prac: "Practical"
+                    };
+                    const questionTypeCounts = {
+                        saq: 0,
+                        mcq: 0,
+                        essay: 0,
+                        prac: 0
+                    };
+                    data.questions.forEach(q => {
+                        questionTypeCounts[q.type]++;
+                    });
+                    let questionTypeIndex = 1;
+                    for (let i = 0; i < index; i++) {
+                        if (data.questions[i].type === question.type) {
+                            questionTypeIndex++;
+                        }
+                    }
+                    option.textContent = `${questionTypeNames[question.type]} ${questionTypeIndex}/${questionTypeCounts[question.type]}`;
+                } else {
+                    option.textContent = question.displayNumber || `Question ${index + 1}`;
+                }
+                questionDropdown.appendChild(option);
+            });
+
+            questionDropdown.classList.add("hidden"); // Hide dropdown initially
+
+            questionDropdown.addEventListener("change", function () {
+                currentQuestionIndex = parseInt(this.value);
+                loadQuestion(data, examType, examName);
+                document.getElementById("instructions-page").style.display = "none"; // Hide the instruction page
+                document.getElementById("exam-page").style.display = "block"; // Ensure the exam page is displayed
+                questionDropdown.classList.remove("hidden"); // Show dropdown when exam starts
+            });
+
             document.getElementById("next-button").addEventListener("click", function () {
                 document.getElementById("instructions-page").style.display = "none";
                 document.getElementById("exam-page").style.display = "block";
+                questionDropdown.classList.remove("hidden"); // Show dropdown when exam starts
 
                 if (!timerInitialized) { // Start the timer only if it hasn't been started
                     timerInitialized = true;
@@ -259,8 +305,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const questionTypeCheckboxes = document.querySelectorAll("input[name='question-type']");
         const questionDetailsDiv = document.getElementById("question-details");
-        const questionCounts = {};
-
         const questionTypeNames = {
             saq: "Short Answer Questions (SAQs)",
             mcq: "Multiple Choice Questions (MCQs)",
@@ -270,10 +314,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         questionTypeCheckboxes.forEach(checkbox => {
             checkbox.addEventListener("change", () => {
-                questionDetailsDiv.innerHTML = '';
-
                 questionTypeCheckboxes.forEach(checkbox => {
-                    if (checkbox.checked) {
+                    if (checkbox.checked && !document.getElementById(`${checkbox.value}-count`)) {
                         const div = document.createElement("div");
                         div.classList.add("form-group");
                         div.innerHTML = `
@@ -281,6 +323,8 @@ document.addEventListener("DOMContentLoaded", () => {
                             <input type="number" id="${checkbox.value}-count" name="${checkbox.value}-count" min="1">
                         `;
                         questionDetailsDiv.appendChild(div);
+                    } else if (!checkbox.checked && document.getElementById(`${checkbox.value}-count`)) {
+                        document.getElementById(`${checkbox.value}-count`).parentElement.remove();
                     }
                 });
             });
@@ -308,65 +352,222 @@ document.addEventListener("DOMContentLoaded", () => {
                     alert("Please select at least one question type and enter the number of questions.");
                     return;
                 }
-
-                try {
-                    const allQuestions = [];
-                    const response = await fetch(`../content/${subjectType}/questions.json`);
-                    const data = await response.json();
-                    const files = data.files;
-
-                    for (const file of files) {
-                        const fileResponse = await fetch(`../content/${subjectType}/${file}`);
-                        if (fileResponse.ok) {
-                            const fileData = await fileResponse.json();
-                            allQuestions.push(...fileData.questions);
-                        }
-                    }
-
-                    const selectedSet = [];
-                    const alertMessages = [];
-                    for (const [type, count] of Object.entries(selectedQuestions)) {
-                        const questionsOfType = allQuestions.filter(q => q.type === type);
-                        if (questionsOfType.length < count) {
-                            alertMessages.push(`Not enough ${questionTypeNames[type]} available. Requested: ${count}, Available: ${questionsOfType.length}`);
-                        }
-                    }
-
-                    if (alertMessages.length > 0) {
-                        alert(alertMessages.join('\n'));
-                        return;
-                    }
-
-                    for (const [type, count] of Object.entries(selectedQuestions)) {
-                        const questionsOfType = allQuestions.filter(q => q.type === type);
-                        while (selectedSet.filter(q => q.type === type).length < count) {
-                            const randomIndex = Math.floor(Math.random() * questionsOfType.length);
-                            selectedSet.push(questionsOfType.splice(randomIndex, 1)[0]);
-                        }
-                    }
-
-                    // Sort questions by type
-                    selectedSet.sort((a, b) => a.type.localeCompare(b.type));
-
-                    // Redirect to custom exam page with selected questions
-                    const customExamData = {
-                        name: "Custom Exam",
-                        date: new Date().toLocaleDateString(),
-                        time: 0,
-                        displayTime: "Custom",
-                        instructions: {
-                            table: {},
-                            text: ["Answer all questions."]
-                        },
-                        questions: selectedSet
-                    };
-
-                    localStorage.setItem("customExamData", JSON.stringify(customExamData));
-                    window.location.href = "../html/exam.html?type=custom&name=custom";
-                } catch (error) {
-                    console.error("Error building custom exam:", error);
-                }
             });
         }
     }
+})
+
+document.addEventListener("DOMContentLoaded", () => {
+    const customExamForm = document.getElementById("custom-exam-form");
+    if (customExamForm) {
+        customExamForm.addEventListener("submit", function(event)  {
+            event.preventDefault();
+            const selectedTypes = Array.from(document.querySelectorAll('input[name="question-type"]:checked')).map(input => input.value);
+            const questionDetails = selectedTypes.map(type => {
+                return {
+                    type: type,
+                    count: document.getElementById(`${type}-count`).value
+                };
+            });
+            const subjectType = document.getElementById("subject-type").value;
+            localStorage.setItem("questionDetails", JSON.stringify(questionDetails));
+            localStorage.setItem("subjectType", subjectType);
+            window.location.href = `../html/custom-topic-selector.html?type=${subjectType}`;
+        });
+    }
+
+    const summaryDiv = document.getElementById("summary");
+    const topicChooserDiv = document.getElementById("topic-chooser");
+    if (summaryDiv && topicChooserDiv) {
+        const questionDetails = JSON.parse(localStorage.getItem("questionDetails"));
+        const subjectType = new URLSearchParams(window.location.search).get('type');
+        const questionTypeNames = {
+            saq: "Short Answer Questions (SAQs)",
+            mcq: "Multiple Choice Questions (MCQs)",
+            essay: "Essay Questions",
+            prac: "Practical Questions"
+        };
+
+        const topicNames = {
+            "protein-structure": "Protein Structure",
+            "macromolecules": "Macromolecules",
+            "metabolism": "Metabolism",
+            "membranes": "Membranes",
+            "carbohydrates": "Carbohydrates",
+            "dna": "DNA",
+            "membrane-proteins": "Membrane Proteins",
+            "enzyme-kinetics": "Enzyme Kinetics",
+            "cell-transport": "Cell Transport",
+            "microscopy": "Microscopy",
+            // Add more topic mappings as needed
+        };
+
+        const topicNamesReverse = Object.fromEntries(Object.entries(topicNames).map(([key, value]) => [value, key]));
+
+        questionDetails.forEach(detail => {
+            const p = document.createElement("p");
+            p.textContent = `${questionTypeNames[detail.type]}: ${detail.count} questions`;
+            summaryDiv.appendChild(p);
+        });
+
+        fetch(`../content/${subjectType}/questions.json`)
+            .then(response => response.json())
+            .then(data => {
+                const questionFiles = data.files;
+                const allQuestions = [];
+
+                Promise.all(questionFiles.map(file => fetch(`../content/${subjectType}/${file}`).then(response => response.json())))
+                    .then(filesData => {
+                        filesData.forEach(fileData => {
+                            allQuestions.push(...fileData.questions.filter(q => q.topic));
+                        });
+
+                        const topicsByType = {};
+                        allQuestions.forEach(question => {
+                            const { type, topic } = question;
+                            if (!topicsByType[type]) {
+                                topicsByType[type] = {};
+                            }
+                            if (!topicsByType[type][topic]) {
+                                topicsByType[type][topic] = 0;
+                            }
+                            topicsByType[type][topic]++;
+                        });
+
+                        questionDetails.forEach(detail => {
+                            if (detail.count > 0) {
+                                const subHeader = document.createElement("h3");
+                                subHeader.textContent = `Select Topics for ${questionTypeNames[detail.type]}`;
+                                topicChooserDiv.appendChild(subHeader);
+
+                                const topicList = document.createElement("div");
+                                topicList.classList.add("topic-list");
+                                topicList.setAttribute("data-question-type", detail.type);
+
+                                const topics = topicsByType[detail.type];
+                                for (const [topic, count] of Object.entries(topics)) {
+                                    if (topicNames[topic]) {
+                                        const topicDiv = document.createElement("div");
+                                        topicDiv.classList.add("topic-item");
+
+                                        const label = document.createElement("label");
+                                        label.textContent = `${topicNames[topic]} (Available: ${count}):`;
+
+                                        const input = document.createElement("input");
+                                        input.type = "number";
+                                        input.min = "0";
+                                        input.max = count;
+                                        input.value = "0";
+                                        input.classList.add("topic-count");
+
+                                        topicDiv.appendChild(label);
+                                        topicDiv.appendChild(input);
+                                        topicList.appendChild(topicDiv);
+                                    }
+                                }
+
+                                topicChooserDiv.appendChild(topicList);
+                            }
+                        });
+
+                        document.getElementById("submit-topics").addEventListener("click", function() {
+                            const topicLists = document.querySelectorAll(".topic-list");
+                            const selectedTopics = {};
+                            let hasError = false;
+
+                            topicLists.forEach(list => {
+                                const questionType = list.getAttribute("data-question-type");
+                                selectedTopics[questionType] = [];
+
+                                const topicItems = list.querySelectorAll(".topic-item");
+                                let totalSelected = 0;
+
+                                topicItems.forEach(item => {
+                                    const topicName = item.querySelector("label").textContent.split(" (")[0];
+                                    const topicCount = parseInt(item.querySelector(".topic-count").value, 10);
+                                    const availableCount = parseInt(item.querySelector(".topic-count").max, 10);
+
+                                    if (topicCount > availableCount) {
+                                        alert(`You have selected more questions for ${topicName} than are available. Please reduce the number of questions.`);
+                                        hasError = true;
+                                    }
+
+                                    if (topicCount > 0) {
+                                        selectedTopics[questionType].push({ topic: topicNamesReverse[topicName], count: topicCount });
+                                        totalSelected += topicCount;
+                                    }
+                                });
+
+                                const questionDetail = questionDetails.find(detail => detail.type === questionType);
+                                if (totalSelected > questionDetail.count) {
+                                    alert(`You have selected too many questions for ${questionTypeNames[questionType]}. Please reduce the number of questions.`);
+                                    hasError = true;
+                                } else if (totalSelected < questionDetail.count) {
+                                    const confirmContinue = confirm(`You have selected fewer questions than required for ${questionTypeNames[questionType]}. The remaining questions will be selected at random. Do you want to continue?`);
+                                    if (!confirmContinue) {
+                                        hasError = true;
+                                    }
+                                }
+                            });
+
+                            if (!hasError) {
+                                localStorage.setItem("selectedTopics", JSON.stringify(selectedTopics));
+                                generateRandomQuestionSet(allQuestions, questionDetails, selectedTopics);
+                                window.location.href = "../html/exam.html?type=custom&name=custom";
+                            }
+                        });
+                    });
+            })
+            .catch(error => {
+                console.error("Error loading questions:", error);
+            });
+    }
 });
+
+function generateRandomQuestionSet(allQuestions, questionDetails, selectedTopics) {
+    const selectedSet = [];
+
+    questionDetails.forEach(detail => {
+        const questionsOfType = allQuestions.filter(q => q.type === detail.type && q.topic);
+        const topics = selectedTopics[detail.type] || [];
+
+        topics.forEach(topic => {
+            const questionsOfTopic = questionsOfType.filter(q => q.topic === topic.topic);
+            while (selectedSet.filter(q => q.type === detail.type && q.topic === topic.topic).length < topic.count) {
+                if (questionsOfTopic.length === 0) {
+                    console.error(`No questions available for topic ${topic.topic} of type ${detail.type}`);
+                    break;
+                }
+                const randomIndex = Math.floor(Math.random() * questionsOfTopic.length);
+                selectedSet.push(questionsOfTopic.splice(randomIndex, 1)[0]);
+            }
+        });
+
+        const remainingCount = detail.count - selectedSet.filter(q => q.type === detail.type).length;
+        if (remainingCount > 0) {
+            const remainingQuestions = questionsOfType.filter(q => !selectedSet.includes(q));
+            while (selectedSet.filter(q => q.type === detail.type).length < detail.count) {
+                if (remainingQuestions.length === 0) {
+                    console.error(`No remaining questions available for type ${detail.type}`);
+                    break;
+                }
+                const randomIndex = Math.floor(Math.random() * remainingQuestions.length);
+                selectedSet.push(remainingQuestions.splice(randomIndex, 1)[0]);
+            }
+        }
+    });
+
+    const customExamData = {
+        name: "Custom Exam",
+        date: new Date().toLocaleDateString(),
+        time: 0,
+        displayTime: "Custom",
+        instructions: {
+            table: {},
+            text: ["Answer all questions."]
+        },
+        questions: selectedSet
+    };
+
+    localStorage.setItem("customExamData", JSON.stringify(customExamData));
+}
