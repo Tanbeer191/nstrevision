@@ -64,7 +64,7 @@
             "number": 5,
             "displayNumber": "Question 1e",
             "type": "saq",
-            "topic": "metabolism",
+            "topic": "metabolism-tca",
             "content": [
                 "Why is the use of carbon skeletons from the TCA cycle for amino acid synthesis an issue, and how is it solved?"
             ],
@@ -74,7 +74,7 @@
             "number": 6,
             "displayNumber": "Question 1f",
             "type": "saq",
-            "topic": "metabolism",
+            "topic": "metabolism-fatty-acids",
             "content": [
                 "How are fatty acids taken up by the mitochondria?"
             ],
@@ -84,7 +84,7 @@
             "number": 7,
             "displayNumber": "Question 1g",
             "type": "saq",
-            "topic": "metabolism",
+            "topic": "metabolism-respiration",
             "content": [
                 "Draw the main structural components of ATP synthase and outline ways in which it is regulated."
             ],
@@ -94,7 +94,7 @@
             "number": 8,
             "displayNumber": "Question 1h",
             "type": "saq",
-            "topic": "metabolism",
+            "topic": "metabolism-fatty-acids",
             "content": ["What are ketone bodies, and why do they form?"
         ],
             "solution": []

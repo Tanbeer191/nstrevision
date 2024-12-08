@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     console.error("Custom exam data not found.");
                 }
             } else {
-                let contentUrl = `../content/${examType}/${examName}.json`;
+                let contentUrl = `../content/json/${examType}/${examName}.json`;
 
                 fetch(contentUrl)
                     .then(response => response.json())
@@ -429,6 +429,12 @@ document.addEventListener("DOMContentLoaded", () => {
             "membranes": "Membranes",
             "membrane-proteins": "Membrane Proteins",
             "metabolism": "Metabolism",
+            "metabolism-atp": "Metabolism - ATP",
+            "metabolism-photosynthesis": "Metabolism - Photosynthesis",
+            "metabolism-glycolysis": "Metabolism - Glycolysis",
+            "metabolism-tca": "Metabolism - TCA Cycle",
+            "metabolism-respiration": "Metabolism - Respiration",
+            "metabolism-amino-acids": "Metabolism - Amino Acids",
             "cell-transport": "Cell Transport",
             "microscopy": "Microscopy",
             // Add more topic mappings as needed
@@ -442,13 +448,13 @@ document.addEventListener("DOMContentLoaded", () => {
             summaryDiv.appendChild(p);
         });
 
-        fetch(`../content/${subjectType}/questions.json`)
+        fetch(`../content/json/${subjectType}/questions.json`)
             .then(response => response.json())
             .then(data => {
                 const questionFiles = data.files;
                 const allQuestions = [];
 
-                Promise.all(questionFiles.map(file => fetch(`../content/${subjectType}/${file}`).then(response => response.json())))
+                Promise.all(questionFiles.map(file => fetch(`../content/json/${subjectType}/${file}`).then(response => response.json())))
                     .then(filesData => {
                         filesData.forEach(fileData => {
                             allQuestions.push(...fileData.questions.filter(q => q.topic));

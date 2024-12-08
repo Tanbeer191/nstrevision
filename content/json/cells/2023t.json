@@ -56,7 +56,7 @@
             "number": 4,
             "displayNumber": "Question 1d",
             "type": "saq",
-            "topic": "metabolism",
+            "topic": "metabolism-photsynthesis",
             "content": [
                 "What are the characteristics of RUBISCO as an enzyme and what reactions does it catalyse?"
             ],
@@ -67,7 +67,7 @@
             "number": 5,
             "displayNumber": "Question 1e",
             "type": "saq",
-            "topic": "metabolism",      
+            "topic": "metabolism-respiration",      
             "content": [
                 "Why does skeletal muscle generate lactate during oxygen limitation?"
             ],
@@ -78,7 +78,7 @@
             "number": 6,
             "displayNumber": "Question 1f",
             "type": "saq",
-            "topic": "metabolism",
+            "topic": "metabolism-atp",
             "content": [
                 "How is ATP recycled in mammalian metabolism?"
             ],
@@ -90,7 +90,7 @@
             "displayNumber": "Question 1g",
             "type": "saq",
             "content": [
-                "What is the role of the cytoskeleton in cell division?"
+                "Why is the maximum genetic distance between any two genes 50 centiMorgan(cM)?"
             ],
             "solution": [
             ]
@@ -100,7 +100,7 @@
             "displayNumber": "Question 1h",
             "type": "saq",
             "content": [
-                "Why is the maximum genetic distance between any two genes 50 centiMorgan(cM)?"
+                "Explain the genetic basis of the rapid spread of multiple drug resistance in bacteria."
             ],
             "solution": [
             ]
@@ -215,7 +215,7 @@
             "number": 19,
             "displayNumber": "Section B - Essay 4",
             "type": "essay",
-            "topic": "metabolism",
+            "topic": "metabolism-amino-acids",
             "content": [
                 "What are the key challenges associated with nitrogen fixation? Explain the processes that have evolved to overcome these challenges."
             ],
@@ -267,7 +267,7 @@
             "displayNumber": "Section B - Essay 9",
             "type": "essay",
             "content": [
-                "DDiscuss the mechanisms that contribute to axis formation in the early embryos of animals. Support your arguments with experimental evidence."
+                "Discuss the mechanisms that contribute to axis formation in the early embryos of animals. Support your arguments with experimental evidence."
             ],
             "solution": [
             ]
