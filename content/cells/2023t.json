@@ -1,0 +1,276 @@
+{
+    "name": "BOC/1: Biology of Cells - Theory",
+    "date": "Tuesday 6th June 2023",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "Answer <strong>Question 1</strong> (Section A) <strong>and three questions</strong> from Section B.",
+            "Section A carries 33% of the marks and Section B carries 67% of the marks for this paper.",
+            "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
+            "<br>",
+            "<strong>Diagrams or other handwritten material:</strong>",
+            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
+            "<strong>Candidates should not copy and paste figures or content from any other documents.</strong"
+        ] 
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question 1a",
+            "type": "saq",
+            "topic": "cell-structure",
+            "sub-instructions": [
+                "<strong>Answer all parts (a-o) of Question 1. Each part carries equal marks. Suggested total time: not more than 1 hour. As a guideline, we suggest average answers should be approximately 100 words long.</strong>"
+            ],
+            "content": [
+                "Draw and label a diagram showing the organelles in a typical plant cell."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question 1b",
+            "type": "saq",
+            "topic": "macromolecules",
+            "content": [
+                "Most macromolecules have directionality. Describe the features that make the three classes of macromolecules directional."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question 1c",
+            "type": "saq",
+            "topic": "membranes",
+            "content": [
+                "An animal cell is moved from an isotonic solution to a hypotonic solution. What might happen and why?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 1d",
+            "type": "saq",
+            "topic": "metabolism",
+            "content": [
+                "What are the characteristics of RUBISCO as an enzyme and what reactions does it catalyse?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 1e",
+            "type": "saq",
+            "topic": "metabolism",      
+            "content": [
+                "Why does skeletal muscle generate lactate during oxygen limitation?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 1f",
+            "type": "saq",
+            "topic": "metabolism",
+            "content": [
+                "How is ATP recycled in mammalian metabolism?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question 1g",
+            "type": "saq",
+            "content": [
+                "What is the role of the cytoskeleton in cell division?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question 1h",
+            "type": "saq",
+            "content": [
+                "Why is the maximum genetic distance between any two genes 50 centiMorgan(cM)?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 1i",
+            "type": "saq",
+            "content": [
+                "How do eukaryotic cells ensure that origins of DNA replication are used only once per cell cycle?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 10,
+            "displayNumber": "Question 1j",
+            "type": "saq",
+            "content": [
+                "Describe the mechanism of DNA mismatch repair in prokaryotes."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 11,
+            "displayNumber": "Question 1k",
+            "type": "saq",
+            "content": [
+                "Describe the process for carrying out a Southern blot on genomic DNA."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 12,
+            "displayNumber": "Question 1l",
+            "type": "saq",
+            "content": [
+                "Briefly describe how to perform a whole-genome QTL scan."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 13,
+            "displayNumber": "Question 1m",
+            "type": "saq",
+            "content": [
+                "What is the Philadelphia chromosome? Why was its discovery regarded as a significant milestone in cancer research? "
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 14,
+            "displayNumber": "Question 1n",
+            "type": "saq",
+            "content": [
+                "What is the role of cyclic AMP in the aggregation of Dictyostelium?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 15,
+            "displayNumber": "Question 1o",
+            "type": "saq",
+            "content": [
+                "What are Hox genes and how do we know that they are important in animal development?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 16,
+            "displayNumber": "Section B - Essay 1",
+            "type": "essay",
+            "topic": "enzyme-kinetics",
+            "sub-instructions": [
+                "<strong>Answer three questions from the following nine.</strong> All questions carry equal marks. Suggested total time for this section: 2 hours"
+            ],
+            "content": [
+                "How are enzymes regulated and why do multiple regulatory mechanisms exist?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 17,
+            "displayNumber": "Section B - Essay 2",
+            "type": "essay",
+            "topic": "macromolecules",
+            "content": [
+                "Discuss, with examples, the significance of lipids in the movement of water and solutes in cells. "
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 18,
+            "displayNumber": "Section B - Essay 3",
+            "type": "essay",
+            "topic": "metabolism",
+            "content": [
+                "Outline the principles of electron transfer chains. Using examples, describe how they can differ from one another."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 19,
+            "displayNumber": "Section B - Essay 4",
+            "type": "essay",
+            "topic": "metabolism",
+            "content": [
+                "What are the key challenges associated with nitrogen fixation? Explain the processes that have evolved to overcome these challenges."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 20,
+            "displayNumber": "Section B - Essay 5",
+            "type": "essay",
+            "content": [
+                "Giving examples, explain how Mendel’s breeding experiments led to the concept of genetic dominance and how this concept subsequently developed"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 21,
+            "displayNumber": "Section B - Essay 6",
+            "type": "essay",
+            "content": [
+                "Compare and contrast the use of linkage and association studies for identifying human disease genes, using examples."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 22,
+            "displayNumber": "Section B - Essay 7",
+            "type": "essay",
+            "content": [
+                "Adult multicellular organisms must balance cell differentiation with cell number. Discuss, with examples, how this is achieved. "
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 23,
+            "displayNumber": "Section B - Essay 8",
+            "type": "essay",
+            "content": [
+                "Compare how the different classes of G proteins respond to extracellular signals in mammalian cells"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 24,
+            "displayNumber": "Section B - Essay 9",
+            "type": "essay",
+            "content": [
+                "DDiscuss the mechanisms that contribute to axis formation in the early embryos of animals. Support your arguments with experimental evidence."
+            ],
+            "solution": [
+            ]
+        }
+    ]
+}

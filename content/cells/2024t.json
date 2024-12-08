@@ -21,6 +21,9 @@
             "displayNumber": "Question 1a",
             "type": "saq",
             "topic": "protein-structure",
+            "sub-instructions": [
+                "<strong>Answer all parts (a-o) of Question 1. Each part carries equal marks. Suggested total time: not more than 1 hour. As a guideline, we suggest average answers should be approximately 100 words long.</strong>"
+            ],
             "content": [
                 "What bonds stabilize alpha-helices and beta-sheets and what is the consequence of these bonds for protein structure?"
             ],
@@ -31,7 +34,7 @@
             "number": 2,
             "displayNumber": "Question 1b",
             "type": "saq",
-            "topic": "carbohydrates",
+            "topic": "macromolecules",
             "content": [
                 "Explain what makes cellulose better suited as a structural element than glycogen."
             ],

@@ -330,6 +330,36 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
+        // Restore state when page loads
+        const checkboxStates = JSON.parse(localStorage.getItem("checkboxStates"));
+        if (checkboxStates) {
+            checkboxStates.forEach(state => {
+                const checkbox = document.getElementById(state.id);
+                if (checkbox) {
+                    checkbox.checked = state.checked;
+                    if (state.checked && !document.getElementById(`${checkbox.value}-count`)) {
+                        const div = document.createElement("div");
+                        div.classList.add("form-group");
+                        div.innerHTML = `
+                            <label for="${checkbox.value}-count">Number of ${questionTypeNames[checkbox.value]}:</label>
+                            <input type="number" id="${checkbox.value}-count" name="${checkbox.value}-count" min="1">
+                        `;
+                        questionDetailsDiv.appendChild(div);
+                    }
+                }
+            });
+        }
+
+        const inputCounts = JSON.parse(localStorage.getItem("inputCounts"));
+        if (inputCounts) {
+            inputCounts.forEach(state => {
+                const input = document.getElementById(state.id);
+                if (input) {
+                    input.value = state.value;
+                }
+            });
+        }
+
         const customExamForm = document.getElementById("custom-exam-form");
         if (customExamForm) {
             customExamForm.addEventListener("submit", async (event) => {
@@ -350,30 +380,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (totalQuestions === 0) {
                     alert("Please select at least one question type and enter the number of questions.");
-                    return;
+                    hasError = true;
+                    return; // Prevent the user from continuing
                 }
+
+                // Save state before navigating away
+                const checkboxStates = Array.from(questionTypeCheckboxes).map(checkbox => ({
+                    id: checkbox.id,
+                    checked: checkbox.checked
+                }));
+                localStorage.setItem("checkboxStates", JSON.stringify(checkboxStates));
+
+                const inputCounts = Array.from(document.querySelectorAll('input[type="number"]')).map(input => ({
+                    id: input.id,
+                    value: input.value
+                }));
+                localStorage.setItem("inputCounts", JSON.stringify(inputCounts));
+
+                const questionDetails = Object.keys(selectedQuestions).map(type => ({
+                    type: type,
+                    count: selectedQuestions[type]
+                }));
+                const subjectType = document.getElementById("subject-type").value;
+                localStorage.setItem("questionDetails", JSON.stringify(questionDetails));
+                localStorage.setItem("subjectType", subjectType);
+                window.location.href = `../html/custom-topic-selector.html?type=${subjectType}`;
             });
         }
-    }
-})
-
-document.addEventListener("DOMContentLoaded", () => {
-    const customExamForm = document.getElementById("custom-exam-form");
-    if (customExamForm) {
-        customExamForm.addEventListener("submit", function(event)  {
-            event.preventDefault();
-            const selectedTypes = Array.from(document.querySelectorAll('input[name="question-type"]:checked')).map(input => input.value);
-            const questionDetails = selectedTypes.map(type => {
-                return {
-                    type: type,
-                    count: document.getElementById(`${type}-count`).value
-                };
-            });
-            const subjectType = document.getElementById("subject-type").value;
-            localStorage.setItem("questionDetails", JSON.stringify(questionDetails));
-            localStorage.setItem("subjectType", subjectType);
-            window.location.href = `../html/custom-topic-selector.html?type=${subjectType}`;
-        });
     }
 
     const summaryDiv = document.getElementById("summary");
@@ -389,14 +422,13 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         const topicNames = {
-            "protein-structure": "Protein Structure",
+            "cell-structure": "Cell Structure",
             "macromolecules": "Macromolecules",
-            "metabolism": "Metabolism",
-            "membranes": "Membranes",
-            "carbohydrates": "Carbohydrates",
-            "dna": "DNA",
-            "membrane-proteins": "Membrane Proteins",
+            "protein-structure": "Protein Structure",
             "enzyme-kinetics": "Enzyme Kinetics",
+            "membranes": "Membranes",
+            "membrane-proteins": "Membrane Proteins",
+            "metabolism": "Metabolism",
             "cell-transport": "Cell Transport",
             "microscopy": "Microscopy",
             // Add more topic mappings as needed
@@ -445,18 +477,18 @@ document.addEventListener("DOMContentLoaded", () => {
                                 topicList.setAttribute("data-question-type", detail.type);
 
                                 const topics = topicsByType[detail.type];
-                                for (const [topic, count] of Object.entries(topics)) {
-                                    if (topicNames[topic]) {
+                                Object.keys(topicNames).forEach(topic => {
+                                    if (topics[topic]) {
                                         const topicDiv = document.createElement("div");
                                         topicDiv.classList.add("topic-item");
 
                                         const label = document.createElement("label");
-                                        label.textContent = `${topicNames[topic]} (Available: ${count}):`;
+                                        label.textContent = `${topicNames[topic]} (Available: ${topics[topic]}):`;
 
                                         const input = document.createElement("input");
                                         input.type = "number";
                                         input.min = "0";
-                                        input.max = count;
+                                        input.max = topics[topic];
                                         input.value = "0";
                                         input.classList.add("topic-count");
 
@@ -464,7 +496,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                         topicDiv.appendChild(input);
                                         topicList.appendChild(topicDiv);
                                     }
-                                }
+                                });
 
                                 topicChooserDiv.appendChild(topicList);
                             }
