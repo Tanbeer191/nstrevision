@@ -1,6 +1,6 @@
 {
     "name": "BOC/1: Biology of Cells - Theory",
-    "date": "Tuesday 6th June 2023",
+    "date": "Tuesday 8th June 2021",
     "time": 10800,
     "displayTime": "3 hours",
     "instructions": {
@@ -20,12 +20,12 @@
             "number": 1,
             "displayNumber": "Question 1a",
             "type": "saq",
-            "topic": "cell-structure",
+            "topic": "macromolecules-carbohydrates",
             "sub-instructions": [
                 "<strong>Answer all parts (a-o) of Question 1. Each part carries equal marks. Suggested total time: not more than 1 hour. As a guideline, we suggest average answers should be approximately 100 words long.</strong>"
             ],
             "content": [
-                "Draw and label a diagram showing the organelles in a typical plant cell."
+                "How do the chemistry and structures of glycogen, starch and cellulose relate to their functions?"
             ],
             "solution": [
             ]
@@ -34,9 +34,9 @@
             "number": 2,
             "displayNumber": "Question 1b",
             "type": "saq",
-            "topic": "macromolecules",
+            "topic": "enzyme-kinetics",
             "content": [
-                "Most macromolecules have directionality. Describe the features that make the three classes of macromolecules directional."
+                "Briefly describe three ways in which enzymes can be controlled in eukaryotic cells."
             ],
             "solution": [
             ]
@@ -45,9 +45,9 @@
             "number": 3,
             "displayNumber": "Question 1c",
             "type": "saq",
-            "topic": "membranes",
+            "topic": "macromolecules-proteins",
             "content": [
-                "An animal cell is moved from an isotonic solution to a hypotonic solution. What might happen and why?"
+                "How are we able to estimate the mass of a purified protein using gel electrophoresis? Outline why this technique works with reference to protein structure."
             ],
             "solution": [
             ]
@@ -56,9 +56,9 @@
             "number": 4,
             "displayNumber": "Question 1d",
             "type": "saq",
-            "topic": "metabolism-photsynthesis",
+            "topic": "metabolism",
             "content": [
-                "What are the characteristics of RUBISCO as an enzyme and what reactions does it catalyse?"
+                "Describe three similarities between cytochrome b6f complex of chloroplasts and complex III of mitochondria."
             ],
             "solution": [
             ]
@@ -67,9 +67,9 @@
             "number": 5,
             "displayNumber": "Question 1e",
             "type": "saq",
-            "topic": "metabolism-respiration",      
+            "topic": "metabolism",      
             "content": [
-                "Why does skeletal muscle generate lactate during oxygen limitation?"
+                "With examples, explain why and when NADH and NADPH are used in metabolism."
             ],
             "solution": [
             ]
@@ -78,9 +78,9 @@
             "number": 6,
             "displayNumber": "Question 1f",
             "type": "saq",
-            "topic": "metabolism-atp",
+            "topic": "metabolism-glycolysis",
             "content": [
-                "How is ATP recycled in mammalian metabolism?"
+                "How do the enzymatic properties of hexokinase and glucokinase relate to their physiological roles in mammals?"
             ],
             "solution": [
             ]
@@ -90,7 +90,7 @@
             "displayNumber": "Question 1g",
             "type": "saq",
             "content": [
-                "Why is the maximum genetic distance between any two genes 50 centiMorgan(cM)?"
+                "Explain how bacteriophage T2 was used by Hershey and Chase in 1952 to determine whether protein or DNA was the primary repository of genetic information."
             ],
             "solution": [
             ]
@@ -100,7 +100,7 @@
             "displayNumber": "Question 1h",
             "type": "saq",
             "content": [
-                "Explain the genetic basis of the rapid spread of multiple drug resistance in bacteria."
+                "Describe two circumstances in which non-Mendelian uniparental inheritance takes place in an eukaryote."
             ],
             "solution": [
             ]
@@ -110,7 +110,7 @@
             "displayNumber": "Question 1i",
             "type": "saq",
             "content": [
-                "How do eukaryotic cells ensure that origins of DNA replication are used only once per cell cycle?"
+                "How do the structure and organization of mRNAs in prokaryotes and eukaryotes facilitate translation?"
             ],
             "solution": [
             ]
@@ -120,7 +120,7 @@
             "displayNumber": "Question 1j",
             "type": "saq",
             "content": [
-                "Describe the mechanism of DNA mismatch repair in prokaryotes."
+                "What are four key features of the genetic code?"
             ],
             "solution": [
             ]
@@ -130,7 +130,7 @@
             "displayNumber": "Question 1k",
             "type": "saq",
             "content": [
-                "Describe the process for carrying out a Southern blot on genomic DNA."
+                "Briefly describe the chromatin immunoprecipitation and sequencing (ChIP-seq) technique and what it is used for?"
             ],
             "solution": [
             ]
@@ -140,7 +140,7 @@
             "displayNumber": "Question 1l",
             "type": "saq",
             "content": [
-                "Briefly describe how to perform a whole-genome QTL scan."
+                "How does spindle orientation specify symmetric versus asymmetric animal cell divisions?"
             ],
             "solution": [
             ]
@@ -150,7 +150,7 @@
             "displayNumber": "Question 1m",
             "type": "saq",
             "content": [
-                "What is the Philadelphia chromosome? Why was its discovery regarded as a significant milestone in cancer research? "
+                "How did cell fusion experiments predict the key roles later attributed to cyclin dependent kinases and checkpoints in cell cycle progression?"
             ],
             "solution": [
             ]
@@ -160,7 +160,7 @@
             "displayNumber": "Question 1n",
             "type": "saq",
             "content": [
-                "What is the role of cyclic AMP in the aggregation of Dictyostelium?"
+                "Outline how adrenaline can cause skeletal muscle contraction."
             ],
             "solution": [
             ]
@@ -170,7 +170,7 @@
             "displayNumber": "Question 1o",
             "type": "saq",
             "content": [
-                "What are Hox genes and how do we know that they are important in animal development?"
+                "Briefly describe how to clone a frog. How would you know you had succeeded?"
             ],
             "solution": [
             ]
@@ -179,12 +179,12 @@
             "number": 16,
             "displayNumber": "Section B - Essay 1",
             "type": "essay",
-            "topic": "enzyme-kinetics",
+            "topic": "macromolecules-proteins",
             "sub-instructions": [
                 "<strong>Answer three questions from the following nine.</strong> All questions carry equal marks. Suggested total time for this section: 2 hours"
             ],
             "content": [
-                "How are enzymes regulated and why do multiple regulatory mechanisms exist?"
+                "Discuss the different bonds and forces responsible for holding protein primary, secondary, tertiary and quaternary structures together and their relative contributions to the stability of protein organization."
             ],
             "solution": [
             ]
@@ -193,9 +193,9 @@
             "number": 17,
             "displayNumber": "Section B - Essay 2",
             "type": "essay",
-            "topic": "macromolecules-lipids",
+            "topic": "metabolism-atp",
             "content": [
-                "Discuss, with examples, the significance of lipids in the movement of water and solutes in cells. "
+                "Eukaryotic plasma membrane Na+/K+-ATPases or H+-ATPases use approximately half of a cell’s ATP supply. Explain how and why?"
             ],
             "solution": [
             ]
@@ -204,9 +204,9 @@
             "number": 18,
             "displayNumber": "Section B - Essay 3",
             "type": "essay",
-            "topic": "metabolism",
+            "topic": "metabolism-atp",
             "content": [
-                "Outline the principles of electron transfer chains. Using examples, describe how they can differ from one another."
+                "Compare and contrast the various systems used to synthesize ATP."
             ],
             "solution": [
             ]
@@ -215,9 +215,9 @@
             "number": 19,
             "displayNumber": "Section B - Essay 4",
             "type": "essay",
-            "topic": "metabolism-amino-acids",
+            "topic": "metabolism",
             "content": [
-                "What are the key challenges associated with nitrogen fixation? Explain the processes that have evolved to overcome these challenges."
+                "How would you define a biochemical pathway? Illustrate your answer with specific examples."
             ],
             "solution": [
             ]
@@ -227,7 +227,7 @@
             "displayNumber": "Section B - Essay 5",
             "type": "essay",
             "content": [
-                "Giving examples, explain how Mendel’s breeding experiments led to the concept of genetic dominance and how this concept subsequently developed"
+                "Describe the phenomenon, discovered in sweet peas by Bateson, Saunders and Punnett, that they described as “partial gametic coupling”. How did Morgan attempt to explain this phenomenon when it was found in Drosophila? Describe how Morgan used his data to construct a genetic map. Explain why a genetic map might differ from the physical map?"
             ],
             "solution": [
             ]
@@ -237,7 +237,7 @@
             "displayNumber": "Section B - Essay 6",
             "type": "essay",
             "content": [
-                "Compare and contrast the use of linkage and association studies for identifying human disease genes, using examples."
+                "Describe the experimental evidence that showed that DNA replication is bidirectional, semi-conservative and semi-discontinuous. "
             ],
             "solution": [
             ]
@@ -247,7 +247,7 @@
             "displayNumber": "Section B - Essay 7",
             "type": "essay",
             "content": [
-                "Adult multicellular organisms must balance cell differentiation with cell number. Discuss, with examples, how this is achieved. "
+                "With reference to human syndromes and gene dosage, discuss the differences between autosomal and sex chromosome aneuploidy. "
             ],
             "solution": [
             ]
@@ -257,7 +257,7 @@
             "displayNumber": "Section B - Essay 8",
             "type": "essay",
             "content": [
-                "Compare how the different classes of G proteins respond to extracellular signals in mammalian cells"
+                "Critically discuss the concepts of \"oncogenes\" and \"tumour suppressor genes\" in the genetics of cancer."
             ],
             "solution": [
             ]
@@ -267,7 +267,7 @@
             "displayNumber": "Section B - Essay 9",
             "type": "essay",
             "content": [
-                "Discuss the mechanisms that contribute to axis formation in the early embryos of animals. Support your arguments with experimental evidence."
+                "Discuss how embryonic stem cells could be important for future disease therapies.  "
             ],
             "solution": [
             ]

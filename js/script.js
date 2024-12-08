@@ -424,7 +424,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const topicNames = {
             "cell-structure": "Cell Structure",
             "macromolecules": "Macromolecules",
-            "protein-structure": "Protein Structure",
+            "macromolecules-proteins": "Macromolecules - Proteins",
+            "macromolecules-nucleic-acids": "Macromolecules - Nucleic Acids",
+            "macromolecules-lipids": "Macromolecules - Lipids",
+            "macromolecules-carbohydrates": "Macromolecules - Carbohydrates",
             "enzyme-kinetics": "Enzyme Kinetics",
             "membranes": "Membranes",
             "membrane-proteins": "Membrane Proteins",

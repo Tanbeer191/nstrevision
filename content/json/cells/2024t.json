@@ -20,7 +20,7 @@
             "number": 1,
             "displayNumber": "Question 1a",
             "type": "saq",
-            "topic": "protein-structure",
+            "topic": "macromolecules-proteins",
             "sub-instructions": [
                 "<strong>Answer all parts (a-o) of Question 1. Each part carries equal marks. Suggested total time: not more than 1 hour. As a guideline, we suggest average answers should be approximately 100 words long.</strong>"
             ],
@@ -34,7 +34,7 @@
             "number": 2,
             "displayNumber": "Question 1b",
             "type": "saq",
-            "topic": "macromolecules",
+            "topic": "macromolecules-carbohydrates",
             "content": [
                 "Explain what makes cellulose better suited as a structural element than glycogen."
             ],

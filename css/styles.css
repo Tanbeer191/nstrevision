@@ -102,6 +102,10 @@ th, td {
     text-align: center;
 }
 
+td p{
+    margin: 0;
+}
+
 .btn {
     padding: 0.5em 1em;
     margin: 0.2em;
