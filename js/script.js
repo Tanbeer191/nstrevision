@@ -499,6 +499,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 });
 
                                 topicChooserDiv.appendChild(topicList);
+                                topicChooserDiv.appendChild(document.createElement("br"));
                             }
                         });
 
