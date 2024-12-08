@@ -363,12 +363,48 @@ th, td {
     position: absolute;
     top: 1em;
     left: 1em;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     font-size: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
     cursor: pointer;
     z-index: 1000; /* Ensure it is above other elements */
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#question-dropdown:hover {
+    border-color: #0073e6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#question-dropdown:focus {
+    outline: none;
+    border-color: #0073e6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Mobile warning message */
+.mobile-warning {
+    display: none;
+    background-color: #ffcc00;
+    color: #333;
+    text-align: center;
+    padding: 1em;
+    font-size: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Show the warning message on mobile devices */
+@media (max-width: 768px) {
+    .mobile-warning {
+        display: block;
+    }
 }
 
 footer {
