@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const currentPage = window.location.pathname;
 
-    if (currentPage.includes("exam.html")) {
+    if (currentPage.includes("/exam.html")) {
         const urlParams = new URLSearchParams(window.location.search);
         const examType = urlParams.get("type");
         const examName = urlParams.get("name");
@@ -408,7 +408,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
     }
-
+    
     const summaryDiv = document.getElementById("summary");
     const topicChooserDiv = document.getElementById("topic-chooser");
     if (summaryDiv && topicChooserDiv) {
@@ -446,9 +446,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const topicNamesReverse = Object.fromEntries(Object.entries(topicNames).map(([key, value]) => [value, key]));
 
         questionDetails.forEach(detail => {
-            const p = document.createElement("p");
-            p.textContent = `${questionTypeNames[detail.type]}: ${detail.count} questions`;
-            summaryDiv.appendChild(p);
+            const div = document.createElement("div");
+            div.classList.add("form-group");
+            div.innerHTML = `
+                <label>${questionTypeNames[detail.type]}:</label>
+                <input type="number" id="${detail.type}-count" name="${detail.type}-count" min="1" max="100" value="${detail.count}">
+            `;
+            summaryDiv.appendChild(div);
+
+            const input = div.querySelector(`input[name="${detail.type}-count"]`);
+            input.addEventListener("input", () => {
+                detail.count = parseInt(input.value, 10);
+                localStorage.setItem("questionDetails", JSON.stringify(questionDetails));
+            });
         });
 
         fetch(`../content/json/${subjectType}/questions.json`)
@@ -475,40 +485,92 @@ document.addEventListener("DOMContentLoaded", () => {
                             topicsByType[type][topic]++;
                         });
 
+                        const topicChooserDiv = document.getElementById("topic-chooser");
+
                         questionDetails.forEach(detail => {
                             if (detail.count > 0) {
                                 const subHeader = document.createElement("h3");
                                 subHeader.textContent = `Select Topics for ${questionTypeNames[detail.type]}`;
                                 topicChooserDiv.appendChild(subHeader);
-
+                    
                                 const topicList = document.createElement("div");
                                 topicList.classList.add("topic-list");
                                 topicList.setAttribute("data-question-type", detail.type);
-
+                    
                                 const topics = topicsByType[detail.type];
-                                Object.keys(topicNames).forEach(topic => {
-                                    if (topics[topic]) {
-                                        const topicDiv = document.createElement("div");
-                                        topicDiv.classList.add("topic-item");
+                    
+                                if (topics && Object.keys(topics).length > 0) {
+                                    const multiSelectDiv = document.createElement("div");
+                                    multiSelectDiv.classList.add("multi-select");
+                    
+                                    const selectBox = document.createElement("div");
+                                    selectBox.classList.add("selectBox");
+                                    selectBox.innerHTML = `<span>Select topics</span><div class="overSelect"></div>`;
+                                    multiSelectDiv.appendChild(selectBox);
+                    
+                                    const checkboxesDiv = document.createElement("div");
+                                    checkboxesDiv.id = "checkboxes";
+                    
+                                    Object.keys(topicNames).forEach(topic => {
+                                        if (topics[topic]) {
+                                            const label = document.createElement("label");
+                                            label.innerHTML = `<input type="checkbox" value="${topic}"/> ${topicNames[topic]} (Available: ${topics[topic]})`;
+                                            checkboxesDiv.appendChild(label);
+                                        }
+                                    });
+                    
+                                    multiSelectDiv.appendChild(checkboxesDiv);
+                                    topicChooserDiv.appendChild(multiSelectDiv);
+                                    multiSelectDiv.appendChild(document.createElement("br")); // Add <br> after multiSelectDiv
+                                    topicChooserDiv.appendChild(topicList);
 
-                                        const label = document.createElement("label");
-                                        label.textContent = `${topicNames[topic]} (Available: ${topics[topic]}):`;
-
-                                        const input = document.createElement("input");
-                                        input.type = "number";
-                                        input.min = "0";
-                                        input.max = topics[topic];
-                                        input.value = "0";
-                                        input.classList.add("topic-count");
-
-                                        topicDiv.appendChild(label);
-                                        topicDiv.appendChild(input);
-                                        topicList.appendChild(topicDiv);
-                                    }
-                                });
-
-                                topicChooserDiv.appendChild(topicList);
-                                topicChooserDiv.appendChild(document.createElement("br"));
+                                    selectBox.addEventListener("click", () => {
+                                        checkboxesDiv.style.display = checkboxesDiv.style.display === "block" ? "none" : "block";
+                                    });
+                    
+                                    checkboxesDiv.addEventListener("change", (event) => {
+                                        const selectedTopics = Array.from(checkboxesDiv.querySelectorAll("input[type='checkbox']:checked")).map(input => input.value);
+                                        const currentTopics = Array.from(topicList.querySelectorAll(".topic-item")).map(item => item.getAttribute("data-topic"));
+                    
+                                        // Remove unselected topics
+                                        currentTopics.forEach(topic => {
+                                            if (!selectedTopics.includes(topic)) {
+                                                const topicDiv = topicList.querySelector(`.topic-item[data-topic="${topic}"]`);
+                                                if (topicDiv) {
+                                                    topicList.removeChild(topicDiv);
+                                                }
+                                            }
+                                        });
+                    
+                                        // Add newly selected topics
+                                        selectedTopics.forEach(topic => {
+                                            if (!currentTopics.includes(topic)) {
+                                                const topicDiv = document.createElement("div");
+                                                topicDiv.classList.add("topic-item");
+                                                topicDiv.setAttribute("data-topic", topic);
+                    
+                                                const label = document.createElement("label");
+                                                label.textContent = `${topicNames[topic]} (Available: ${topics[topic]}):`;
+                    
+                                                const input = document.createElement("input");
+                                                input.type = "number";
+                                                input.min = "0";
+                                                input.max = topics[topic];
+                                                input.value = "0";
+                                                input.classList.add("topic-count");
+                    
+                                                topicDiv.appendChild(label);
+                                                topicDiv.appendChild(input);
+                                                topicList.appendChild(topicDiv);
+                                            }
+                                        });
+                                    });
+                                } else {
+                                    const noTopicsMessage = document.createElement("p");
+                                    noTopicsMessage.textContent = "No topics available for this question type.";
+                                    topicChooserDiv.appendChild(noTopicsMessage);
+                                    topicChooserDiv.appendChild(document.createElement("br"));
+                                }
                             }
                         });
 

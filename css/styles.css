@@ -404,6 +404,113 @@ td p{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.topic-dropdown {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 1em;
+    color: #333;
+}
+
+.topic-dropdown option {
+    padding: 0.5em;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Choices.js specific styles */
+.choices {
+    width: 100%;
+}
+
+.choices__inner {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    padding: 0.5em;
+    font-size: 1em;
+    color: #333;
+}
+
+.choices__list--multiple .choices__item {
+    background-color: #0073e6;
+    color: white;
+    border-radius: 4px;
+    margin: 0.2em;
+    padding: 0.2em 0.5em;
+}
+
+.choices__list--multiple .choices__item[data-deletable] {
+    padding-right: 1.5em;
+}
+
+.choices__list--multiple .choices__item[data-deletable]::after {
+    content: '×';
+    position: absolute;
+    right: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+}
+
+/* Multi-select dropdown styles */
+.multi-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.selectBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.selectBox::after {
+    content: '\25BC';
+    font-size: 12px;
+    color: #333;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+#checkboxes {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-height: 200px; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+#checkboxes label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#checkboxes label:hover {
+    background-color: #ddd;
+}
+
 /* Show the warning message on mobile devices */
 @media (max-width: 768px) {
     .mobile-warning {
