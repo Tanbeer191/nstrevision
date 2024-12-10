@@ -1,0 +1,275 @@
+{
+    "name": "BOC/1: Biology of Cells - Theory",
+    "date": "Tuesday 3 June 2014",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "Answer <strong>Question 1</strong> (Section A) <strong>and three questions</strong> from Section B.",
+            "Section A carries 33% of the marks and Section B carries 67% of the marks for this paper.",
+            "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
+            "<br>",
+            "<strong>Diagrams or other handwritten material:</strong>",
+            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
+            "<strong>Candidates should not copy and paste figures or content from any other documents.</strong"
+        ] 
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question 1a",
+            "type": "saq",
+            "topic": "enzyme-kinetics",
+            "sub-instructions": [
+                "<strong>Answer all parts (a-o) of Question 1. Each part carries equal marks. Suggested total time: not more than 1 hour. As a guideline, we suggest average answers should be approximately 100 words long.</strong>"
+            ],
+            "content": [
+                "Use a diagram to describe how you would distinguish an enzyme that is allosterically controlled from one that obeys Michaelis-Menten kinetics."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question 1b",
+            "type": "saq",
+            "topic": "macromolecules-nucleic-acids",
+            "content": [
+                "Explain why uracil is one of the four bases in RNA, but DNA contains thymine instead."               
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question 1c",
+            "type": "membranes",
+            "content": [
+                "Explain the structural basis of phospholipid diversity using a labelled diagram."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 1d",
+            "type": "saq",
+            "topic": "membrane-proteins",
+            "content": [
+                "Briefly, describe an experiment that tests for rotational movement of F- ATPase sub-units."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 1e",
+            "type": "saq",
+            "topic": "metabolism-amino-acids",
+            "content": [
+                "Outline the likely journey of a nitrogen atom from the atmosphere to a beef sandwich."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 1f",
+            "type": "saq",
+            "topic": "metabolism",
+            "content": [
+                "In metabolism what are activated carriers and why are they so common in metabolic pathways?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question 1g",
+            "type": "saq",
+            "content": [
+                "Petite mutants in yeast can be nuclear or cytoplasmic. What pattern of inheritance would you expect in the case of (i) nuclear and (ii) cytoplasmic mutations?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question 1h",
+            "type": "saq",
+            "content": [
+                "How does a eukaryotic cell pack two metres of DNA into the nucleus?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 1i",
+            "type": "saq",
+            "content": [
+                "Describe the role of sigma factors in promoter recognition in prokaryotes."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 10,
+            "displayNumber": "Question 1j",
+            "type": "saq",
+            "content": [
+                "Explain how DNA fingerprinting works."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 11,
+            "displayNumber": "Question 1k",
+            "type": "saq",
+            "content": [
+                "How does p53 function as a tumour suppressor?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 12,
+            "displayNumber": "Question 1l",
+            "type": "saq",
+            "content": [
+                "Describe three methods that can be used to detect apoptotic cells."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 13,
+            "displayNumber": "Question 1m",
+            "type": "saq",
+            "content": [
+                "What are homeotic mutations? Give one example each for a homeotic mutation in an animal and in a plant. Outline basic similarities and differences between animal and plant homeotic genes in terms of genomic arrangement and protein structure."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 14,
+            "displayNumber": "Question 1n",
+            "type": "saq",
+            "content": [
+                "Describe how quorum sensing controls bioluminescence in Vibrio fischeri."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 15,
+            "displayNumber": "Question 1o",
+            "type": "saq",
+            "content": [
+                "Briefly describe two examples of signalling processes in eukaryotes that use cytosolic receptor proteins to detect the initial stimulus molecule."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 16,
+            "displayNumber": "Section B - Essay 1",
+            "type": "essay",
+            "topic": "cell-structure",
+            "sub-instructions": [
+                "<strong>Answer three questions from the following nine.</strong> All questions carry equal marks. Suggested total time for this section: 2 hours"
+            ],
+            "content": [
+                "Genes are almost all in the nucleus, but proteins are required at many different, specific places within and outside cells. How does the eukaryotic cell solve this transport and sorting problem?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 17,
+            "displayNumber": "Section B - Essay 2",
+            "type": "essay",
+            "topic": "macromolecules-carbohydrates",
+            "content": [
+                "The polysaccharides are constructed from a limited repertoire of simple sugars and their derivatives. Explain how the different organisation of bonds between sugar residues gives rise to diverse polysaccharide structures, and how this defines their utility."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 18,
+            "displayNumber": "Section B - Essay 3",
+            "type": "essay",
+            "topic": "metabolism-respiration",
+            "content": [
+                "Why is the direction of transport of electrons and hydrogen ions across membranes important in ATP synthesis?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 19,
+            "displayNumber": "Section B - Essay 4",
+            "type": "essay",
+            "topic": "metabolism",
+            "content": [
+                "Describe with examples how regulation is exerted in metabolic pathways in the short and longer term."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 20,
+            "displayNumber": "Section B - Essay 5",
+            "type": "essay",
+            "content": [
+                "The pioneering experiments in gene cloning by Cohen and Boyer in the 1970s were possible because these scientists brought together three disparate areas of prokaryotic genetics. Describe each of these three areas in its own right and then explain how their combination enabled the development of DNA cloning technology."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 21,
+            "displayNumber": "Section B - Essay 6",
+            "type": "essay",
+            "content": [
+                "“Bacteria and eukaryotes have similar strategies to replicate their DNA”. Discuss."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 22,
+            "displayNumber": "Section B - Essay 7",
+            "type": "essay",
+            "content": [
+                "Describe, with examples, how RFLPs and SNPs can be used for identifying human disease genes."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 23,
+            "displayNumber": "Section B - Essay 8",
+            "type": "essay",
+            "content": [
+                "“Embryonic development begins with the mother”. Discuss and give examples of experiments that support your argument."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 24,
+            "displayNumber": "Section B - Essay 9",
+            "type": "essay",
+            "content": [
+                "“Secondary messengers are essential components of eukaryotic signal transduction pathways.” Using examples, discuss the validity of this statement."
+            ],
+            "solution": [
+            ]
+        }
+    ]
+}

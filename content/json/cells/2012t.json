@@ -1,0 +1,249 @@
+{
+    "name": "BOC/1: Biology of Cells - Theory",
+    "date": "Tuesday 5 June 2012",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "Answer <strong>Question 1</strong> (Section A) <strong>and three questions</strong> from Section B.",
+            "Section A carries 33% of the marks and Section B carries 67% of the marks for this paper.",
+            "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
+            "<br>",
+            "<strong>Diagrams or other handwritten material:</strong>",
+            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
+            "<strong>Candidates should not copy and paste figures or content from any other documents.</strong"
+        ] 
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question 1a",
+            "type": "saq",
+            "content": [
+                "With the aid of a diagram, describe the differences between Gram-positive and Gram-negative bacteria. How might these differences be important in the treatment of human disease?"
+            ],
+            "sub-instructions": [
+                "<strong>Answer all parts (a-o) of Question 1. Each part carries equal marks. Suggested total time: not more than 1 hour. Lengthy answers are not required.</strong>"
+            ],
+            "solution": []
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question 1b",
+            "type": "saq",
+            "topic": "macromolecules-carbohydrates",
+            "content": [
+                "What is the molecular basis for the differences between starch, glycogen, and cellulose?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question 1c",
+            "type": "saq",
+            "topic": "macromolecules-proteins",
+            "content": [
+                "Why is the peptide bond planar? What stereoisomer does it normally form and why?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 1d",
+            "type": "saq",
+            "topic": "membranes",
+            "content": [
+                "How do sterols aid membrane stability?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 1e",
+            "type": "saq",
+            "topic": "metabolism-tca",
+            "content": [
+                "Briefly discuss why, in mammals, the conversion of pyruvate to acetyl-CoA is an important regulatory step."
+            ],
+            "solution": []
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 1f",
+            "type": "saq",
+            "content": [
+                "Outline three different strategies used by living organisms to capture energy from their environment."
+            ],
+            "solution": []
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question 1g",
+            "content": [
+                "Describe briefly two experimental observations made by geneticists during the first half of the 20th century that appeared to contradict Mendel’s view of inheritance. In each case state clearly which specific aspect of Mendel’s hypothesis is being challenged."
+            ],
+            "solution": []
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question 1h",
+            "type": "saq",
+            "content": [
+                "Which two pieces of experimental evidence were instrumental to the development of Watson and Crick’s model of B-form DNA?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 1i",
+            "type": "saq",
+            "content": [
+                "Describe the “loop” (also known as the “trombone”) model for DNA replication in *E. coli*."
+            ],
+            "solution": []
+        },
+        {
+            "number": 10,
+            "displayNumber": "Question 1j",
+            "type": "saq",
+            "content": [
+                "Briefly describe three strategies organisms use to balance the dosage of products from genes located on the X chromosome."
+            ],
+            "solution": []
+        },
+        {
+            "number": 11,
+            "displayNumber": "Question 1k",
+            "type": "saq",
+            "content": [
+                "Some cytoplasmic organelles contain DNA. Briefly outline the current thinking about the origin and function of this DNA."
+            ],
+            "solution": []
+        },
+        {
+            "number": 12,
+            "displayNumber": "Question 1l",
+            "type": "saq",
+            "content": [
+                "Give examples of how viruses alter the host cell cycle."
+            ],
+            "solution": []
+        },
+        {
+            "number": 13,
+            "displayNumber": "Question 1m",
+            "type": "saq",
+            "content": [
+                "What is the zone of polarising activity (ZPA)?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 14,
+            "displayNumber": "Question 1n",
+            "type": "saq",
+            "content": [
+                "What is a fate map? Illustrate with two annotated examples."
+            ],
+            "solution": []
+        },
+        {
+            "number": 15,
+            "displayNumber": "Question 1o",
+            "type": "saq",
+            "content": [
+                "How are pseudopodia localized appropriately in the *Dictyostelium* chemotaxis response?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 16,
+            "displayNumber": "Section B - Essay 1",
+            "type": "essay",
+            "topic": "macromolecules-nucleic-acids",
+            "sub-instructions": [
+                "<strong>Answer three questions from the following nine.</strong> All questions carry equal marks. Suggested total time for this section: 2 hours."
+            ],
+            "content": [
+                "The helix underpins biology. Discuss this statement in relation to the structure of both DNA and proteins."
+            ],
+            "solution": []
+        },
+        {
+            "number": 17,
+            "displayNumber": "Section B - Essay 2",
+            "type": "essay",
+            "topic": "membrane-proteins",
+            "content": [
+                "Describe the journey of a glycosylated integral membrane protein from the ribosome to insertion into the cell membrane in a eukaryotic cell."
+            ],
+            "solution": []
+        },
+        {
+            "number": 18,
+            "displayNumber": "Section B - Essay 3",
+            "type": "essay",
+            "topic": "metabolism-glycolysis",
+            "content": [
+                "Discuss how the breakdown of glucose to pyruvate or lactate, and the reverse process, are both made energetically favourable. How are they regulated to prevent waste of energy?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 19,
+            "displayNumber": "Section B - Essay 4",
+            "type": "essay",
+            "topic": "metabolism",
+            "content": [
+                "Explain the main differences between mitochondria and chloroplasts."
+            ],
+            "solution": []
+        },
+        {
+            "number": 20,
+            "displayNumber": "Section B - Essay 5",
+            "type": "essay",
+            "content": [
+                "Describe the principles underpinning the construction of a genetic map. In what ways would you expect a physical map of the same chromosome (constructed by analysis of DNA sequence data) to differ from the genetic map?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 21,
+            "displayNumber": "Section B - Essay 6",
+            "type": "essay",
+            "content": [
+                "Describe the similarities and differences between transcriptional regulation at bacterial and eukaryotic promoters. In your answer explain why the process of attenuation (gene regulation by transcriptional termination) is generally limited to prokaryotic organisms."
+            ],
+            "solution": []
+        },
+        {
+            "number": 22,
+            "displayNumber": "Section B - Essay 7",
+            "type": "essay",
+            "content": [
+                "Describe the structural features of eukaryotic chromosomes required for successful replication and transmission."
+            ],
+            "solution": []
+        },
+        {
+            "number": 23,
+            "displayNumber": "Section B - Essay 8",
+            "type": "essay",
+            "content": [
+                "Discuss the central role of protein phosphorylation in the cell division cycle."
+            ],
+            "solution": []
+        },
+        {
+            "number": 24,
+            "displayNumber": "Section B - Essay 9",
+            "type": "essay",
+            "content": [
+                "Describe in detail two signaling pathways leading to the regulation of eukaryotic gene expression. Use as your examples one pathway in which inactivation of a negative regulator is the primary signaling event and another pathway in which upregulation of an activator is central."
+            ],
+            "solution": []
+        }        
+    ]
+}

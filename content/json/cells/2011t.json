@@ -1,0 +1,251 @@
+{
+    "name": "BOC/1: Biology of Cells - Theory",
+    "date": "Tuesday 7 June 2011",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "Answer <strong>Question 1</strong> (Section A) <strong>and three questions</strong> from Section B.",
+            "Section A carries 33% of the marks and Section B carries 67% of the marks for this paper.",
+            "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
+            "<br>",
+            "<strong>Diagrams or other handwritten material:</strong>",
+            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
+            "<strong>Candidates should not copy and paste figures or content from any other documents.</strong"
+        ] 
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question 1a",
+            "type": "saq",
+            "sub-instructions": [
+                "<strong>Answer all parts (a-o) of Question 1. Each part carries equal marks. Suggested total time: not more than 1 hour. Lengthy answers are not required.</strong>"
+            ],
+            "content": [
+                "Using diagrams, illustrate the structures that bring about cytokinesis in (i) an animal and (ii) a plant cell."
+            ],
+            "solution": []
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question 1b",
+            "type": "saq",
+            "topic": "enzyme-kinetics",
+            "content": [
+                "Sketch the energy diagram for an exergonic reaction. Include in your sketch the reaction path for the same reaction catalysed by an enzyme. Briefly explain how enzymes help to drive endergonic reactions."
+            ],
+            "solution": []
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question 1c",
+            "type": "saq",
+            "topic": "cell-transport",
+            "content": [
+                "Use an annotated diagram to explain how transport of glucose from the intestinal lumen across an epithelial cell is achieved."
+            ],
+            "solution": []
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 1d",
+            "type": "saq",
+            "topic": "metabolism-respiration",
+            "content": [
+                "How does the intermembrane space of the mitochondrion differ from the mitochondrial matrix?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 1e",
+            "type": "saq",
+            "topic": "metabolism-glycolysis",
+            "content": [
+                "Briefly discuss why the conversion of glucose to glucose 6-phosphate is an important regulatory step in glycolysis."
+            ],
+            "solution": []
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 1f",
+            "type": "saq",
+            "topic": "metabolism-photosynthesis",
+            "content": [
+                "Describe the interconversion of photons, quanta and energised electrons during photosynthesis."
+            ],
+            "solution": []
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question 1g",
+            "type": "saq",
+            "content": [
+                "Pre-Mendelian theories suggested that inheritance involved either irreversible mixing of the characteristics of the two parents (Hippocrates), or that information came from the male and raw materials from the female (Aristotle). Describe experiments performed by Mendel which demonstrated that both theories were wrong."
+            ],
+            "solution": []
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question 1h",
+            "type": "saq",
+            "content": [
+                "Describe, with the help of diagrams, how errors in (i) meiosis I and (ii) meiosis II could give rise to aneuploidy."
+            ],
+            "solution": []
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 1i",
+            "type": "saq",
+            "content": [
+                "Briefly outline the post-transcriptional processing events that take place during the generation of eukaryotic mRNA."
+            ],
+            "solution": []
+        },
+        {
+            "number": 10,
+            "displayNumber": "Question 1j",
+            "type": "saq",
+            "content": [
+                "How can DNA microarrays contribute to the study of human diseases?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 11,
+            "displayNumber": "Question 1k",
+            "type": "saq",
+            "content": [
+                "Outline the role of protein kinases in mitotic control."
+            ],
+            "solution": []
+        },
+        {
+            "number": 12,
+            "displayNumber": "Question 1l",
+            "type": "saq",
+            "content": [
+                "Describe connections between viruses and cancer."
+            ],
+            "solution": []
+        },
+        {
+            "number": 13,
+            "displayNumber": "Question 1m",
+            "type": "saq",
+            "content": [
+                "What is the significance of the Bicoid and Oskar proteins for Drosophila development? How are they localised to opposite poles of the egg cell?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 14,
+            "displayNumber": "Question 1n",
+            "type": "saq",
+            "content": [
+                "How are cells assigned to form mesoderm in (i) Drosophila and (ii) Xenopus?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 15,
+            "displayNumber": "Question 1o",
+            "type": "saq",
+            "content": [
+                "Describe an abscisic acid receptor of plants."
+            ],
+            "solution": []
+        },
+        {
+            "number": 16,
+            "displayNumber": "Section B - Essay 1",
+            "type": "essay",
+            "topic": "cell-structure",
+            "sub-instructions": [
+                "<strong>Answer three questions from the following nine.</strong> All questions carry equal marks. Suggested total time for this section: 2 hours."
+            ],
+            "content": [
+                "Eukaryotic cells are subdivided into intracellular compartments. Discuss the advantages and challenges of this organisation."
+            ],
+            "solution": []
+        },
+        {
+            "number": 17,
+            "displayNumber": "Section B - Essay 2",
+            "type": "essay",
+            "topic": "macromolecules-proteins",
+            "content": [
+                "Summarise the forces that hold the tertiary structures of proteins together. Discuss, with examples, the roles of these forces in supersecondary structures."
+            ],
+            "solution": []
+        },
+        {
+            "number": 18,
+            "displayNumber": "Section B - Essay 3",
+            "type": "essay",
+            "topic": "membrane-proteins",
+            "content": [
+                "Discuss the mechanism and importance of F-ATPases."
+            ],
+            "solution": []
+        },
+        {
+            "number": 19,
+            "displayNumber": "Section B - Essay 4",
+            "type": "essay",
+            "topic": "metabolism-tca",
+            "content": [
+                "In mammals, two carbons enter the citric acid cycle as acetyl-CoA but two carbons leave as CO2. Discuss the metabolic implications for fat and glucose metabolism."
+            ],
+            "solution": []
+        },
+        {
+            "number": 20,
+            "displayNumber": "Section B - Essay 5",
+            "type": "essay",
+            "content": [
+                "Describe how the study of bacteria and their viruses (bacteriophages) laid the foundation for the development of recombinant DNA technology in the 1970s."
+            ],
+            "solution": []
+        },
+        {
+            "number": 21,
+            "displayNumber": "Section B - Essay 6",
+            "type": "essay",
+            "content": [
+                "Compare and contrast DNA replication in eukaryotes and prokaryotes."
+            ],
+            "solution": []
+        },
+        {
+            "number": 22,
+            "displayNumber": "Section B - Essay 7",
+            "type": "essay",
+            "content": [
+                "Compare and contrast linkage and association studies for identifying human disease genes."
+            ],
+            "solution": []
+        },
+        {
+            "number": 23,
+            "displayNumber": "Section B - Essay 8",
+            "type": "essay",
+            "content": [
+                "How do growth factors, stem cells and programmed cell death contribute to the control of cell proliferation in multi-cellular organisms?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 24,
+            "displayNumber": "Section B - Essay 9",
+            "type": "essay",
+            "content": [
+                "Describe the roles of G-proteins in signalling."
+            ],
+            "solution": []
+        }        
+    ]
+}

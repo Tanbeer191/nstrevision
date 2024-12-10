@@ -1,0 +1,250 @@
+{
+    "name": "BOC/1: Biology of Cells - Theory",
+    "date": "Tuesday 4 June 2013",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "Answer <strong>Question 1</strong> (Section A) <strong>and three questions</strong> from Section B.",
+            "Section A carries 33% of the marks and Section B carries 67% of the marks for this paper.",
+            "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
+            "<br>",
+            "<strong>Diagrams or other handwritten material:</strong>",
+            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
+            "<strong>Candidates should not copy and paste figures or content from any other documents.</strong"
+        ] 
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question 1a",
+            "type": "saq",
+            "sub-instructions": [
+                "<strong>Answer all parts (a-o) of Question 1. Each part carries equal marks. Suggested total time: not more than 1 hour. Lengthy answers are not required.</strong>"
+            ],
+            "content": [
+                "Explain what you could use a sucrose density gradient for, giving an example."
+            ],
+            "solution": []
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question 1b",
+            "type": "saq",
+            "topic": "macromolecules-nucleic-acids",
+            "content": [
+                "Briefly compare and contrast the chemical structures of RNA and DNA."
+            ],
+            "solution": []
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question 1c",
+            "type": "saq",
+            "topic": "macromolecules-proteins",
+            "content": [
+                "How and why do proline and glycine differ from other amino acids in a Ramachandran plot?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 1d",
+            "type": "saq",
+            "topic": "membrane-proteins",
+            "content": [
+                "Suggest an experiment that could be used to detect lateral mobility of an integral protein in the cell membrane of a eukaryotic cell."
+            ],
+            "solution": []
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 1e",
+            "type": "saq",
+            "topic": "metabolism",
+            "content": [
+                "Briefly describe the major differences between photosynthesis and respiration."
+            ],
+            "solution": []
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 1f",
+            "type": "saq",
+            "topic": "metabolism-fatty-acids",
+            "content": [
+                "Discuss the statement that \u201cin mammals glucose cannot be synthesised from fat\u201d."
+            ],
+            "solution": []
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question 1g",
+            "type": "saq",
+            "content": [
+                "Describe three mechanisms of horizontal gene transfer in bacteria (i.e. mechanisms by which genes can be transferred, directly or indirectly, from one bacterium to another). Which is likely to be the most efficient in the natural environment? Justify your answer."
+            ],
+            "solution": []
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question 1h",
+            "type": "saq",
+            "content": [
+                "Give TWO examples of how the study of bacteriophages contributed to our understanding of genetics in the second half of the twentieth century."
+            ],
+            "solution": []
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 1i",
+            "type": "saq",
+            "content": [
+                "Describe the structure of the nucleosome."
+            ],
+            "solution": []
+        },
+        {
+            "number": 10,
+            "displayNumber": "Question 1j",
+            "type": "saq",
+            "content": [
+                "How are hybridisation techniques used in the analysis of nucleic acids?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 11,
+            "displayNumber": "Question 1k",
+            "type": "saq",
+            "content": [
+                "How is entry into mitosis regulated in eukaryotic cells?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 12,
+            "displayNumber": "Question 1l",
+            "type": "saq",
+            "content": [
+                "How do genomes of animal and plant viruses encode enough information to make virus particles and damage the host cell?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 13,
+            "displayNumber": "Question 1m",
+            "type": "saq",
+            "content": [
+                "What is the French flag model of pattern formation?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 14,
+            "displayNumber": "Question 1n",
+            "type": "saq",
+            "content": [
+                "Describe an experiment to test the pluripotency of embryonic stem cells."
+            ],
+            "solution": []
+        },
+        {
+            "number": 15,
+            "displayNumber": "Question 1o",
+            "type": "saq",
+            "content": [
+                "What are DELLA proteins?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 16,
+            "displayNumber": "Section B - Essay 1",
+            "type": "essay",
+            "topic": "cell-structure",
+            "sub-instructions": [
+                "<strong>Answer three questions from the following nine.</strong> All questions carry equal marks. Suggested total time for this section: 2 hours."
+            ],
+            "content": [
+                "Discuss the major components of the cytoskeleton. What are their roles in intracellular movement?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 17,
+            "displayNumber": "Section B - Essay 2",
+            "type": "essay",
+            "topic": "macromolecules-proteins",
+            "content": [
+                "Describe how proteins acquire their three-dimensional structure and the forces that stabilise it."
+            ],
+            "solution": []
+        },
+        {
+            "number": 18,
+            "displayNumber": "Section B - Essay 3",
+            "type": "essay",
+            "content": [
+                "Compare the different mechanisms used by cells to take up solutes."
+            ],
+            "solution": []
+        },
+        {
+            "number": 19,
+            "displayNumber": "Section B - Essay 4",
+            "type": "essay",
+            "topic": "metabolism",
+            "content": [
+                "Discuss how catabolism is regulated at the cellular and whole organism level. Give specific examples of pathways and enzymes."
+            ],
+            "solution": []
+        },
+        {
+            "number": 20,
+            "displayNumber": "Section B - Essay 5",
+            "type": "essay",
+            "content": [
+                "Write an essay on non-Mendelian inheritance, illustrating your answer with examples from eukaryotes."
+            ],
+            "solution": []
+        },
+        {
+            "number": 21,
+            "displayNumber": "Section B - Essay 6",
+            "type": "essay",
+            "content": [
+                "How were codons shown to be comprised of triplets of nucleotides, and how was the genetic code determined?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 22,
+            "displayNumber": "Section B - Essay 7",
+            "type": "essay",
+            "content": [
+                "Describe the genetic and molecular methods used to clone the genes responsible for Cystic Fibrosis and Duchenne Muscular Dystrophy. What are the challenges for diagnosis that the cloning and subsequent analysis revealed?"
+            ],
+            "solution": []
+        },
+        {
+            "number": 23,
+            "displayNumber": "Section B - Essay 8",
+            "type": "essay",
+            "content": [
+                "Describe the processes that alter genes in cancer cells and how specific genetic changes affect cell behaviour."
+            ],
+            "solution": []
+        },
+        {
+            "number": 24,
+            "displayNumber": "Section B - Essay 9",
+            "type": "essay",
+            "content": [
+                "Discuss the formation of axes in animal and plant embryos."
+            ],
+            "solution": []
+        }
+    ]
+}        
