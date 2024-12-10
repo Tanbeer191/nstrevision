@@ -91,7 +91,7 @@ a {
 table {
     margin: 0 auto;
     display: table;
-    width: 60%;
+    width: auto;
     border-collapse: collapse;
     margin-bottom: 1em;
 }

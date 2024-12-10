@@ -467,6 +467,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 const questionFiles = data.files;
                 const allQuestions = [];
 
+                console.time("loadQuestionBank");
+
                 Promise.all(questionFiles.map(file => fetch(`../content/json/${subjectType}/${file}`).then(response => response.json())))
                     .then(filesData => {
                         filesData.forEach(fileData => {
@@ -484,6 +486,9 @@ document.addEventListener("DOMContentLoaded", () => {
                             }
                             topicsByType[type][topic]++;
                         });
+
+                        console.timeEnd("loadQuestionBank");
+                        console.log("Question bank created:", topicsByType);
 
                         const topicChooserDiv = document.getElementById("topic-chooser");
 
