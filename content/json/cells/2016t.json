@@ -1,0 +1,279 @@
+{
+    "name": "BOC/1: Biology of Cells - Theory",
+    "date": "Tuesday 31st May 2016",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "Answer <strong>Question 1</strong> (Section A) <strong>and three questions</strong> from Section B.",
+            "Section A carries 33% of the marks and Section B carries 67% of the marks for this paper.",
+            "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
+            "<br>",
+            "<strong>Diagrams or other handwritten material:</strong>",
+            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
+            "<strong>Candidates should not copy and paste figures or content from any other documents.</strong"
+        ] 
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question 1a",
+            "type": "saq",
+            "topic": "macromolecules-nucleic-acids",
+            "sub-instructions": [
+                "<strong>Answer all parts (a-o) of Question 1. Each part carries equal marks. Suggested total time: not more than 1 hour. As a guideline, we suggest average answers should be approximately 100 words long.</strong>"
+            ],
+            "content": [
+                "How does DNA exemplify the properties required of any molecule used to store genetic information in a biological system?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question 1b",
+            "type": "saq",
+            "topic": "macromolecules-carbohydrates",
+            "content": [
+                "What is the anomeric carbon atom in polymers of D-glucose? Why is it important?"               
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question 1c",
+            "type": "saq",
+            "topic": "enzyme-kinetics",
+            "content": [
+                "What are the properties of the transition-state complex of an enzyme-catalysed reaction?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 1d",
+            "type": "saq",
+            "topic": "membrane-proteins",
+            "content": [
+                "Draw and annotate a diagram to explain the important features of an ion channel protein."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 1e",
+            "type": "saq",
+            "topic": "metabolism",
+            "content": [
+                "Briefly describe why fatty acids provide more energy per mole than glucose under oxidative conditions."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 1f",
+            "type": "saq",
+            "topic": "metabolism-respiration",
+            "content": [
+                "Describe three pieces of evidence for chemiosmosis."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question 1g",
+            "type": "saq",
+            "content": [
+                "Explain how experiments performed by Gregor Mendel refute each of the following assertions:",
+                "<br>",
+                "(i) in reproduction the male parent provides the information and the female the raw materials (Aristotle)",
+                "<br>",
+                "(ii) reproduction involves the irreversible mixing of characters from the two parents (Hippocrates)."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question 1h",
+            "type": "saq",
+            "content": [
+                "Briefly describe the key elements of nucleotide excision repair."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 1i",
+            "type": "saq",
+            "content": [
+                "What has changed in genome sequencing technologies since the human genome sequence was published? How is this impacting on the understanding of human biology?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 10,
+            "displayNumber": "Question 1j",
+            "type": "saq",
+            "content": [
+                "What are Single Nucleotide Polymorphisms and how are they used to help characterize human disease?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 11,
+            "displayNumber": "Question 1k",
+            "type": "saq",
+            "content": [
+                "How do viruses suppress the translation of host cell mRNAs and enable viral mRNAs to be translated instead?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 12,
+            "displayNumber": "Question 1l",
+            "type": "saq",
+            "content": [
+                "How can a mutation in one of the two alleles of p53 contribute to an increased risk of cancer?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 13,
+            "displayNumber": "Question 1m",
+            "type": "saq",
+            "content": [
+                "Describe the intracellular signalling pathway that occurs in the signal relay between Dictyostelium cells during aggregation."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 14,
+            "displayNumber": "Question 1n",
+            "type": "saq",
+            "content": [
+                "Describe three changes that occur at the mid-blastula transition in a Xenopus embryo."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 15,
+            "displayNumber": "Question 1o",
+            "type": "saq",
+            "content": [
+                "How are auxins transported in a developing plant embryo?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 16,
+            "displayNumber": "Section B - Essay 1",
+            "type": "essay",
+            "sub-instructions": [
+                "<strong>Answer three questions from the following nine.</strong> All questions carry equal marks. Suggested total time for this section: 2 hours"
+            ],
+            "content": [
+                "Identify three distinct classes of RNA present in both eukaryotic and prokaryotic cells. Describe the role of each in protein synthesis."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 17,
+            "displayNumber": "Section B - Essay 2",
+            "type": "essay",
+            "topic": "membrane-proteins",
+            "content": [
+                "It is estimated that half of a cell’s ATP supply is used by the plasma membrane Na+-K+-ATPase or by the H+-ATPase. Discuss these proteins and their importance to cells."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 18,
+            "displayNumber": "Section B - Essay 3",
+            "type": "essay",
+            "topic": "metabolism-photosynthesis",
+            "content": [
+                "Explain, with examples, the key mechanisms that allow photosynthetic organisms to convert light energy into ATP and NADPH."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 19,
+            "displayNumber": "Section B - Essay 4",
+            "type": "essay",
+            "topic": "metabolism-amino-acids",
+            "content": [
+                "How does organic nitrogen in a dead animal in the soil get converted to protein amino acids in living plants?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 20,
+            "displayNumber": "Section B - Essay 5",
+            "type": "essay",
+            "content": [
+                "Discuss horizontal gene transfer in bacteria. Describe each of the three main mechanisms involved and how these processes have been important in recent bacterial evolution."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 21,
+            "displayNumber": "Section B - Essay 6",
+            "type": "essay",
+            "content": [
+                "Discuss how DNA replication was shown to be both semi-conservative and semi- discontinuous."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 22,
+            "displayNumber": "Section B - Essay 7",
+            "type": "essay",
+            "content": [
+                "How is genome-wide analysis of gene expression performed and how can it be used to improve our understanding of biology and disease?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 23,
+            "displayNumber": "Section B - Essay 8",
+            "type": "essay",
+            "content": [
+                "Describe the intracellular signalling network that regulates the control of glycogen breakdown in mammalian muscle cells in response to adrenaline."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 24,
+            "displayNumber": "Section B - Essay 9",
+            "type": "essay",
+            "content": [
+                "Using Drosophila as an example, discuss how experiments in model organisms have led to our current understanding of developmental biology?"
+            ],
+            "solution": [
+            ]
+        }
+    ]
+}
