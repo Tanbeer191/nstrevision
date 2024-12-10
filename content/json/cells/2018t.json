@@ -1,0 +1,278 @@
+{
+    "name": "BOC/1: Biology of Cells - Theory",
+    "date": "Tuesday 4th June 2019",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "Answer <strong>Question 1</strong> (Section A) <strong>and three questions</strong> from Section B.",
+            "Section A carries 33% of the marks and Section B carries 67% of the marks for this paper.",
+            "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
+            "<br>",
+            "<strong>Diagrams or other handwritten material:</strong>",
+            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
+            "<strong>Candidates should not copy and paste figures or content from any other documents.</strong"
+        ] 
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question 1a",
+            "type": "saq",
+            "topic": "microscopy",
+            "sub-instructions": [
+                "<strong>Answer all parts (a-o) of Question 1. Each part carries equal marks. Suggested total time: not more than 1 hour. As a guideline, we suggest average answers should be approximately 100 words long.</strong>"
+            ],
+            "content": [
+                "How can fluorescence microscopy be used to study the mobility of proteins in membranes?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question 1b",
+            "type": "saq",
+            "topic": "cell-structure",
+            "content": [
+                "Distinguish the roles of the cell membrane and the cell wall."               
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question 1c",
+            "type": "saq",
+            "topic": "macromolecules-nucleic-acids",
+            "content": [
+                "The directionality of nucleic acids is defined by their 5' and 3' ends. What do these numbers refer to, and how is this directionality important for the biological functions of polynucleotides?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 1d",
+            "type": "saq",
+            "topic": "macromolecules-proteins",
+            "content": [
+                "Describe the structural differences between a b-strand and an a-helix, including the forces that stabilise these protein secondary structures."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 1e",
+            "type": "saq",
+            "topic": "membrane-proteins",
+            "content": [
+                "Construct an annotated diagram of a channel protein to describe how its structure determines its function."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 1f",
+            "type": "saq",
+            "topic": "metabolism-photosynthesis",
+            "content": [
+                "How do protein-pigment complexes in photosynthetic membranes allow efficient harvesting of light energy?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question 1g",
+            "type": "saq",
+            "topic": "metabolism-tca",
+            "content": [
+                "Discuss the importance of the fact that the hydrolysis of acetyl CoA has a standard Gibbs Free energy (∆G ̊̒) of -31.4 kJ/mol."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question 1h",
+            "type": "saq",
+            "topic": "metabolism-glycolysis",
+            "content": [
+                "Briefly discuss why the conversion of glucose to glucose 6-phosphate is an important regulatory step in glycolysis."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 1i",
+            "type": "saq",
+            "content": [
+                "By reference to the results of Mendel’s single factor crosses, justify his assertion that adult plants carry two copies of each gene."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 10,
+            "displayNumber": "Question 1j",
+            "type": "saq",
+            "content": [
+                "Using a simple annotated sketch draw a bacterial DNA promoter region. Label and explain the location and function of the key elements within the promoter region."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 11,
+            "displayNumber": "Question 1k",
+            "type": "saq",
+            "content": [
+                "Using a diagram to illustrate your answer, describe how to construct a genomic library of DNA from a higher eukaryote in bacteriophage lambda."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 12,
+            "displayNumber": "Question 1l",
+            "type": "saq",
+            "content": [
+                "Explain the principle behind di-deoxy chain termination DNA sequencing (Sanger sequencing). Use diagrams to illustrate your answer."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 13,
+            "displayNumber": "Question 1m",
+            "type": "saq",
+            "content": [
+                "Name the cyclin/CDK complexes involved in cell cycle progression in humans and state which stage they control."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 14,
+            "displayNumber": "Question 1n",
+            "type": "saq",
+            "content": [
+                "What is quorum sensing?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 15,
+            "displayNumber": "Question 1o",
+            "type": "saq",
+            "content": [
+                "Briefly describe an experiment that would address whether or not information, in the form of DNA, is lost as an embryo develops."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 16,
+            "displayNumber": "Section B - Essay 1",
+            "type": "essay",
+            "topic": "cell-structure",
+            "sub-instructions": [
+                "<strong>Answer three questions from the following nine.</strong> All questions carry equal marks. Suggested total time for this section: 2 hours"
+            ],
+            "content": [
+                "What is the importance of membrane bound compartments to the eukaryotic cell and how are newly synthesized proteins delivered to the correct compartments?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 17,
+            "displayNumber": "Section B - Essay 2",
+            "type": "essay",
+            "topic": "cell-transport",
+            "content": [
+                "Briefly outline protein-mediated and lipid-mediated solute transport across biological membranes. Compare the two transport systems in terms of their advantages and disadvantages."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 18,
+            "displayNumber": "Section B - Essay 3",
+            "type": "essay",
+            "topic": "metabolism-amino-acids",
+            "content": [
+                "Outline the main challenges associated with nitrogen fixation and assimilation. Explain the principles that life has evolved to overcome these challenges."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 19,
+            "displayNumber": "Section B - Essay 4",
+            "type": "essay",
+            "topic": "metabolism",
+            "content": [
+                "With reference to specific examples of metabolites and enzymes involved, discuss how metabolic pathways are regulated at the cellular and whole organism level."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 20,
+            "displayNumber": "Section B - Essay 5",
+            "type": "essay",
+            "content": [
+                "Bacterial plasmids have been the cause of both great harm and great benefit to humanity. Discuss this claim with particular reference to their roles in antibiotic resistance and gene cloning."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 21,
+            "displayNumber": "Section B - Essay 6",
+            "type": "essay",
+            "content": [
+                "Using specific examples from bacteria (prokaryotes) and eukaryotes discuss how the regulation of gene expression can be achieved."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 22,
+            "displayNumber": "Section B - Essay 7",
+            "type": "essay",
+            "content": [
+                " Describe the various types of repetitive DNA present in the human genome. In your answer consider, (i) the impact that repeat DNAs have on the human genome and on human biology; and (ii) practical implications of repeat DNAs for genome analysis."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 23,
+            "displayNumber": "Section B - Essay 8",
+            "type": "essay",
+            "content": [
+                "Compare cell signalling between plants and animals. Provide examples to support your comparisons."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 24,
+            "displayNumber": "Section B - Essay 9",
+            "type": "essay",
+            "content": [
+                "“Generating and analysing mutants is a good way to identify gene function.” Discuss and give examples of experiments that support this argument."
+            ],
+            "solution": [
+            ]
+        }
+    ]
+}
