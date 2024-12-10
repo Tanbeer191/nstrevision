@@ -466,6 +466,8 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(data => {
                 const questionFiles = data.files;
                 const allQuestions = [];
+                //possible optimisation steps - not sure if this has an effect
+                //const selectedQuestionTypes = questionDetails.map(detail => detail.type);
 
                 console.time("loadQuestionBank");
 
@@ -473,6 +475,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     .then(filesData => {
                         filesData.forEach(fileData => {
                             allQuestions.push(...fileData.questions.filter(q => q.topic));
+                            //allQuestions.push(...fileData.questions.filter(q => q.topic && selectedQuestionTypes.includes(q.type)));
                         });
 
                         const topicsByType = {};

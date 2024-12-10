@@ -1,6 +1,6 @@
 {
     "name": "BOC/1: Biology of Cells - Theory",
-    "date": "Tuesday 6th June 2023",
+    "date": "Tuesday 2 June 2015",
     "time": 10800,
     "displayTime": "3 hours",
     "instructions": {
@@ -20,12 +20,12 @@
             "number": 1,
             "displayNumber": "Question 1a",
             "type": "saq",
-            "topic": "cell-structure",
+            "topic": "microscopy",
             "sub-instructions": [
                 "<strong>Answer all parts (a-o) of Question 1. Each part carries equal marks. Suggested total time: not more than 1 hour. As a guideline, we suggest average answers should be approximately 100 words long.</strong>"
             ],
             "content": [
-                "Draw and label a diagram showing the organelles in a typical plant cell."
+                "How have scanning and transmission electron microscopy aided the study of cell biology?"
             ],
             "solution": [
             ]
@@ -34,9 +34,9 @@
             "number": 2,
             "displayNumber": "Question 1b",
             "type": "saq",
-            "topic": "macromolecules",
+            "topic": "macromolecules-proteins",
             "content": [
-                "Most macromolecules have directionality. Describe the features that make the three classes of macromolecules directional."
+                "Outline three techniques you might use to determine the structure of proteins. What are their relative advantages and disadvantages?"               
             ],
             "solution": [
             ]
@@ -45,9 +45,8 @@
             "number": 3,
             "displayNumber": "Question 1c",
             "type": "saq",
-            "topic": "membranes",
             "content": [
-                "An animal cell is moved from an isotonic solution to a hypotonic solution. What might happen and why?"
+                "One red blood cell is placed in a hypertonic solution of NaCl, another is placed in a solution of CaCl2 equimolar with the NaCl solution. What would you expect to happen and why?"
             ],
             "solution": [
             ]
@@ -56,9 +55,9 @@
             "number": 4,
             "displayNumber": "Question 1d",
             "type": "saq",
-            "topic": "metabolism-photosynthesis",
+            "topic": "metabolism",
             "content": [
-                "What are the characteristics of RUBISCO as an enzyme and what reactions does it catalyse?"
+                "In metabolism, outline how the role of NADPH differs from that of NAD<super>+</super>."
             ],
             "solution": [
             ]
@@ -67,9 +66,8 @@
             "number": 5,
             "displayNumber": "Question 1e",
             "type": "saq",
-            "topic": "metabolism-respiration",      
             "content": [
-                "Why does skeletal muscle generate lactate during oxygen limitation?"
+                "What is the oxidative pentose phosphate pathway and what are its roles?"
             ],
             "solution": [
             ]
@@ -80,7 +78,7 @@
             "type": "saq",
             "topic": "metabolism-atp",
             "content": [
-                "How is ATP recycled in mammalian metabolism?"
+                "Why is the Gibbs Free energy for the hydrolysis of ATP inside the cell lower than the standard Gibbs Free Energy for this reaction?"
             ],
             "solution": [
             ]
@@ -90,7 +88,7 @@
             "displayNumber": "Question 1g",
             "type": "saq",
             "content": [
-                "Why is the maximum genetic distance between any two genes 50 centiMorgan(cM)?"
+                "What are restriction endonucleases and why are they produced by bacteria? Explain briefly how they have been exploited in the biosciences."
             ],
             "solution": [
             ]
@@ -100,7 +98,7 @@
             "displayNumber": "Question 1h",
             "type": "saq",
             "content": [
-                "Explain the genetic basis of the rapid spread of multiple drug resistance in bacteria."
+                "Cite two pieces of experimental evidence, obtained after the rediscovery of Mendel’s work, contradicting Mendel’s assertion that reciprocal crosses give the same result."
             ],
             "solution": [
             ]
@@ -110,7 +108,7 @@
             "displayNumber": "Question 1i",
             "type": "saq",
             "content": [
-                "How do eukaryotic cells ensure that origins of DNA replication are used only once per cell cycle?"
+                "With the aid of a diagram, briefly describe the key experiment performed to demonstrate that DNA replication is semi-conservative."
             ],
             "solution": [
             ]
@@ -120,7 +118,7 @@
             "displayNumber": "Question 1j",
             "type": "saq",
             "content": [
-                "Describe the mechanism of DNA mismatch repair in prokaryotes."
+                "What are microarrays, and how can they be used to improve our understanding of biology and disease?"
             ],
             "solution": [
             ]
@@ -130,7 +128,7 @@
             "displayNumber": "Question 1k",
             "type": "saq",
             "content": [
-                "Describe the process for carrying out a Southern blot on genomic DNA."
+                "What are the main differences in the transmission of human dominant X-linked and recessive X-linked mutations?"
             ],
             "solution": [
             ]
@@ -140,7 +138,7 @@
             "displayNumber": "Question 1l",
             "type": "saq",
             "content": [
-                "Briefly describe how to perform a whole-genome QTL scan."
+                "Outline the Notch signalling pathway."
             ],
             "solution": [
             ]
@@ -150,7 +148,7 @@
             "displayNumber": "Question 1m",
             "type": "saq",
             "content": [
-                "What is the Philadelphia chromosome? Why was its discovery regarded as a significant milestone in cancer research? "
+                "Describe three types of genetic alterations that can create oncogenes. Give an example for each alteration."
             ],
             "solution": [
             ]
@@ -160,7 +158,7 @@
             "displayNumber": "Question 1n",
             "type": "saq",
             "content": [
-                "What is the role of cyclic AMP in the aggregation of Dictyostelium?"
+                "How would you generate a fate map of a developing amphibian embryo? What can fate maps tell you about embryo development?"
             ],
             "solution": [
             ]
@@ -170,7 +168,7 @@
             "displayNumber": "Question 1o",
             "type": "saq",
             "content": [
-                "What are Hox genes and how do we know that they are important in animal development?"
+                "What is the Zone of Polarising Activity (ZPA)? Outline how the ZPA contributes to limb development."
             ],
             "solution": [
             ]
@@ -179,12 +177,12 @@
             "number": 16,
             "displayNumber": "Section B - Essay 1",
             "type": "essay",
-            "topic": "enzyme-kinetics",
+            "topic": "cell-structure",
             "sub-instructions": [
                 "<strong>Answer three questions from the following nine.</strong> All questions carry equal marks. Suggested total time for this section: 2 hours"
             ],
             "content": [
-                "How are enzymes regulated and why do multiple regulatory mechanisms exist?"
+                "How do eukaryotic cells use their cytoskeleton to maintain and change their shape?"
             ],
             "solution": [
             ]
@@ -193,9 +191,9 @@
             "number": 17,
             "displayNumber": "Section B - Essay 2",
             "type": "essay",
-            "topic": "macromolecules-lipids",
+            "topic": "macromolecules-proteins",
             "content": [
-                "Discuss, with examples, the significance of lipids in the movement of water and solutes in cells. "
+                "Proteins are held together by several different forces. Describe these forces and discuss how they contribute to the higher-order structure of proteins."
             ],
             "solution": [
             ]
@@ -204,9 +202,9 @@
             "number": 18,
             "displayNumber": "Section B - Essay 3",
             "type": "essay",
-            "topic": "metabolism",
+            "topic": "membranes",
             "content": [
-                "Outline the principles of electron transfer chains. Using examples, describe how they can differ from one another."
+                "Labelling techniques are used extensively in membrane biology. Describe the key techniques and discuss how they have contributed to our knowledge of membranes."
             ],
             "solution": [
             ]
@@ -215,9 +213,9 @@
             "number": 19,
             "displayNumber": "Section B - Essay 4",
             "type": "essay",
-            "topic": "metabolism-amino-acids",
+            "topic": "metabolism-glycolysis",
             "content": [
-                "What are the key challenges associated with nitrogen fixation? Explain the processes that have evolved to overcome these challenges."
+                "Describe the regulation of glycolysis with particular reference to metabolism in skeletal muscle and the liver."
             ],
             "solution": [
             ]
@@ -227,7 +225,7 @@
             "displayNumber": "Section B - Essay 5",
             "type": "essay",
             "content": [
-                "Giving examples, explain how Mendel’s breeding experiments led to the concept of genetic dominance and how this concept subsequently developed"
+                "Compare and contrast the methods used to construct genetic maps of Drosophila melanogaster chromosomes with those employed to construct a genetic map of the rII region of bacteriophage T4. Explain why it was possible to achieve much higher map resolution with T4 than with Drosophila melanogaster."
             ],
             "solution": [
             ]
@@ -237,7 +235,7 @@
             "displayNumber": "Section B - Essay 6",
             "type": "essay",
             "content": [
-                "Compare and contrast the use of linkage and association studies for identifying human disease genes, using examples."
+                "Using specific examples discuss how bacteria (prokaryotes) and eukaryotes regulate the transcription of their genes."
             ],
             "solution": [
             ]
@@ -247,7 +245,7 @@
             "displayNumber": "Section B - Essay 7",
             "type": "essay",
             "content": [
-                "Adult multicellular organisms must balance cell differentiation with cell number. Discuss, with examples, how this is achieved. "
+                "Describe the molecular basis of photomorphogenesis in Arabidopsis thaliana."
             ],
             "solution": [
             ]
@@ -257,7 +255,7 @@
             "displayNumber": "Section B - Essay 8",
             "type": "essay",
             "content": [
-                "Compare how the different classes of G proteins respond to extracellular signals in mammalian cells"
+                "Outside the cell viruses are inert. What strategies do eukaryotic viruses use to replicate?"
             ],
             "solution": [
             ]
@@ -267,7 +265,7 @@
             "displayNumber": "Section B - Essay 9",
             "type": "essay",
             "content": [
-                "Discuss the mechanisms that contribute to axis formation in the early embryos of animals. Support your arguments with experimental evidence."
+                "How has the study of homeotic mutations informed our understanding of animal and plant development? Give examples to illustrate your argument."
             ],
             "solution": [
             ]
