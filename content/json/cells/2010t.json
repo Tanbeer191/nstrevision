@@ -1,6 +1,6 @@
 {
     "name": "BOC/1: Biology of Cells - Theory",
-    "date": "Tuesday 7 June 2011",
+    "date": "Tuesday 1 June 2010",
     "time": 10800,
     "displayTime": "3 hours",
     "instructions": {
@@ -20,11 +20,12 @@
             "number": 1,
             "displayNumber": "Question 1a",
             "type": "saq",
+            "topic": "cell-structure",
             "sub-instructions": [
                 "<strong>Answer all parts (a-o) of Question 1. Each part carries equal marks. Suggested total time: not more than 1 hour. Lengthy answers are not required.</strong>"
             ],
             "content": [
-                "Using diagrams, illustrate the structures that bring about cytokinesis in (i) an animal and (ii) a plant cell."
+                "Draw a eukaryotic cell that is specialised for the synthesis and secretion of a protein. Label the organelles that are required for this process."
             ],
             "solution": []
         },
@@ -32,8 +33,9 @@
             "number": 2,
             "displayNumber": "Question 1b",
             "type": "saq",
+            "topic": "enzyme-kinetics",
             "content": [
-                "Sketch the titration curves for aspartic acid and alanine, and explain the difference between them."
+                "Sketch the energy diagram for an exergonic reaction. Include in your sketch the reaction path for the same reaction catalysed by an enzyme. Briefly explain how enzymes help to drive endergonic reactions."
             ],
             "solution": []
         },
@@ -41,9 +43,9 @@
             "number": 3,
             "displayNumber": "Question 1c",
             "type": "saq",
-            "topic": "membranes",
+            "topic": "cell-transport",
             "content": [
-                "Draw an annotated diagram describing the structural diversity in membrane phospholipids."
+                "Use an annotated diagram to explain how transport of glucose from the intestinal lumen across an epithelial cell is achieved."
             ],
             "solution": []
         },
@@ -51,8 +53,9 @@
             "number": 4,
             "displayNumber": "Question 1d",
             "type": "saq",
+            "topic": "metabolism-respiration",
             "content": [
-                "What are the roles of “signal sequences” and “stop transfer sequences”?"
+                "How does the intermembrane space of the mitochondrion differ from the mitochondrial matrix?"
             ],
             "solution": []
         },
@@ -60,9 +63,9 @@
             "number": 5,
             "displayNumber": "Question 1e",
             "type": "saq",
-            "topic": "metabolism-photosynthesis",
+            "topic": "metabolism-glycolysis",
             "content": [
-                "How does the chloroplast stroma differ from the thylakoid lumen?."
+                "Briefly discuss why the conversion of glucose to glucose 6-phosphate is an important regulatory step in glycolysis."
             ],
             "solution": []
         },
