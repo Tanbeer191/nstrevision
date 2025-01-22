@@ -149,6 +149,10 @@ td p{
     padding: 2em;
 }
 
+.instructions {
+    margin-bottom: 5em;
+}
+
 .instructions-table {
     width: 30%;
     margin: 1em 0;
@@ -198,8 +202,7 @@ td p{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: yellow;
     color: black;
-    padding: 0.05em;
-    margin-bottom: 1em;
+    padding: 1px;
 }
 
 /* Buttons Section */
@@ -263,16 +266,43 @@ td p{
 }
 
 #end-exam-container {
-    position: fixed;
-    top: 20px;
-    right: 150px;
-    z-index: 1000;
+    position: relative;
+    width: 100%;
+}
+
+#question-dropdown {
+    left: 1em;
+    margin-top: 1.31em;
+    position: absolute;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    border: 0 solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#question-dropdown:hover {
+    border-color: #0073e6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#question-dropdown:focus {
+    outline: none;
+    border-color: #0073e6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 #end-exam-container button#end-exam {
+    position: absolute;
+    margin-top: 1.31em;
+    right: 1em;
     background-color: #dc3545;
     color: white;
-    padding: 0.7em 1em;
+    padding: 0.5em 1em;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
@@ -370,33 +400,6 @@ td p{
     border-radius: 4px;
 }
 
-#question-dropdown {
-    margin-top: 0.4em;
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    padding: 0.5em 1em;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 1000; /* Ensure it is above other elements */
-    background-color: #fff;
-    color: #333;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-#question-dropdown:hover {
-    border-color: #0073e6;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-#question-dropdown:focus {
-    outline: none;
-    border-color: #0073e6;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
 /* Mobile warning message */
 .mobile-warning {
     display: none;

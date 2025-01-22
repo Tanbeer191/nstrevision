@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentPage = window.location.pathname;
 
     if (document.querySelector(".exam-section")) {
-        const defaultSubjectID = "cells";
+        const defaultSubjectID = "physiology";
         if (document.getElementById(defaultSubjectID)) {
             showSubject(defaultSubjectID);
         } else {
@@ -442,217 +442,206 @@ document.addEventListener("DOMContentLoaded", () => {
             prac: "Practical Questions"
         };
 
-        const topicNames = {
-            "cell-structure": "Cell Structure",
-            "macromolecules": "Macromolecules",
-            "macromolecules-proteins": "Macromolecules - Proteins",
-            "macromolecules-nucleic-acids": "Macromolecules - Nucleic Acids",
-            "macromolecules-lipids": "Macromolecules - Lipids",
-            "macromolecules-carbohydrates": "Macromolecules - Carbohydrates",
-            "enzyme-kinetics": "Enzyme Kinetics",
-            "membranes": "Membranes",
-            "membrane-proteins": "Membrane Proteins",
-            "metabolism": "Metabolism",
-            "metabolism-atp": "Metabolism - ATP",
-            "metabolism-photosynthesis": "Metabolism - Photosynthesis",
-            "metabolism-glycolysis": "Metabolism - Glycolysis",
-            "metabolism-tca": "Metabolism - TCA Cycle",
-            "metabolism-respiration": "Metabolism - Respiration",
-            "metabolism-amino-acids": "Metabolism - Amino Acids",
-            "cell-transport": "Cell Transport",
-            "microscopy": "Microscopy",
-            // Add more topic mappings as needed
-        };
+        const topicNamesUrl = `../content/json/${subjectType}/topics.json`;
+        
+        fetch(topicNamesUrl)
+        .then(response => response.json())
+        .then(data => {
+            const topicNames = data.topics;
 
-        const topicNamesReverse = Object.fromEntries(Object.entries(topicNames).map(([key, value]) => [value, key]));
+            const topicNamesReverse = Object.fromEntries(Object.entries(topicNames).map(([key, value]) => [value, key]));
 
-        questionDetails.forEach(detail => {
-            const div = document.createElement("div");
-            div.classList.add("form-group");
-            div.innerHTML = `
-                <label>${questionTypeNames[detail.type]}:</label>
-                <input type="number" id="${detail.type}-count" name="${detail.type}-count" min="1" max="100" value="${detail.count}">
-            `;
-            summaryDiv.appendChild(div);
+            questionDetails.forEach(detail => {
+                const div = document.createElement("div");
+                div.classList.add("form-group");
+                div.innerHTML = `
+                    <label>${questionTypeNames[detail.type]}:</label>
+                    <input type="number" id="${detail.type}-count" name="${detail.type}-count" min="1" max="100" value="${detail.count}">
+                `;
+                summaryDiv.appendChild(div);
 
-            const input = div.querySelector(`input[name="${detail.type}-count"]`);
-            input.addEventListener("input", () => {
-                detail.count = parseInt(input.value, 10);
-                localStorage.setItem("questionDetails", JSON.stringify(questionDetails));
+                const input = div.querySelector(`input[name="${detail.type}-count"]`);
+                input.addEventListener("input", () => {
+                    detail.count = parseInt(input.value, 10);
+                    localStorage.setItem("questionDetails", JSON.stringify(questionDetails));
+                });
             });
-        });
 
-        fetch(`../content/json/${subjectType}/questions.json`)
-            .then(response => response.json())
-            .then(data => {
-                const questionFiles = data.files;
-                const allQuestions = [];
-                //possible optimisation steps - not sure if this has an effect
-                //const selectedQuestionTypes = questionDetails.map(detail => detail.type);
+            fetch(`../content/json/${subjectType}/questions.json`)
+                .then(response => response.json())
+                .then(data => {
+                    const questionFiles = data.files;
+                    const allQuestions = [];
+                    //possible optimisation steps - not sure if this has an effect
+                    //const selectedQuestionTypes = questionDetails.map(detail => detail.type);
 
-                console.time("loadQuestionBank");
+                    console.time("loadQuestionBank");
 
-                Promise.all(questionFiles.map(file => fetch(`../content/json/${subjectType}/${file}`).then(response => response.json())))
-                    .then(filesData => {
-                        filesData.forEach(fileData => {
-                            allQuestions.push(...fileData.questions.filter(q => q.topic));
-                            //allQuestions.push(...fileData.questions.filter(q => q.topic && selectedQuestionTypes.includes(q.type)));
-                        });
+                    Promise.all(questionFiles.map(file => fetch(`../content/json/${subjectType}/${file}`).then(response => response.json())))
+                        .then(filesData => {
+                            filesData.forEach(fileData => {
+                                allQuestions.push(...fileData.questions.filter(q => q.topic));
+                                //allQuestions.push(...fileData.questions.filter(q => q.topic && selectedQuestionTypes.includes(q.type)));
+                            });
 
-                        const topicsByType = {};
-                        allQuestions.forEach(question => {
-                            const { type, topic } = question;
-                            if (!topicsByType[type]) {
-                                topicsByType[type] = {};
-                            }
-                            if (!topicsByType[type][topic]) {
-                                topicsByType[type][topic] = 0;
-                            }
-                            topicsByType[type][topic]++;
-                        });
-
-                        console.timeEnd("loadQuestionBank");
-                        console.log("Question bank created:", topicsByType);
-
-                        const topicChooserDiv = document.getElementById("topic-chooser");
-
-                        questionDetails.forEach(detail => {
-                            if (detail.count > 0) {
-                                const subHeader = document.createElement("h3");
-                                subHeader.textContent = `Select Topics for ${questionTypeNames[detail.type]}`;
-                                topicChooserDiv.appendChild(subHeader);
-                    
-                                const topicList = document.createElement("div");
-                                topicList.classList.add("topic-list");
-                                topicList.setAttribute("data-question-type", detail.type);
-                    
-                                const topics = topicsByType[detail.type];
-                    
-                                if (topics && Object.keys(topics).length > 0) {
-                                    const multiSelectDiv = document.createElement("div");
-                                    multiSelectDiv.classList.add("multi-select");
-                    
-                                    const selectBox = document.createElement("div");
-                                    selectBox.classList.add("selectBox");
-                                    selectBox.innerHTML = `<span>Select topics</span><div class="overSelect"></div>`;
-                                    multiSelectDiv.appendChild(selectBox);
-                    
-                                    const checkboxesDiv = document.createElement("div");
-                                    checkboxesDiv.id = "checkboxes";
-                    
-                                    Object.keys(topicNames).forEach(topic => {
-                                        if (topics[topic]) {
-                                            const label = document.createElement("label");
-                                            label.innerHTML = `<input type="checkbox" value="${topic}"/> ${topicNames[topic]} (Available: ${topics[topic]})`;
-                                            checkboxesDiv.appendChild(label);
-                                        }
-                                    });
-                    
-                                    multiSelectDiv.appendChild(checkboxesDiv);
-                                    topicChooserDiv.appendChild(multiSelectDiv);
-                                    multiSelectDiv.appendChild(document.createElement("br")); // Add <br> after multiSelectDiv
-                                    topicChooserDiv.appendChild(topicList);
-
-                                    selectBox.addEventListener("click", () => {
-                                        checkboxesDiv.style.display = checkboxesDiv.style.display === "block" ? "none" : "block";
-                                    });
-                    
-                                    checkboxesDiv.addEventListener("change", (event) => {
-                                        const selectedTopics = Array.from(checkboxesDiv.querySelectorAll("input[type='checkbox']:checked")).map(input => input.value);
-                                        const currentTopics = Array.from(topicList.querySelectorAll(".topic-item")).map(item => item.getAttribute("data-topic"));
-                    
-                                        // Remove unselected topics
-                                        currentTopics.forEach(topic => {
-                                            if (!selectedTopics.includes(topic)) {
-                                                const topicDiv = topicList.querySelector(`.topic-item[data-topic="${topic}"]`);
-                                                if (topicDiv) {
-                                                    topicList.removeChild(topicDiv);
-                                                }
-                                            }
-                                        });
-                    
-                                        // Add newly selected topics
-                                        selectedTopics.forEach(topic => {
-                                            if (!currentTopics.includes(topic)) {
-                                                const topicDiv = document.createElement("div");
-                                                topicDiv.classList.add("topic-item");
-                                                topicDiv.setAttribute("data-topic", topic);
-                    
-                                                const label = document.createElement("label");
-                                                label.textContent = `${topicNames[topic]} (Available: ${topics[topic]}):`;
-                    
-                                                const input = document.createElement("input");
-                                                input.type = "number";
-                                                input.min = "0";
-                                                input.max = topics[topic];
-                                                input.value = "0";
-                                                input.classList.add("topic-count");
-                    
-                                                topicDiv.appendChild(label);
-                                                topicDiv.appendChild(input);
-                                                topicList.appendChild(topicDiv);
-
-                                                input.addEventListener("input", updateTotalCount);
-                                            }
-                                        });
-                                    });
-                                } else {
-                                    const noTopicsMessage = document.createElement("p");
-                                    noTopicsMessage.textContent = "No topics available for this question type.";
-                                    topicChooserDiv.appendChild(noTopicsMessage);
-                                    topicChooserDiv.appendChild(document.createElement("br"));
+                            const topicsByType = {};
+                            allQuestions.forEach(question => {
+                                const { type, topic } = question;
+                                if (!topicsByType[type]) {
+                                    topicsByType[type] = {};
                                 }
-                            }
-                        });
+                                if (!topicsByType[type][topic]) {
+                                    topicsByType[type][topic] = 0;
+                                }
+                                topicsByType[type][topic]++;
+                            });
 
-                        document.getElementById("submit-topics").addEventListener("click", function() {
-                            const topicLists = document.querySelectorAll(".topic-list");
-                            const selectedTopics = {};
-                            let hasError = false;
+                            console.timeEnd("loadQuestionBank");
+                            console.log("Question bank created:", topicsByType);
 
-                            topicLists.forEach(list => {
-                                const questionType = list.getAttribute("data-question-type");
-                                selectedTopics[questionType] = [];
+                            const topicChooserDiv = document.getElementById("topic-chooser");
 
-                                const topicItems = list.querySelectorAll(".topic-item");
-                                let totalSelected = 0;
+                            questionDetails.forEach(detail => {
+                                if (detail.count > 0) {
+                                    const subHeader = document.createElement("h3");
+                                    subHeader.textContent = `Select Topics for ${questionTypeNames[detail.type]}`;
+                                    topicChooserDiv.appendChild(subHeader);
+                        
+                                    const topicList = document.createElement("div");
+                                    topicList.classList.add("topic-list");
+                                    topicList.setAttribute("data-question-type", detail.type);
+                        
+                                    const topics = topicsByType[detail.type];
+                        
+                                    if (topics && Object.keys(topics).length > 0) {
+                                        const multiSelectDiv = document.createElement("div");
+                                        multiSelectDiv.classList.add("multi-select");
+                        
+                                        const selectBox = document.createElement("div");
+                                        selectBox.classList.add("selectBox");
+                                        selectBox.innerHTML = `<span>Select topics</span><div class="overSelect"></div>`;
+                                        multiSelectDiv.appendChild(selectBox);
+                        
+                                        const checkboxesDiv = document.createElement("div");
+                                        checkboxesDiv.id = "checkboxes";
+                        
+                                        Object.keys(topicNames).forEach(topic => {
+                                            if (topics[topic]) {
+                                                const label = document.createElement("label");
+                                                label.innerHTML = `<input type="checkbox" value="${topic}"/> ${topicNames[topic]} (Available: ${topics[topic]})`;
+                                                checkboxesDiv.appendChild(label);
+                                            }
+                                        });
+                        
+                                        multiSelectDiv.appendChild(checkboxesDiv);
+                                        topicChooserDiv.appendChild(multiSelectDiv);
+                                        multiSelectDiv.appendChild(document.createElement("br")); // Add <br> after multiSelectDiv
+                                        topicChooserDiv.appendChild(topicList);
 
-                                topicItems.forEach(item => {
-                                    const topicName = item.querySelector("label").textContent.split(" (")[0];
-                                    const topicCount = parseInt(item.querySelector(".topic-count").value, 10);
-                                    const availableCount = parseInt(item.querySelector(".topic-count").max, 10);
+                                        selectBox.addEventListener("click", () => {
+                                            checkboxesDiv.style.display = checkboxesDiv.style.display === "block" ? "none" : "block";
+                                        });
+                        
+                                        checkboxesDiv.addEventListener("change", (event) => {
+                                            const selectedTopics = Array.from(checkboxesDiv.querySelectorAll("input[type='checkbox']:checked")).map(input => input.value);
+                                            const currentTopics = Array.from(topicList.querySelectorAll(".topic-item")).map(item => item.getAttribute("data-topic"));
+                        
+                                            // Remove unselected topics
+                                            currentTopics.forEach(topic => {
+                                                if (!selectedTopics.includes(topic)) {
+                                                    const topicDiv = topicList.querySelector(`.topic-item[data-topic="${topic}"]`);
+                                                    if (topicDiv) {
+                                                        topicList.removeChild(topicDiv);
+                                                    }
+                                                }
+                                            });
+                        
+                                            // Add newly selected topics
+                                            selectedTopics.forEach(topic => {
+                                                if (!currentTopics.includes(topic)) {
+                                                    const topicDiv = document.createElement("div");
+                                                    topicDiv.classList.add("topic-item");
+                                                    topicDiv.setAttribute("data-topic", topic);
+                        
+                                                    const label = document.createElement("label");
+                                                    label.textContent = `${topicNames[topic]} (Available: ${topics[topic]}):`;
+                        
+                                                    const input = document.createElement("input");
+                                                    input.type = "number";
+                                                    input.min = "0";
+                                                    input.max = topics[topic];
+                                                    input.value = "0";
+                                                    input.classList.add("topic-count");
+                        
+                                                    topicDiv.appendChild(label);
+                                                    topicDiv.appendChild(input);
+                                                    topicList.appendChild(topicDiv);
 
-                                    if (topicCount > availableCount) {
-                                        alert(`You have selected more questions for ${topicName} than are available. Please reduce the number of questions.`);
-                                        hasError = true;
-                                    }
-
-                                    if (topicCount > 0) {
-                                        selectedTopics[questionType].push({ topic: topicNamesReverse[topicName], count: topicCount });
-                                        totalSelected += topicCount;
-                                    }
-                                });
-
-                                const questionDetail = questionDetails.find(detail => detail.type === questionType);
-                                    if (totalSelected < questionDetail.count) {
-                                    const confirmContinue = confirm(`You have selected fewer questions than required for ${questionTypeNames[questionType]}. The remaining questions will be selected at random. Do you want to continue?`);
-                                    if (!confirmContinue) {
-                                        hasError = true;
+                                                    input.addEventListener("input", updateTotalCount);
+                                                }
+                                            });
+                                        });
+                                    } else {
+                                        const noTopicsMessage = document.createElement("p");
+                                        noTopicsMessage.textContent = "No topics available for this question type.";
+                                        topicChooserDiv.appendChild(noTopicsMessage);
+                                        topicChooserDiv.appendChild(document.createElement("br"));
                                     }
                                 }
                             });
 
-                            if (!hasError) {
-                                localStorage.setItem("selectedTopics", JSON.stringify(selectedTopics));
-                                generateRandomQuestionSet(allQuestions, questionDetails, selectedTopics);
-                                window.location.href = "../html/exam.html?type=custom&name=custom";
-                            }
+                            document.getElementById("submit-topics").addEventListener("click", function() {
+                                const topicLists = document.querySelectorAll(".topic-list");
+                                const selectedTopics = {};
+                                let hasError = false;
+
+                                topicLists.forEach(list => {
+                                    const questionType = list.getAttribute("data-question-type");
+                                    selectedTopics[questionType] = [];
+
+                                    const topicItems = list.querySelectorAll(".topic-item");
+                                    let totalSelected = 0;
+
+                                    topicItems.forEach(item => {
+                                        const topicName = item.querySelector("label").textContent.split(" (")[0];
+                                        const topicCount = parseInt(item.querySelector(".topic-count").value, 10);
+                                        const availableCount = parseInt(item.querySelector(".topic-count").max, 10);
+
+                                        if (topicCount > availableCount) {
+                                            alert(`You have selected more questions for ${topicName} than are available. Please reduce the number of questions.`);
+                                            hasError = true;
+                                        }
+
+                                        if (topicCount > 0) {
+                                            selectedTopics[questionType].push({ topic: topicNamesReverse[topicName], count: topicCount });
+                                            totalSelected += topicCount;
+                                        }
+                                    });
+
+                                    const questionDetail = questionDetails.find(detail => detail.type === questionType);
+                                        if (totalSelected < questionDetail.count) {
+                                        const confirmContinue = confirm(`You have selected fewer questions than required for ${questionTypeNames[questionType]}. The remaining questions will be selected at random. Do you want to continue?`);
+                                        if (!confirmContinue) {
+                                            hasError = true;
+                                        }
+                                    }
+                                });
+
+                                if (!hasError) {
+                                    localStorage.setItem("selectedTopics", JSON.stringify(selectedTopics));
+                                    generateRandomQuestionSet(allQuestions, questionDetails, selectedTopics);
+                                    window.location.href = "../html/exam.html?type=custom&name=custom";
+                                }
+                            });
                         });
-                    });
-            })
-            .catch(error => {
-                console.error("Error loading questions:", error);
-            });
+                })
+                .catch(error => {
+                    console.error("Error loading questions:", error);
+                });
+        })
+        .catch(error => {
+            console.error("Error loading topics:", error);
+        });
     }
 });
 

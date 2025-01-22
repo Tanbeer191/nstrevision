@@ -1,0 +1,94 @@
+{
+    "name": "PHO/1: Physiology of Organisms - Theory",
+    "date": "",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "<div class=\"info\">\n<p>&nbsp&nbsp&#9432; Section A (SAQs) are not available for this paper.</p></div>",
+            "Answer <strong>ALL 10 questions</strong> from Section A (SAQs), and </strong> 2 questions</strong> from Section C (Essays).",
+            "Section A represents 25% of the total marks for the Physiology of Organisms exam. Section C represents 50% of the total mark for the exam. You are advised to divide your time accordingly.",
+            "(Section B is the practical paper which is taken separately - it is not part of this paper.)",
+            "You have <strong>3 hours</strong> (plus any pre-agreed individual adjustment) to answer this paper. You must complete this paper within this time-period.",
+            "<br>",
+            "<strong>Diagrams or other handwritten material:</strong>",
+            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera Scan paper provided.</em>",
+            "<strong>Candidates should not copy and paste figures or content from any other documents.</strong"
+        ]
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question C1",
+            "type": "essay",
+            "topic": "nervous-system",
+            "sub-instructions": [
+                "Answer <strong>TWO</strong> of the following essay questions, with a maximum of <strong>one</strong> from questions C3A and C3B and a maximum of <strong>one</strong> from questions C4A and C4B."
+            ],
+            "content": [
+                "How do different multicellular organisms coordinate whole-body responses to locally received environmental stimuli?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question C2",
+            "type": "essay",
+            "topic": "bulk-flow",
+            "sub-instructions": [],
+            "content": [
+                "Compare and contrast how nutrients are appropriately transported around the bodies of plants and animals."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question C3A",
+            "type": "essay",
+            "topic": "countercurrent",
+            "sub-instructions": [],
+            "content": [
+                "What is countercurrent exchange? Giving specific examples, explain why it is important to animal physiology."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question C3B",
+            "type": "essay",
+            "topic": "respiration",
+            "sub-instructions": [],
+            "content": [
+                "In patients with pathologies that cause hypoventilation we commonly see hypercapnia (high CO2 in blood) and hypoxemia (low O2 in blood). In patients with pathologies that impair diffusion across the alveoli we commonly see hypoxemia with normocapnia (normal blood CO2). How could these different clinical conditions arise, and what accounts for the differences in blood gases?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question C4A",
+            "type": "essay",
+            "sub-instructions": [],
+            "content": [
+                "“Auxin is the most important plant growth regulator.” Discuss."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question C4B",
+            "type": "essay",
+            "sub-instructions": [],
+            "content": [
+                "Compare the strategies used by fungi and bacteria to acquire carbon and other nutrients."
+            ],
+            "solution": [
+            ]
+        }
+    ]
+}

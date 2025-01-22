@@ -8,10 +8,13 @@
 </head>
 <body>
     <header class="exam-header">
+        <select id="question-dropdown" class="hidden"></select>
+        <div id="end-exam-container">
+            <button id="end-exam" onclick="endExam()">End Exam</button>
+        </div>
         <h1 id="exam-name">Exam Name</h1>
         <p id="exam-date">Exam Date</p>
     </header>
-    <select id="question-dropdown" class="hidden"></select>
     <main class="exam-container">
         <!-- Instructions section-->
         <div id="instructions-page">
@@ -50,8 +53,6 @@
                 <button id="prev-button" class="hidden">Previous</button>
                 <button id="view-solution" class="hidden">View Solution</button>
                 <button id="next-button">Next</button>
-                <div id="end-exam-container">
-                    <button id="end-exam" onclick="endExam()">End Exam</button>
                 </div>
             </div>
         </footer>
