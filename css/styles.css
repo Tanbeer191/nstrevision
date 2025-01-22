@@ -194,6 +194,14 @@ td p{
     line-height: 1;
 }
 
+.info {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: yellow;
+    color: black;
+    padding: 0.05em;
+    margin-bottom: 1em;
+}
+
 /* Buttons Section */
 .controls {
     position: relative;

@@ -153,6 +153,27 @@ function toggleSolution(data, examType, examName) {
     }
 }
 
+function updateTotalCount() {
+    const topicLists = document.querySelectorAll(".topic-list");
+    topicLists.forEach(list => {
+        const questionType = list.getAttribute("data-question-type");
+        const topicItems = list.querySelectorAll(".topic-item");
+        let totalSelected = 0;
+
+        topicItems.forEach(item => {
+            const topicCount = parseInt(item.querySelector(".topic-count").value, 10);
+            if (!isNaN(topicCount)) {
+                totalSelected += topicCount;
+            }
+        });
+
+        const questionCountInput = document.getElementById(`${questionType}-count`);
+        if (questionCountInput) {
+            questionCountInput.value = totalSelected;
+        }
+    });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const currentPage = window.location.pathname;
 
@@ -570,6 +591,8 @@ document.addEventListener("DOMContentLoaded", () => {
                                                 topicDiv.appendChild(label);
                                                 topicDiv.appendChild(input);
                                                 topicList.appendChild(topicDiv);
+
+                                                input.addEventListener("input", updateTotalCount);
                                             }
                                         });
                                     });
@@ -611,10 +634,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 });
 
                                 const questionDetail = questionDetails.find(detail => detail.type === questionType);
-                                if (totalSelected > questionDetail.count) {
-                                    alert(`You have selected too many questions for ${questionTypeNames[questionType]}. Please reduce the number of questions.`);
-                                    hasError = true;
-                                } else if (totalSelected < questionDetail.count) {
+                                    if (totalSelected < questionDetail.count) {
                                     const confirmContinue = confirm(`You have selected fewer questions than required for ${questionTypeNames[questionType]}. The remaining questions will be selected at random. Do you want to continue?`);
                                     if (!confirmContinue) {
                                         hasError = true;
