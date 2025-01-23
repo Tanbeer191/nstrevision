@@ -1,8 +1,15 @@
 {
     "topics": {
         "nervous-system": "Nervous System",
+        "hormones": "Hormones",
+        "action-potentials": "Action Potentials",
         "bulk-flow": "Bulk Flow",
+        "muscles": "Muscles",
+        "cardiovascular-physiology": "Cardiovascular Physiology",
         "countercurrent": "Countercurrent Multipliers",
-        "respiration": "Respiration in Air and Water"
+        "nutrient-acquisition": "Nutrient Acquisition",
+        "respiration": "Respiration in Air and Water",
+        "osmoregulation": "Osmoregulation",
+        "energy-exercise-metabolism": "Energy, Exercise and Metabolism"
     }
 }

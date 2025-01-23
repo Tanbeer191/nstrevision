@@ -124,6 +124,10 @@ td p{
     color: white;
 }
 
+.unavailable {
+    opacity: 0.5;
+}
+
 .download-pdf {
     background-color: #6c757d;
     color: white;
@@ -203,6 +207,10 @@ td p{
     background-color: yellow;
     color: black;
     padding: 1px;
+}
+
+.info p{
+    margin: 1em;
 }
 
 /* Buttons Section */

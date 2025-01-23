@@ -1,0 +1,211 @@
+{
+    "name": "PHO/1: Physiology of Organisms - Theory",
+    "date": "3rd June 2022",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "Answer <strong>ALL 10 questions</strong> from Section A (SAQs), and </strong> 2 questions</strong> from Section C (Essays).",
+            "Section A represents 25% of the total marks for the Physiology of Organisms exam. Section C represents 50% of the total mark for the exam. You are advised to divide your time accordingly.",
+            "(Section B is the practical paper which is taken separately - it is not part of this paper.)",
+            "You have <strong>3 hours</strong> (plus any pre-agreed individual adjustment) to answer this paper. You must complete this paper within this time-period.",
+            "<br>",
+            "All candidates are permitted to use an approved calculator.",
+            "There are no word limits for Section A, but there is a 1500 word limit for each essay in Section C. You may hand-draw and submit scans or photographs of e.g., equations and figures. Candidates should not copy and paste images from any other documents."
+        ]
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question 1",
+            "type": "saq",
+            "topic": "action-potentials",
+            "sub-instructions": [
+                "<div class=\"info\">\n<p>&#9432; Answer <strong>ALL 10 questions</strong> from Section A.</p></div>",
+                "<div class=\"info\">\n<p>&#9432; There is no word limit in Section A, but we strongly advise you spend no longer than 6 minutes on any one question. We are expecting a relatively brief answer to each question.</p></div>"
+            ],
+            "content": [
+                "List TWO points of similarity and TWO points of difference relating to how a skeletal muscle fibre and an auditory hair cell in the mammalian inner ear become electrically excited, under normal circumstances (focus on those specific cells only, not any other cells that might be involved)."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question 2",
+            "type": "saq",
+            "topic": "muscles",
+            "sub-instructions": [],
+            "content": [
+                "Given action potentials are all-or-none events, how is a graded force produced by a single motor unit?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question 3",
+            "type": "saq",
+            "topic": "cardiovascular-physiology",
+            "sub-instructions": [],
+            "content": [
+                "Explain how the autonomic nervous system contributes to the cardiovascular baroreflex response to a decrease in arterial blood pressure."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 4",
+            "type": "saq",
+            "topic": "osmoregulation",
+            "sub-instructions": [],
+            "content": [
+                "How does urea contribute to the concentration of urine in the mammalian kidney?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 5",
+            "type": "saq",
+            "topic": "energy-exercise-metabolism",
+            "sub-instructions": [],
+            "content": [
+                "Considering an otherwise healthy and (until now) well-fed human: Which metabolic fuels would be released from the body’s reserves and used by the brain and other tissues, a) during an overnight fast, and b) after 3-4 weeks of starvation?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 6",
+            "type": "saq",
+            "sub-instructions": [],
+            "content": [
+                "Briefly explain how vertebrates transduce olfactory signals."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question 7",
+            "type": "saq",
+            "sub-instructions": [],
+            "content": [
+                "Summarise the key features which distinguish C3, C4 and CAM pathways."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question 8",
+            "type": "saq",
+            "sub-instructions": [],
+            "content": [
+                "Briefly describe three similarities and one difference between shoot and root apical meristems."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 9",
+            "type": "saq",
+            "sub-instructions": [],
+            "content": [
+                "Outline the events that occur in plant non-host resistance."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 10,
+            "displayNumber": "Question 10",
+            "type": "saq",
+            "sub-instructions": [],
+            "content": [
+                "Briefly compare the challenges posed by gravity to fluid transport in plants and animals and how these are overcome."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 1,
+            "displayNumber": "Question C1a",
+            "type": "essay",
+            "topic": "muscles",
+            "sub-instructions": [
+                "<div class=\"info\">\n<p>&#9432; Answer <strong>TWO</strong> of the following essay questions, with a maximum of <strong>one</strong> from question C1.</p></div>",
+                "<div class=\"info\">\n<p>&#9432; There is a strict word limit of 1500 words per essay. This does not include the title, but it does include any figure legends and text in tables. Assessors will stop reading once the word limit is reached.</p></div>"
+            ],
+            "content": [
+                "Discuss how muscle types differ in their structure and function, with particular reference to differences affecting whole body physiology."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question C1b",
+            "type": "essay",
+            "sub-instructions": [],
+            "content": [
+                "“Movement is not confined to animals”. Discuss, with examples, movement of plants and microbes."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question C2",
+            "type": "essay",
+            "topic": "nutrient-acquisition",
+            "sub-instructions": [],
+            "content": [
+                "How do plants and animals benefit from symbiotic strategies for nutrient acquisition?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question C3",
+            "type": "essay",
+            "topic": "respiration",
+            "sub-instructions": [],
+            "content": [
+                "Given that diffusion of CO2 and O2 is low in water, how do plants and animals achieve gas exchange?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question C4",
+            "type": "essay",
+            "topic": "hormones",
+            "sub-instructions": [],
+            "content": [
+                "Compare and contrast the source, transport, and action of plant and animal hormones."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question C5",
+            "type": "essay",
+            "sub-instructions": [],
+            "content": [
+                "Discuss how the structure of plant and animal biomaterials is related to their function."
+            ],
+            "solution": [
+            ]
+        }
+    ]
+}
