@@ -39,13 +39,14 @@ function loadQuestion(data, examType, examName) {
     document.getElementById("sub-instructions").innerHTML = "";
     document.getElementById("solution").textContent = "";
     document.getElementById("solution").classList.add("hidden");
-
+    
     if (examType === "custom") {
         const questionTypeCounts = {
             saq: 0,
             mcq: 0,
             essay: 0,
-            prac: 0
+            prac: 0,
+            maths: 0
         };
 
         data.questions.forEach(q => {
@@ -68,7 +69,8 @@ function loadQuestion(data, examType, examName) {
             saq: "SAQ",
             mcq: "MCQ",
             essay: "Essay",
-            prac: "Practical"
+            prac: "Practical",
+            maths: "Maths"
         };
 
         document.getElementById("question-number").textContent = `${questionTypeNames[question.type]} ${questionTypeIndex}/${questionTypeCounts[question.type]}`;
@@ -80,6 +82,7 @@ function loadQuestion(data, examType, examName) {
     const contentDiv = document.getElementById("question-content");
     contentDiv.innerHTML = "";
     contentDiv.innerHTML = contentText.join('');
+    MathJax.typeset()
 
     if (examType !== "custom") {
         const subInstructionText = question["sub-instructions"];
@@ -178,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentPage = window.location.pathname;
 
     if (document.querySelector(".exam-section")) {
-        const defaultSubjectID = "physiology";
+        const defaultSubjectID = "cells";
         if (document.getElementById(defaultSubjectID)) {
             showSubject(defaultSubjectID);
         } else {
@@ -246,13 +249,15 @@ document.addEventListener("DOMContentLoaded", () => {
                         saq: "SAQ",
                         mcq: "MCQ",
                         essay: "Essay",
-                        prac: "Practical"
+                        prac: "Practical",
+                        maths: "Maths"
                     };
                     const questionTypeCounts = {
                         saq: 0,
                         mcq: 0,
                         essay: 0,
-                        prac: 0
+                        prac: 0,
+                        maths: 0
                     };
                     data.questions.forEach(q => {
                         questionTypeCounts[q.type]++;
@@ -330,7 +335,8 @@ document.addEventListener("DOMContentLoaded", () => {
             saq: "Short Answer Questions (SAQs)",
             mcq: "Multiple Choice Questions (MCQs)",
             essay: "Essay Questions",
-            prac: "Practical Questions"
+            prac: "Practical Questions",
+            maths: "Maths Questions"
         };
 
         questionTypeCheckboxes.forEach(checkbox => {
@@ -439,7 +445,8 @@ document.addEventListener("DOMContentLoaded", () => {
             saq: "Short Answer Questions (SAQs)",
             mcq: "Multiple Choice Questions (MCQs)",
             essay: "Essay Questions",
-            prac: "Practical Questions"
+            prac: "Practical Questions",
+            maths: "Maths Questions"
         };
 
         const topicNamesUrl = `../content/json/${subjectType}/topics.json`;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natural Sciences - Exam Hub</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <header>
@@ -104,10 +105,13 @@
                         <!-- <td>N/A</td> -->
                         <!-- <td>N/A</td> -->
                         <td>
-                            <p>No exams this year.</p>
-                        </td>
+                            <button class="btn take-exam unavailable">Take Exam</button>
+                            <button class="btn view-solutions unavailable">View Examiner Report</button>
+                            <button class="btn download-pdf unavailable">Download PDF</button>
                         <td>
-                            <p>No exams this year.</p>
+                            <button class="btn take-exam unavailable">Take Exam</button>
+                            <button class="btn view-solutions unavailable">View Examiner Report</button>
+                            <button class="btn download-pdf unavailable">Download PDF</button>
                         </td>
                     </tr>
                     <tr>
@@ -395,7 +399,7 @@
                         </td>
                         <td>
                             <button class="btn take-exam">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                     </tr>
@@ -410,7 +414,7 @@
                         </td>
                         <td>
                             <button class="btn take-exam">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                     </tr>
@@ -425,7 +429,7 @@
                         </td>
                         <td>
                             <button class="btn take-exam">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                     </tr>
@@ -435,12 +439,12 @@
                         <!-- <td>N/A</td> -->
                         <td>
                             <button class="btn take-exam" onclick="window.location.href='html/exam.html?type=cells&name=2024p'">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                         <td>
                             <button class="btn take-exam">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                     </tr>
@@ -450,12 +454,12 @@
                         <!-- <td>N/A</td> -->
                         <td>
                             <button class="btn take-exam" onclick="window.location.href='html/exam.html?type=cells&name=2024p'">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                         <td>
                             <button class="btn take-exam">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                     </tr>
@@ -465,12 +469,12 @@
                         <!-- <td>N/A</td> -->
                         <td>
                             <button class="btn take-exam" onclick="window.location.href='html/exam.html?type=cells&name=2024p'">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                         <td>
                             <button class="btn take-exam">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                     </tr>
@@ -480,12 +484,12 @@
                         <!-- <td>N/A</td> -->
                         <td>
                             <button class="btn take-exam" onclick="window.location.href='html/exam.html?type=cells&name=2024p'">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                         <td>
                             <button class="btn take-exam">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                     </tr>
@@ -501,24 +505,17 @@
                 <thead>
                     <tr>
                         <th>Year</th>
-                        <th>Best Score</th>
-                        <th>Last Attempt</th>
-                        <th>Actions</th>
+                        <th>Written Exam</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>2024</td>
+                        <td>2023</td>
                         <!-- <td>N/A</td> -->
                         <!-- <td>N/A</td> -->
                         <td>
-                            <button class="btn take-exam" onclick="window.location.href='html/exam.html?type=cells&name=2024p'">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
-                            <button class="btn download-pdf">Download PDF</button>
-                        </td>
-                        <td>
-                            <button class="btn take-exam">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn take-exam" onclick="window.location.href='html/exam.html?type=mathsbio&name=2024'">Take Exam</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                     </tr>
@@ -528,12 +525,7 @@
                         <!-- <td>N/A</td> -->
                         <td>
                             <button class="btn take-exam" onclick="window.location.href='html/exam.html?type=cells&name=2024p'">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
-                            <button class="btn download-pdf">Download PDF</button>
-                        </td>
-                        <td>
-                            <button class="btn take-exam">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                     </tr>
@@ -543,12 +535,7 @@
                         <!-- <td>N/A</td> -->
                         <td>
                             <button class="btn take-exam" onclick="window.location.href='html/exam.html?type=cells&name=2024p'">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
-                            <button class="btn download-pdf">Download PDF</button>
-                        </td>
-                        <td>
-                            <button class="btn take-exam">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                     </tr>
@@ -558,12 +545,7 @@
                         <!-- <td>N/A</td> -->
                         <td>
                             <button class="btn take-exam" onclick="window.location.href='html/exam.html?type=cells&name=2024p'">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
-                            <button class="btn download-pdf">Download PDF</button>
-                        </td>
-                        <td>
-                            <button class="btn take-exam">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                     </tr>
@@ -573,12 +555,7 @@
                         <!-- <td>N/A</td> -->
                         <td>
                             <button class="btn take-exam" onclick="window.location.href='html/exam.html?type=cells&name=2024p'">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
-                            <button class="btn download-pdf">Download PDF</button>
-                        </td>
-                        <td>
-                            <button class="btn take-exam">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                     </tr>
@@ -588,14 +565,10 @@
                         <!-- <td>N/A</td> -->
                         <td>
                             <button class="btn take-exam" onclick="window.location.href='html/exam.html?type=cells&name=2024p'">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
-                        <td>
-                            <button class="btn take-exam">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
-                            <button class="btn download-pdf">Download PDF</button>
-                        </td>
+
                     </tr>
                     <tr>
                         <td>2018</td>
@@ -603,12 +576,7 @@
                         <!-- <td>N/A</td> -->
                         <td>
                             <button class="btn take-exam" onclick="window.location.href='html/exam.html?type=cells&name=2024p'">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
-                            <button class="btn download-pdf">Download PDF</button>
-                        </td>
-                        <td>
-                            <button class="btn take-exam">Take Exam</button>
-                            <button class="btn view-solutions">View Solutions</button>
+                            <button class="btn view-solutions">View Examiner Report</button>
                             <button class="btn download-pdf">Download PDF</button>
                         </td>
                     </tr>

@@ -106,6 +106,14 @@ td p{
     margin: 0;
 }
 
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .btn {
     padding: 0.5em 1em;
     margin: 0.2em;
@@ -189,6 +197,10 @@ td p{
 
 .question-display {
     text-align: left;
+}
+
+.question-content {
+    margin-bottom: 5em;
 }
 
 #solution.hidden {
@@ -368,8 +380,24 @@ td p{
     flex-direction: column; /* Ensure checkboxes are in a column */
 }
 
+.checkbox-container {
+    display: flex;
+    align-items: center; /* Align checkbox and label vertically */
+    margin-top: 0.5em;
+}
+
 .checkbox-group input[type="checkbox"] {
-    margin-top: 1em;
+    height: 1em;
+    margin-right: 0.5em; /* Add space between checkbox and label */
+    height: 1em;
+    width: 1em; /* Ensure checkbox is square */
+    vertical-align: middle; /* Align checkbox vertically with label */
+    border-radius: 50%; /* Make checkbox circular */
+}
+
+.checkbox-group label {
+    height: 1em;
+    line-height: 1em; /* Ensure label text is vertically centered */
 }
 
 #question-details {

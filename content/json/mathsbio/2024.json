@@ -1,0 +1,103 @@
+{
+    "name": "MBO/1: Mathematical Biology - Written",
+    "date": "Friday 9th June 2023",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "You have <strong>three hours</strong> to answer this paper (plus any pre-agreed individual adjustments).",
+            "<strong>You must answer eight questions, including at least one question from each of Sections A to E.</strong>",
+            "All questions carry equal weight. Indicative proportions of marks are given for each question part.",
+            "You may use an approved calculator and the Mathematical Biology Formula Booklet.",
+            "Begin each paper on a <strong>separate</strong> blank page.",
+            "Answers should be <strong>hand-written</strong>, either electronically on a tablet or on paper and then uploaded to Inspera. Make sure that your handwriting and any diagrams or equations are clear and legible in your submitted files.",
+            "Where relevant, formulae, equations, diagrams, graphs and sketches should be drawn by hand, not prepared using a computer. Do not copy and paste any figures from other documents.",
+            "For full credit, calculation steps must be shown where necessary to explain your answers.",
+            "This examination is <strong>closed</strong> book so access to the internet and use of mobile devices is prohibited."
+        ]
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question A1) a)",
+            "type": "maths",
+            "topic": "probability",
+            "sub-instructions": [
+            ],
+            "content": [
+                "The random variable \\(y\\) has the following probability density function:",
+                "$$f(y) = \\begin{cases} k(y^2+2y+2) & \\text{for } 1 \\leq y \\leq 3 \\\\ 0 & \\text{otherwise} \\end{cases}$$",
+                "where \\(k\\) is a positive constant.",
+                "<br>",
+                "<strong>(i)</strong> Calculate the value of \\(k\\). <strong>[~15% marks]</strong>",
+                "<br>",
+                "<strong>(ii)</strong> Derive the expression of the cumulative distribution function of \\(y\\). <strong>[~15% marks]</strong>",
+                "<br>",
+                "<strong>(iii)</strong> Evaluate \\(P(y \\leq 2)\\). <strong>[~10% marks]</strong>"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question A1) b)",
+            "type": "maths",
+            "topic": "probability",
+            "sub-instructions": [],
+            "content": [
+                "A gardener sets up a challenge for visiting squirrels.",
+                "<br>",
+                "When a squirrel stands on the starting platform, each of 5 doors in two parallel tubes are randomly set as 'open' with probability \\(p_{i}\\) and 'shut' with probability \\(q_{i} = 1 - p_{i}\\) where \\(i = 1 ... 5\\) is the door number as shown in the diagram:",
+                "<br>",
+                "<br>",
+                "<img src='../content/img/img1.jpg'>",
+                "<br>",
+                "<strong>(i)</strong> Write down an expression for the probability that, in any given trial, the squirrel will be able to reach the reward in the end chamber (assume that if the squirrel reaches a closed door in one tunnel it will try the other tunnel). <strong>[~15% marks]</strong>",
+                "<br>",
+                "The experiment is set up so that the probability of reaching the reward is 0.15. After each trial, the squirrel exits the contraption before returning for another go (resetting it each time).",
+                "<br>",
+                "<strong>(ii)</strong> What is the expected number of attempts required for the squirrel to get the reward? Explain your answer. <strong>[~15% marks]</strong>",
+                "<br>",
+                "<strong>(iii)</strong> What is the probability that it takes at least three attempts for the squirrel to get the reward? <strong>[~10% marks]</strong>",
+                "<br>",
+                "<strong>(iv)</strong> The squirrel manages to collect and bury 50 nuts over an area of 100. Another squirrel comes to the same patch of land hoping to steal some nuts. If the thief searches an area of 4m2 , what is the probability that it finds exactly 5 nuts? What assumptions did you make? <strong>[~10% marks]</strong>"
+                                            
+                
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question A2) a)",
+            "type": "maths",
+            "topic": "calculus",
+            "sub-instructions": [],
+            "content": [
+                "A microfluidic mixing device has four inputs and four outputs, connected as follows:",
+                "<br>",
+                "<ul>",
+                "<li>Flow into input 1 goes to outputs 1 and 2.</li>",
+                "<li>Flow into input 2 goes to outputs 1 and 3.</li>",
+                "<li>Flow into input 3 goes to outputs 2 and 4.</li>",
+                "<li>Flow into input 4 goes to outputs 2, 3 and 4.</li>",
+                "</ul>",
+                "In each case, input flow is divided evenly among the corresponding outputs.",
+                "<br>",
+                "<strong>(i)</strong> These connections can be summarised by a matrix \\(\\textbf{M}\\), where \\(M_{ij}\\) is the proportion of flow from input \\(j\\) which goes to output \\(i\\). Write down this matrix for the device specified here. <strong>[~16% marks]</strong>",
+                "<br>",
+                "<strong>(ii)</strong> Let \\(\\textbf{x}\\), be a vector whose \\(i\\)th element is the flow into input \\(i\\), and let \\(\\textbf{y}\\), be a vector whose \\(i\\)th element is the total flow from output \\(i\\). Write down a matrix-vector equation relating \\(\\textbf{M}\\), \\(\\textbf{x}\\), and \\(\\textbf{y}\\), and solve it to find the input flows in the case where the following output flows are measured from the device:",
+                "<ul>",
+                "<li>output 1: 3.0 μl/s</li>",
+                "<li>output 2: 10.0 μl/s</li>",
+                "<li>output 3: 1.0 μl/s</li>",
+                "<li>output 4: 7.0 μl/s</li>",
+                "</ul>",
+                "<strong>[~16% marks]</strong>"
+                ],
+            "solution": [
+            ]
+        }
+    ]
+}

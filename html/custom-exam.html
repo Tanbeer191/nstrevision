@@ -17,24 +17,28 @@
                 <div class="form-group">
                     <label>Question Types:</label>
                     <div class="checkbox-group">
-                        <div>
+                        <div class="checkbox-container">
                             <input type="checkbox" id="saq" name="question-type" value="saq">
                             <label for="saq">Short Answer Questions (SAQs)</label>
                         </div>
-                        <div>
+                        <div class="checkbox-container">
                             <input type="checkbox" id="mcq" name="question-type" value="mcq">
                             <label for="mcq">Multiple Choice Questions (MCQs)</label>
                         </div>
-                        <div>
+                        <div class="checkbox-container">
                             <input type="checkbox" id="essay" name="question-type" value="essay">
                             <label for="essay">Essay Questions</label>
                         </div>
-                        <div>
+                        <div class="checkbox-container">
                             <input type="checkbox" id="prac" name="question-type" value="prac">
                             <label for="prac">Practical Questions</label>
                         </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="maths" name="question-type" value="maths">
+                            <label for="maths">Maths Questions</label>
                     </div>
                 </div>
+                <br>
                 <div id="question-details"></div>
                 <button type="submit" class="btn custom-exam-submit">Build Exam</button>
             </form>
