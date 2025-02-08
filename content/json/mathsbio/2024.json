@@ -24,6 +24,7 @@
             "type": "maths",
             "topic": "probability",
             "sub-instructions": [
+                "&#9432;&nbsp&nbspSection A starts here."
             ],
             "content": [
                 "The random variable \\(y\\) has the following probability density function:",
@@ -72,7 +73,7 @@
             "number": 3,
             "displayNumber": "Question A2) a)",
             "type": "maths",
-            "topic": "calculus",
+            "topic": "linear-algebra",
             "sub-instructions": [],
             "content": [
                 "A microfluidic mixing device has four inputs and four outputs, connected as follows:",
@@ -97,6 +98,49 @@
                 "<strong>[~16% marks]</strong>"
                 ],
             "solution": [
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question A2) b)",
+            "type": "maths",
+            "topic": "linear-algebra",
+            "sub-instructions": [],
+            "content": [
+                "<strong>b)</strong> Calculate a complete set of eigenvalues and eigenvectors for the following matrix: <strong>[~60% marks]</strong>",
+                "$$\\begin{pmatrix} 4 & 1 & -1 \\\\ 2 & 5 & -2 \\\\ 1 & 1 & 2 \\end{pmatrix}$$"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question B3",
+            "type": "maths",   
+            "topic": "statistical-tests",
+            "sub-instructions": [
+                "&#9432;&nbsp&nbspSection B starts here."
+            ],
+            "content": [
+                "An oncologist wants to test whether a given mutation is associated with the development of prostate cancer. She types a set of patients with the disease and a set of control individuals that do not show any symptoms, scoring individuals as either carriers of the mutation or not (i.e. with the ancestral version of the allele). She gets the following results:",
+                "<br>",
+                "<table>",
+                "<tr>",
+                "<th></th>",
+                "<th>mutation</th>",
+                "<th>ancestral</th>",
+                "</tr>",
+                "<tr>",
+                "<td>cancer</td>",
+                "<td>736</td>",
+                "<td>1245</td>",
+                "</tr>",
+                "<tr>",
+                "<td>healthy</td>",
+                "<td>874</td>",
+                "<td>1345</td>",
+                "</tr>",
+                "</table>"
             ]
         }
     ]

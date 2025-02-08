@@ -221,6 +221,14 @@ img {
     padding: 1px;
 }
 
+#sub-instructions {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: yellow;
+    color: black;
+    padding: 7px;
+    font-size: 1.1em;
+}
+
 .info p{
     margin: 1em;
 }

@@ -1,5 +1,7 @@
 {
     "topics": {
-        "probability": "Probability"
+        "probability": "Probability",
+        "linear-algebra": "Linear Algebra",
+        "statistical-tests": "Statistical Tests"
     }
 }

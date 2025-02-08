@@ -87,14 +87,19 @@ function loadQuestion(data, examType, examName) {
     if (examType !== "custom") {
         const subInstructionText = question["sub-instructions"];
         const subInstructionDiv = document.getElementById("sub-instructions");
-        subInstructionDiv.innerHTML = "";
-        if (Array.isArray(subInstructionText)) {
-            subInstructionDiv.innerHTML = subInstructionText.join('');
+        if (!subInstructionText || subInstructionText.length === 0) {
+            subInstructionDiv.style.display = "none";
         } else {
-            subInstructionDiv.innerHTML = subInstructionText;
+            subInstructionDiv.style.display = "block";
+            console.log("block")
+            subInstructionDiv.innerHTML = "";
+            if (Array.isArray(subInstructionText)) {
+                subInstructionDiv.innerHTML = subInstructionText.join('');
+            } else {
+                subInstructionDiv.innerHTML = subInstructionText;
+            }
         }
-        subInstructionDiv.style.display = subInstructionText ? "block" : "none"; // Hide if no sub instructions
-    }
+        }
 
     const marksDisplay = document.getElementById("marks-display");
     if (question.marks) {
