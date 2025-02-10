@@ -122,9 +122,11 @@
                 "&#9432;&nbsp&nbspSection B starts here."
             ],
             "content": [
-                "An oncologist wants to test whether a given mutation is associated with the development of prostate cancer. She types a set of patients with the disease and a set of control individuals that do not show any symptoms, scoring individuals as either carriers of the mutation or not (i.e. with the ancestral version of the allele). She gets the following results:",
+                "An oncologist wants to test whether a given mutation is associated with the development of prostate cancer. She types a set of patients with the disease and a set of control individuals that do not show any symptoms, scoring individuals as either carriers of the mutation or not (i.e. with the ancestral version of the allele).",
                 "<br>",
-                "<table>",
+                "She gets the following results:",
+                "<br>",
+                "<table class='question-table'>",
                 "<tr>",
                 "<th></th>",
                 "<th>mutation</th>",

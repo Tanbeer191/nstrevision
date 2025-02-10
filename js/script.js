@@ -39,7 +39,8 @@ function loadQuestion(data, examType, examName) {
     document.getElementById("sub-instructions").innerHTML = "";
     document.getElementById("solution").textContent = "";
     document.getElementById("solution").classList.add("hidden");
-    
+    document.getElementById("question-origin").textContent = ""; 
+
     if (examType === "custom") {
         const questionTypeCounts = {
             saq: 0,
@@ -84,14 +85,13 @@ function loadQuestion(data, examType, examName) {
     contentDiv.innerHTML = contentText.join('');
     MathJax.typeset()
 
+    const subInstructionText = question["sub-instructions"];
+    const subInstructionDiv = document.getElementById("sub-instructions");
     if (examType !== "custom") {
-        const subInstructionText = question["sub-instructions"];
-        const subInstructionDiv = document.getElementById("sub-instructions");
         if (!subInstructionText || subInstructionText.length === 0) {
             subInstructionDiv.style.display = "none";
         } else {
             subInstructionDiv.style.display = "block";
-            console.log("block")
             subInstructionDiv.innerHTML = "";
             if (Array.isArray(subInstructionText)) {
                 subInstructionDiv.innerHTML = subInstructionText.join('');
@@ -99,7 +99,13 @@ function loadQuestion(data, examType, examName) {
                 subInstructionDiv.innerHTML = subInstructionText;
             }
         }
-        }
+    } else {    
+        subInstructionDiv.style.display = "none";   
+        const yearMatch = question.fileName.match(/(\d{4})/);
+        const year = yearMatch ? yearMatch[1] : "Unknown Year";
+        const originText = `Source: ${question.sourceName} (${year}) - ${question.displayNumber}`;
+        document.getElementById("question-origin").textContent = originText;
+    }
 
     const marksDisplay = document.getElementById("marks-display");
     if (question.marks) {
@@ -491,9 +497,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     Promise.all(questionFiles.map(file => fetch(`../content/json/${subjectType}/${file}`).then(response => response.json())))
                         .then(filesData => {
-                            filesData.forEach(fileData => {
-                                allQuestions.push(...fileData.questions.filter(q => q.topic));
-                                //allQuestions.push(...fileData.questions.filter(q => q.topic && selectedQuestionTypes.includes(q.type)));
+                            filesData.forEach((fileData, index) => {
+                                const fileName = fileData.name;
+                                const jsonFileName = questionFiles[index];
+                                fileData.questions.filter(q => q.topic).forEach(question => {
+                                    question.sourceName = fileName; 
+                                    question.fileName = jsonFileName;
+                                    allQuestions.push(question);
+                                });
                             });
 
                             const topicsByType = {};
