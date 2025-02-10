@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Exam Instructions</title>
+</head>
+<body>
+    <header class="exam-header">
+        <select id="question-dropdown" class="hidden"></select>
+        <div id="end-exam-container">
+            <button id="end-exam" onclick="endExam()">End Exam</button>
+        </div>
+        <h1 id="exam-name">Exam Name</h1>
+        <p id="exam-date">Exam Date</p>
+    </header>
+    <main class="exam-container">
+        <div id="exam-page"></div>
+            <div class="header">
+                <div id="timer"></div>
+            </div>
+            <div id="question">
+                <div id="question-display">
+                    <div id="question-origin"></div>
+                    <h2 id="question-number"></h2>
+                </div>
+                <div class="question-content">
+                    <p id="question-content"></p>
+                </div>
+            </div>
+            <div id="solution" class="hidden"></div>
+        </div>
+
+        <footer class="exam-footer">
+            <div class="controls">
+                <button id="prev-button" class="hidden">Previous</button>
+                <button id="view-solution" class="hidden">View Solution</button>
+                <button id="next-button">Next</button>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="../js/script.js"></script>
+    <script>
+        const questionIndex = 7; // Hardcoded question index
+
+        fetch('../content/json/mathsbio/2023.json')
+            .then(response => response.json())
+            .then(data => {
+                const question = data.questions[questionIndex - 1];
+                const contentText = question.content;
+                const contentDiv = document.getElementById("question-content");
+                contentDiv.innerHTML = "";
+                contentDiv.innerHTML = contentText.join('');
+                MathJax.typeset();
+            })
+        
+            .catch(error => console.error('Error loading JSON:', error));
+    </script>
+</body>
+</html>

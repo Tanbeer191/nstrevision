@@ -2,6 +2,8 @@
     "topics": {
         "probability": "Probability",
         "linear-algebra": "Linear Algebra",
-        "statistical-tests": "Statistical Tests"
+        "statistical-tests": "Statistical Tests",
+        "linear-models": "Linear Models",
+        "diff-eq": "Differential Equations"
     }
 }
