@@ -96,7 +96,7 @@ table {
     margin-bottom: 1em;
 }
 
-.question-table table {
+.question-table {
     margin-left: 0;
 }
 
@@ -240,9 +240,7 @@ img {
 #question-origin {
     font-size: 0.8em;   
     color: grey;
-    position: fixed;
-    bottom: 100px;
-    /* Align to bottom */
+    text-align: right;
 }
 
     /* Buttons Section */

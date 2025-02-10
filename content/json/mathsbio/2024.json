@@ -56,11 +56,15 @@
                 "<br>",
                 "<strong>(i)</strong> Write down an expression for the probability that, in any given trial, the squirrel will be able to reach the reward in the end chamber (assume that if the squirrel reaches a closed door in one tunnel it will try the other tunnel). <strong>[~15% marks]</strong>",
                 "<br>",
+                "<br>",
                 "The experiment is set up so that the probability of reaching the reward is 0.15. After each trial, the squirrel exits the contraption before returning for another go (resetting it each time).",
+                "<br>",
                 "<br>",
                 "<strong>(ii)</strong> What is the expected number of attempts required for the squirrel to get the reward? Explain your answer. <strong>[~15% marks]</strong>",
                 "<br>",
+                "<br>",
                 "<strong>(iii)</strong> What is the probability that it takes at least three attempts for the squirrel to get the reward? <strong>[~10% marks]</strong>",
+                "<br>",
                 "<br>",
                 "<strong>(iv)</strong> The squirrel manages to collect and bury 50 nuts over an area of 100. Another squirrel comes to the same patch of land hoping to steal some nuts. If the thief searches an area of 4m2 , what is the probability that it finds exactly 5 nuts? What assumptions did you make? <strong>[~10% marks]</strong>"
                                             
@@ -126,6 +130,7 @@
                 "<br>",
                 "She gets the following results:",
                 "<br>",
+                "<br>",
                 "<table class='question-table'>",
                 "<tr>",
                 "<th></th>",
@@ -142,7 +147,14 @@
                 "<td>874</td>",
                 "<td>1345</td>",
                 "</tr>",
-                "</table>"
+                "</table>",
+                "<strong>(a)</strong> Test whether carrying the mutation is associated with the disease. Specify which test is appropriate and show your working. <strong>[~15% marks]</strong>",
+                "<br>",
+                "<strong>(b)</strong> Write a sentence to report your results in a paper. <strong>[~10% marks]</strong>",
+                "<br>",
+                "<strong>(c)</strong> From a previously published study, she knows that 40% of individuals carry the mutation in another population. Does the frequency of carriers of the mutation in the current study differ from that reported in the literature? Specify which test is appropriate and show your workings. <strong>[~15% marks]</strong>",
+                "<br>",
+                "<strong>(d)</strong> Write a sentence to report your results in a paper. <strong>[~15% marks]</strong>"
             ]
         }
     ]
