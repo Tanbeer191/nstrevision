@@ -96,6 +96,10 @@ table {
     margin-bottom: 1em;
 }
 
+.question-table {
+    margin-left: 0;
+}
+
 th, td {
     border: 1px solid #ddd;
     padding: 0.5em;
@@ -125,6 +129,14 @@ img {
 .take-exam {
     background-color: #28a745;
     color: white;
+}
+
+#sub-instructions {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: yellow;
+    color: black;
+    padding: 7px;
+    font-size: 1.1em;
 }
 
 .view-solutions {
@@ -225,7 +237,12 @@ img {
     margin: 1em;
 }
 
-/* Buttons Section */
+#question-origin {
+    font-size: 0.8em;   
+    color: grey;
+    text-align: right;
+}
+    /* Buttons Section */
 .controls {
     position: relative;
     width: 100%;
