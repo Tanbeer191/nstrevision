@@ -259,18 +259,25 @@
         },
         {
             "number": 7,
-            "displayNumber": "Question C5",
+            "displayNumber": "Question C5) a)",
             "type": "maths",
-            "topic": "diff-eq",
+            "topic": "calc",
             "sub-instructions": [
                 "&#9432;&nbsp&nbspSection C starts here."
             ],
             "content": [
                 "<strong>(a)</strong> Calculate the derivative of",
                 "$$Y(t) = \\log{(p + e^{-qt})}$$",
-                "where \\(p\\) and \\(q\\) are positive constants. (Note: here log refers to the natural logarithm, i.e., base \\(e\\)) <strong>[~10% marks]</strong>",
-                "<br>",
-                "<br>",
+                "where \\(p\\) and \\(q\\) are positive constants. (Note: here log refers to the natural logarithm, i.e., base \\(e\\)) <strong>[~10% marks]</strong>"
+            ]
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question C5) b)",
+            "type":"maths",
+            "topic": "diff-eq",
+            "sub-instructions": [],
+            "content": [
                 "A certain species of fungus causes disease in wheat. This fungus persists in agricultural soil via hardened masses of hyphae called sclerotia. Mycelial growth from sclerotia can lead to infection of plants. Within a growing season, the fungus increases in density on the roots of infected plants. However, no new sclerotia are formed when the crop is present. It is harvesting the wheat crop that causes new sclerotia to be released to the soil. Secondary infection, i.e. the direct spread of the fungus from one wheat plant to another within a growing season, is so rare that it can reasonably be ignored.",
                 "<br>",
                 "<br>",
