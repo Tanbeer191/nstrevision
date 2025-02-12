@@ -22,10 +22,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 2em;
     position: relative;
-    gap: 1em; /* Added gap between flex items */
-    min-height: 100px;
+    background-color: #0073e6;
+    color: white;
+    padding: 1em 0 3em;
+    width: 100%;
 }
 
 #exam-name {
@@ -43,7 +44,7 @@ header {
 
 #exam-date {
     position: absolute;
-    top: 5em;
+    top: 3.8em;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
@@ -182,13 +183,6 @@ img {
     background-color: #ff9900;
     color: white;
     font-size: 1.2em;
-}
-
-.exam-header {
-    background-color: #0073e6;
-    color: white;
-    padding: 1em 0;
-    width: 100%;
 }
 
 .exam-container {
