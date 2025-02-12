@@ -18,6 +18,37 @@ header {
     text-align: center;
 }
 
+.exam-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    position: relative;
+    gap: 1em; /* Added gap between flex items */
+    min-height: 100px;
+}
+
+#exam-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+    white-space: nowrap;
+    max-width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#exam-date {
+    position: absolute;
+    top: 5em;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
 header nav {
     background-color: #0073e6;
     margin: 0;
@@ -131,14 +162,6 @@ img {
     color: white;
 }
 
-#sub-instructions {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: yellow;
-    color: black;
-    padding: 7px;
-    font-size: 1.1em;
-}
-
 .view-solutions {
     background-color: #17a2b8;
     color: white;
@@ -227,16 +250,34 @@ img {
 }
 
 .info {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: yellow;
-    color: black;
-    padding: 1px;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 1px solid #b3d7ff;
+    background-color: #e6f2ff;
+    color: #004085;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    animation: subtleSlide 0.5s ease-out;
 }
 
-.info p{
-    margin: 1em;
+.info p {
+    margin-left: 0.8rem;
 }
 
+/* Animation */
+@keyframes subtleSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 #question-origin {
     font-size: 0.8em;   
     color: grey;
@@ -302,24 +343,10 @@ img {
     border: 1px solid #ddd;
 }
 
-#end-exam-container {
-    position: relative;
-    width: 100%;
-}
-
 #question-dropdown {
-    left: 1em;
-    margin-top: 1.31em;
-    position: absolute;
-    padding: 0.5em 1em;
-    font-size: 1rem;
-    border: 0 solid #ddd;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #fff;
-    color: #333;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    font-size: 1.1rem; /* Larger text */
+    height: 42px; /* Consistent height with button */
+    margin-left: 1em;
 }
 
 #question-dropdown:hover {
@@ -333,14 +360,20 @@ img {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+#end-exam-container {
+    margin-left: auto; /* Pushes to far right */
+    order: 2;
+    margin-right: 1rem;
+}
+
 #end-exam-container button#end-exam {
-    position: absolute;
-    margin-top: 1.31em;
-    right: 1em;
+    position: relative;
+    margin-top: 0;
+    right: 0;
     background-color: #dc3545;
     color: white;
-    padding: 0.5em 1em;
-    font-size: 1rem;
+    padding: 0.7em 1.5em;
+    font-size: 1.1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
