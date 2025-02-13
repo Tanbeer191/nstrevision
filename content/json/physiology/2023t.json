@@ -1,6 +1,6 @@
 {
     "name": "PHO/1: Physiology of Organisms - Theory",
-    "date": "",
+    "date": "2023",
     "time": 10800,
     "displayTime": "3 hours",
     "instructions": {
@@ -24,7 +24,7 @@
             "type": "essay",
             "topic": "nervous-system",
             "sub-instructions": [
-                "Answer <strong>TWO</strong> of the following essay questions, with a maximum of <strong>one</strong> from questions C3A and C3B and a maximum of <strong>one</strong> from questions C4A and C4B."
+                "<div class=\"info\">\n<p>&#9432; Answer <strong>TWO</strong> of the following essay questions, with a maximum of <strong>one</strong> from questions C3A and C3B and a maximum of <strong>one</strong> from questions C4A and C4B.</p></div>"
             ],
             "content": [
                 "How do different multicellular organisms coordinate whole-body responses to locally received environmental stimuli?"

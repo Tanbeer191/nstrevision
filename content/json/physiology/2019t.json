@@ -1,0 +1,90 @@
+{
+    "name": "PHO/1: Physiology of Organisms - Theory",
+    "date": "Wednesday 5th June 2019",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "<div class=\"info\">\n<p>&#9432; From 2019 and earlier, PHO/1 papers contained Multiple Choice Questions (MCQs) in Section A, rather than Short Answer Questions (SAQs).</p></div>",
+            "<div class=\"info\">\n<p>&#9432; These are not available to the public, so this paper only contains Section B (Essays).</p></div>",
+            "Answer <strong>two</strong> questions from Section B (Essays).",
+            "Section B contains essay questions and carries 50% of the total marks for the examination.",
+            "You have <strong>3 hours</strong> (plus any pre-agreed individual adjustment) to answer this paper. You must complete this paper within this time-period.",
+            "Approved calculators are allowed."
+        ]
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question B1) a)",
+            "type": "essay",
+            "topic": "thermoregulation",
+            "sub-instructions": [
+                "<div class=\"info\">\n<p>&#9432; Answer <strong>TWO</strong> of the following essay questions, with a maximum of <strong>one</strong> from questions B1a and B1b.</p></div>"
+            ],
+            "content": [
+                "What are the strategies that animals use to survive fluctuations in temperature?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question B1) b)",
+            "type": "essay",
+            "sub-instructions": [],
+            "content": [
+                "Contrast the processes which control cell expansion leading to growth in plants, fungi and microbes."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question B2",
+            "type": "essay",
+            "topic": "countercurrent",
+            "sub-instructions": [],
+            "content": [
+                "Discuss how organisms can use symbiotic relationships in order to gain nutrients."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question B3",
+            "type": "essay",
+            "sub-instructions": [],
+            "content": [
+                "What are the fundamental principles that govern fluid movement within organisms?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question B4",
+            "type": "essay",
+            "sub-instructions": [],
+            "content": [
+                "Compare and contrast the mechanisms used by plants and animals to sense the dark/light cycle."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question B5",
+            "type": "essay",
+            "topic": "hormones",
+            "sub-instructions": [],
+            "content": [
+                "Compare and contrast plant growth regulators with endocrine control in animal systems, and in doing so, consider how plants manage without a central nervous system."
+            ],
+            "solution": [
+            ]
+        }
+    ]
+}

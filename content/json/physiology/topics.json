@@ -5,7 +5,6 @@
         "electrochemical-gradients": "Electrochemical Gradients",
         "autonomic-nervous-system": "Autonomic Nervous System",
         "hormones": "Hormones",
-        "plant-hormones": "Plant Hormones",
         "bulk-flow": "Bulk Flow",
         "muscles": "Muscles",
         "cardiovascular-physiology": "Cardiovascular Physiology",
@@ -13,6 +12,7 @@
         "nutrient-acquisition": "Nutrient Acquisition",
         "respiration": "Respiration in Air and Water",
         "osmoregulation": "Osmoregulation",
-        "energy-exercise-metabolism": "Energy, Exercise and Metabolism"
+        "energy-exercise-metabolism": "Energy, Exercise and Metabolism",
+        "thermoregulation": "Thermoregulation"
     }
 }

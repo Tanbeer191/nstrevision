@@ -44,7 +44,7 @@ header {
 
 #exam-date {
     position: absolute;
-    top: 3.8em;
+    top: 3.4em;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
@@ -146,8 +146,6 @@ img {
     max-width: 50%;
     height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .btn {
@@ -338,7 +336,7 @@ img {
 }
 
 #question-dropdown {
-    font-size: 1.1rem; /* Larger text */
+    font-size: 1.0rem; /* Larger text */
     height: 42px; /* Consistent height with button */
     margin-left: 1em;
 }
@@ -358,6 +356,7 @@ img {
     margin-left: auto; /* Pushes to far right */
     order: 2;
     margin-right: 1rem;
+    height: 42px; /* Consistent height with button */
 }
 
 #end-exam-container button#end-exam {
@@ -367,7 +366,7 @@ img {
     background-color: #dc3545;
     color: white;
     padding: 0.7em 1.5em;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;

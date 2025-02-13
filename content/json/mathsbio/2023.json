@@ -24,7 +24,7 @@
             "type": "maths",
             "topic": "probability",
             "sub-instructions": [
-                "&#9432;&nbsp&nbspSection A starts here."
+                "<div class=\"info\">\n<p>&#9432; Section A starts here.</p></div>"
             ],
             "content": [
                 "The random variable \\(y\\) has the following probability density function:",
@@ -122,7 +122,7 @@
             "type": "maths",   
             "topic": "statistical-tests",
             "sub-instructions": [
-                "&#9432;&nbsp&nbspSection B starts here."
+                "<div class=\"info\">\n<p>&#9432; Section B starts here.</p></div>"
             ],
             "content": [
                 "An oncologist wants to test whether a given mutation is associated with the development of prostate cancer. She types a set of patients with the disease and a set of control individuals that do not show any symptoms, scoring individuals as either carriers of the mutation or not (i.e. with the ancestral version of the allele).",
@@ -263,7 +263,7 @@
             "type": "maths",
             "topic": "calc",
             "sub-instructions": [
-                "&#9432;&nbsp&nbspSection C starts here."
+                "<div class=\"info\">\n<p>&#9432; Section C starts here.</p></div>"
             ],
             "content": [
                 "<strong>(a)</strong> Calculate the derivative of",
@@ -288,7 +288,21 @@
                 "<br>",
                 "<strong>(b)</strong> Briefly explain the model, giving a possible biological interpretation \\(\\gamma\\). <strong>[~5% marks]</strong>",
                 "<br>",
-                "<strong>(c)</strong> Solve the model to find an expression for \\(X(t)\\). <strong>[~10% marks]</strong>"
+                "<strong>(c)</strong> Solve the model to find an expression for \\(X(t)\\). <strong>[~10% marks]</strong>",
+                "<br>",
+                "<br>",
+                "A model of the number of infected wheat plants, \\(I(t)\\), at time \\(t\\) during the growing season is:",
+                "$$\\frac{dI}{dt} = \\frac{\\beta X}{\\alpha + X}(N-I)$$",
+                "in which \\(N\\) is the (constant) number of wheat plants, \\(X\\) is the (time-dependent) density of sclerotia, and \\(\\alpha\\) and \\(\\beta\\) are positive parameters. No wheat plants are infected initially.",
+                "<br>",
+                "<br>",
+                "<strong>(d)</strong> Explain the model. giving a possible biological interpretation of \\(\\alpha\\) and \\(\\beta\\). <strong>[~20% marks]</strong>",
+                "<br>",
+                "<strong>(e)</strong>  Substitute the expression for \\(X(t)\\) from question (c) into the model and solve the differential equation for \\(I(t)\\) to show that:",
+                "$$I(t) = N\\left(1 - \\left(\\frac{\\alpha + X_0}{\\alpha + X_0e^{-\\gamma t}}\\right)^{-\\frac{\\beta}{\\gamma}}\\right)$$",
+                "<i>(Hint: You might find your answer to <strong>(a)</strong> to be helpful.)</i> <strong>[~30% marks]</strong>",
+                "<br>",
+                "<strong>(f)</strong> Verify that the expression given in <strong>(e)</strong> is indeed a solution of the model. <strong>[~25% marks]</strong>"
             ]
         }
     ]
