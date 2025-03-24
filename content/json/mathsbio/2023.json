@@ -304,6 +304,20 @@
                 "<br>",
                 "<strong>(f)</strong> Verify that the expression given in <strong>(e)</strong> is indeed a solution of the model. <strong>[~25% marks]</strong>"
             ]
+        },
+        {
+            "question": 9,
+            "displayNumber": "Question C6) a)",
+            "type": "maths",
+            "topic": "eqbm-anal",
+            "content": [
+                "The differential equation",
+                "$$\\frac{dy}{dt} = F(Y)$$",
+                "has an equlibirum at \\(Y = \\bar{Y}\\)",
+                "<br>",
+                "<br>",
+                "<strong>(a)</strong> By considering the dynamics of a perturbation, \\(h(t)\\), with \\(Y(t)\\) = \\(\\bar{Y}\\) + \\(h(t)\\), and \\(h(0)\\) = \\(h_{0}\\), where \\(h_0\\) is very small, show how the stability of the equilibrium depends on the sign of \\(\\frac{dF}{dY}\\) evaluated at \\(Y\\) = \\(\\bar{Y}\\). <strong>[~25% marks]</strong>"
+            ]
         }
     ]
 }

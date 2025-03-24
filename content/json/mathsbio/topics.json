@@ -4,6 +4,7 @@
         "linear-algebra": "Linear Algebra",
         "statistical-tests": "Statistical Tests",
         "linear-models": "Linear Models",
-        "diff-eq": "Differential Equations"
+        "diff-eq": "Differential Equations",
+        "eqbm-anal": "Equilibrium Analysis"
     }
 }
