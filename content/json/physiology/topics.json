@@ -4,15 +4,19 @@
         "nervous-system": "Nervous System",
         "electrochemical-gradients": "Electrochemical Gradients",
         "autonomic-nervous-system": "Autonomic Nervous System",
+        "diffusion": "Diffusion",
         "hormones": "Hormones",
+        "homeostasis": "Homeostasis",
         "bulk-flow": "Bulk Flow",
-        "muscles": "Muscles",
+        "movement": "Movement",
         "cardiovascular-physiology": "Cardiovascular Physiology",
         "countercurrent": "Countercurrent Multipliers",
         "nutrient-acquisition": "Nutrient Acquisition",
         "respiration": "Respiration in Air and Water",
         "osmoregulation": "Osmoregulation",
         "energy-exercise-metabolism": "Energy, Exercise and Metabolism",
-        "thermoregulation": "Thermoregulation"
+        "thermoregulation": "Thermoregulation",
+        "comparative-physiology": "Comparative Physiology",
+        "sensing-the-environment": "Sensing the Environment"
     }
 }

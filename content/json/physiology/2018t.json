@@ -1,0 +1,92 @@
+{
+    "name": "PHO/1: Physiology of Organisms - Theory",
+    "date": "Wednesday 6th June 2018",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "<div class=\"info\">\n<p>&#9432; From 2019 and earlier, PHO/1 papers contained Multiple Choice Questions (MCQs) in Section A, rather than Short Answer Questions (SAQs).</p></div>",
+            "<div class=\"info\">\n<p>&#9432; These are not available to the public, so this paper only contains Section B (Essays).</p></div>",
+            "Answer <strong>two</strong> questions from Section B (Essays).",
+            "Section B contains essay questions and carries 50% of the total marks for the examination.",
+            "You have <strong>3 hours</strong> (plus any pre-agreed individual adjustment) to answer this paper. You must complete this paper within this time-period.",
+            "Approved calculators are allowed."
+        ]
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question B1) a)",
+            "type": "essay",
+            "topic": "nutrient-acquisition",
+            "sub-instructions": [
+                "<div class=\"info\">\n<p>&#9432; Answer <strong>TWO</strong> of the following essay questions, with a maximum of <strong>one</strong> from questions B1a and B1b.</p></div>"
+            ],
+            "content": [
+                "What adaptations allow plants to survive fluctuations in the availability of soil nutrients?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question B1) b)",
+            "type": "essay",
+            "topic": "energy-exercise-metabolism",
+            "sub-instructions": [],
+            "content": [
+                "What adaptations allow animals to survive fluctuations in the availability of their principal energy source?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question B2",
+            "type": "essay",
+            "topic": "homeostasis",
+            "sub-instructions": [],
+            "content": [
+                " How do animals and plants detect and respond to rhythmical changes in the environment?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question B3",
+            "type": "essay",
+            "sub-instructions": [],
+            "content": [
+                "Discuss the diverse implications of Laplace's law for the 'design' of organisms."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question B4",
+            "type": "essay",
+            "topic": "respiration",
+            "sub-instructions": [],
+            "content": [
+                "What mechanisms allow water loss to be minimised while organisms carry out essential gas exchange with air?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question B5",
+            "type": "essay",
+            "topic": "movement",
+            "sub-instructions": [],
+            "content": [
+                "What mechanisms do animals and plants use to produce rapid movements?"
+            ],
+            "solution": [
+            ]
+        }
+    ]
+}

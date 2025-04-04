@@ -105,6 +105,7 @@
             "number": 9,
             "displayNumber": "Question 1i",
             "type": "saq",
+            "topic": "molecular-genetics",
             "content": [
                 "How did Benzer identify discrete units of recombination using bacteriophage T4?"
             ],
@@ -114,6 +115,7 @@
             "number": 10,
             "displayNumber": "Question 1j",
             "type": "saq",
+            "topic": "gene-cloning",
             "content": [
                 "What three technologies first came together to make gene cloning a reality in the 1970s? Briefly describe the experimental steps needed to clone a gene using these technologies."
             ],
@@ -123,6 +125,7 @@
             "number": 11,
             "displayNumber": "Question 1k",
             "type": "saq",
+            "topic": "dna-replication",
             "content": ["Draw a diagram of a prokaryotic replication fork to explain how DNA replication is semi-discontinuous."
         ],
             "solution": []
@@ -131,6 +134,7 @@
             "number": 12,
             "displayNumber": "Question 1l",
             "type": "saq",
+            "topic": "chromosome-biology",
             "content": [
                 "When can meiotic chromosomal nondisjunction occur and what are the consequences for gametes? Name a human syndrome that results from nondisjunction."
         ],

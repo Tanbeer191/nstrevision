@@ -35,7 +35,7 @@
             "number": 2,
             "displayNumber": "Question 2",
             "type": "saq",
-            "topic": "muscles",
+            "topic": "movement",
             "sub-instructions": [],
             "content": [
                 "Given action potentials are all-or-none events, how is a graded force produced by a single motor unit?"
@@ -138,7 +138,7 @@
             "number": 1,
             "displayNumber": "Question C1a",
             "type": "essay",
-            "topic": "muscles",
+            "topic": "movement",
             "sub-instructions": [
                 "<div class=\"info\">\n<p>&#9432; Answer <strong>TWO</strong> of the following essay questions, with a maximum of <strong>one</strong> from question C1.</p></div>",
                 "<div class=\"info\">\n<p>&#9432; There is a strict word limit of 1500 words per essay. This does not include the title, but it does include any figure legends and text in tables. Assessors will stop reading once the word limit is reached.</p></div>"

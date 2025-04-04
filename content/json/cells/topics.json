@@ -16,6 +16,10 @@
         "metabolism-tca": "Metabolism - TCA Cycle",
         "metabolism-respiration": "Metabolism - Respiration",
         "metabolism-amino-acids": "Metabolism - Amino Acids",
+        "molecular-genetics": "Molecular Genetics",
+        "gene-cloning": "Gene Cloning",
+        "dna-replication": "DNA Replication",
+        "chromosome-biology": "Chromosome Biology",
         "cell-transport": "Cell Transport",
         "microscopy": "Microscopy"
     }
