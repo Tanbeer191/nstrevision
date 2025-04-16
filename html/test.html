@@ -44,9 +44,9 @@
     </main>
     <script src="../js/script.js"></script>
     <script>
-        const questionIndex = 10; // Hardcoded question index
+        const questionIndex = 1; // Hardcoded question index
 
-        fetch('../content/json/mathsbio/2023.json')
+        fetch('../content/json/cells/2023p.json')
             .then(response => response.json())
             .then(data => {
                 const question = data.questions[questionIndex - 1];

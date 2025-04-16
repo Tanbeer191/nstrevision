@@ -1,0 +1,178 @@
+{
+    "name": "BOC/WP: Biology of Cells - Written Practical",
+    "date": "Saturday 10 June 2023",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "Answer <strong>all questions</strong>.",
+            "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
+            "<strong>Diagrams or other handwritten material:</strong>",
+            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
+            "<strong>Candidates should not copy and paste figures or content from any other documents.</strong",
+            "<strong>SPECIAL REQUIREMENTS:</strong><br><em>Approved calculators</em><br><em>A ruler</em>",
+            "<strong>For reference, a list of the questions is given below.</strong>",
+            "<ol><li>Quantifying Protein and Nucleic Acids</li><li>Protein Structure</li><li>Enzyme Activity</li><li>Photosynthesis and the Oxygen Electrode</li><li>Fungal Genetics</li><li>Bacterial Plasmids</li><li>PCR</li><li>Imaging Cell Division and Microscopy</li><li>The Embryological Zoo</li></ol>"
+        ]
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question 1)",
+            "type": "prac",
+            "marks": 3,
+            "topic": "microscopy",
+            "content": [
+                "You have extracted RNA from leaves, stems and roots of a plant and want to quantify the amount of RNA in each sample using a spectrophotometer to measure the absorbance at 260 nm. However, the values you measure are much higher than expected. You wonder whether something is wrong with the spectrophotometer. Luckily, a colleague in the lab has a set of RNA samples with known concentrations that they previously measured with a different machine.",
+                "<br>",
+                "<br>",
+                "You want to use these samples to test whether you get the expected results using your spectrophotometer. You start to calculate the expected absorbance values for the samples of known concentration. The results are shown in Table 1.",
+                "<br>",
+                "<br>",
+                "<table class='question-table'>",
+                "    <thead>",
+                "        <tr>",
+                "            <th>Tube</th>",
+                "            <th>1</th>",
+                "            <th>2</th>",
+                "            <th>3</th>",
+                "            <th>4</th>",
+                "            <th>5</th>",
+                "        </tr>",
+                "    </thead>",
+                "    <tbody>",
+                "        <tr>",
+                "            <td>Concentration (µg/mL)</td>",
+                "            <td>0</td>",
+                "            <td>750</td>",
+                "            <td>1250</td>",
+                "            <td>1800</td>",
+                "            <td>2300</td>",
+                "        </tr>",
+                "        <tr>",
+                "            <td>Absorbance at 260 nm</td>",
+                "            <td>0</td>",
+                "            <td>0.01875</td>",
+                "            <td>0.03125</td>",
+                "            <td></td>",
+                "            <td></td>",
+                "        </tr>",
+                "    </tbody>",
+                "</table>",
+                "Assume that the extinction coefficient for RNA at 260 nm is 25 litres cm<sup>-1</sup> g<sup>-1</sup>. The path length of the cuvette you are using is 1 cm.",
+                "<br>",
+                "<br>",
+                "<strong>(a)</strong> Complete Table 1 by calculating the expected absorbance values for samples 4 and 5. Show your workings."
+                
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question 1a) ii)",
+            "type": "prac",
+            "marks": 3,
+            "content": [
+                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
+                "<br>",
+                "For each specimen state which microscopical technique you could use:",
+                "<br>",
+                "<br>",
+                "<center>Mammalian hepatocytes, to estimate the width of the lumen of the rough endoplasmic reticulum.</center>"
+            ],
+            "solution": [
+                "Transmission electron microscopy."
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question 1a) iii)",
+            "type": "prac",
+            "marks": 3,
+            "content": [
+                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
+                "<br>",
+                "For each specimen state which microscopical technique you could use:",
+                "<br>",
+                "<br>",
+                "<center>Rat pancreatic cells, to assess the distribution of nucleic acids.</center>"
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 1a) iv)",
+            "type": "prac",
+            "marks": 3,
+            "content": [
+                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
+                "<br>",
+                "For each specimen state which microscopical technique you could use:",
+                "<br>",
+                "<br>",
+                "<center>Chara cells, to study the localisation of the protein myosin fused to green fluorescent protein.</center>"
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 1a) v)",
+            "type": "prac",
+            "marks": 3,
+            "content": [
+                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
+                "<br>",
+                "For each specimen state which microscopical technique you could use:",
+                "<br>",
+                "<br>",
+                "<center>Living buccal epithelial cells, to estimate the number of cells in a sample of saliva.</center>"
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 1a) vi)",
+            "type": "prac",
+            "marks": 3,
+            "content": [
+                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
+                "<br>",
+                "For each specimen state which microscopical technique you could use:",
+                "<br>",
+                "<br>",
+                "<center>An unknown virus, to determine its morphology.</center>"
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question 1b) i)",
+            "type": "prac",
+            "content": [
+                "Briefly describe how the Chara samples in (i) and hepatocyte samples in (ii) would be prepared for the respective microscopy techniques." 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question 1c",
+            "type": "prac",
+            "content": [
+                "When would you use scanning electron microscopy and when would you use transmission electron microscopy to analyse a sample? For each method give an example of a specimen that could be examined."
+            ]
+        }
+    ]
+}
