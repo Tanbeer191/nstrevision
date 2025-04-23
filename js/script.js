@@ -34,6 +34,7 @@ function loadQuestion(data, examType, examName) {
     const question = data.questions[currentQuestionIndex];
 
     // Clear previous content
+    window.scrollTo(0, 0);
     document.getElementById("question-number").textContent = "";
     document.getElementById("question-content").innerHTML = "";
     document.getElementById("sub-instructions").innerHTML = "";
@@ -84,6 +85,16 @@ function loadQuestion(data, examType, examName) {
     contentDiv.innerHTML = "";
     contentDiv.innerHTML = contentText.join('');
     MathJax.typeset()
+
+    if (!instructionTooShort && currentQuestionIndex === 0) {
+        const instructionDiv = document.getElementById("instruction-text");
+        const button = instructionDiv.querySelector("button");
+        console.log("Button in questionDiv")
+        if (button) {
+            contentDiv.appendChild(button);
+        }
+    }
+    checkIfAtBottom()
 
     const subInstructionText = question["sub-instructions"];
     const subInstructionDiv = document.getElementById("sub-instructions");
@@ -241,6 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const instructionText = instructions.text;
             const instructionDiv = document.getElementById("instruction-text");
+            document.getElementById("question").style.display = "none";
             instructionDiv.innerHTML = "";
             instructionText.forEach(line => {
                 const p = document.createElement("p");
@@ -248,8 +260,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 instructionDiv.appendChild(p);
             });
 
-            document.getElementById("marks-display").style.display = "none"; // Hide marks display initially
+            if (!checkIfAtBottom()) {
+                instructionTooShort = false;
+                const questionContentDiv = document.querySelector(".question-content");
+                const instructionDiv = document.getElementById("instruction-text");
+                const button = questionContentDiv.querySelector("button");
+                console.log("button in instructionDIv");
+                if (button) {
+                    instructionDiv.appendChild(button);
+                }
+            } else {
+                instructionTooShort = true;
+                console.log("Instruction too short");
+            }
 
+            document.getElementById("marks-display").style.display = "none"; // Hide marks display initially
+            
             const questionDropdown = document.getElementById("question-dropdown");
             questionDropdown.innerHTML = "";
             data.questions.forEach((question, index) => {
@@ -299,6 +325,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("next-button").addEventListener("click", function () {
                 document.getElementById("instructions-page").style.display = "none";
                 document.getElementById("exam-page").style.display = "block";
+                document.getElementById("question").style.display = "block";
                 questionDropdown.classList.remove("hidden"); // Show dropdown when exam starts
 
                 if (!timerInitialized) { // Start the timer only if it hasn't been started
@@ -317,9 +344,12 @@ document.addEventListener("DOMContentLoaded", () => {
                             if (timeRemaining < 0) {
                                 clearInterval(timerInterval);
                             }
-                        }, 1000);
-                    }
+                        }, 1000);                    }
                 }
+
+                setTimeout(() => {
+                    checkIfAtBottom();
+                }, 1000);
 
                 loadQuestion(data, examType, examName);
 
@@ -714,4 +744,27 @@ function generateRandomQuestionSet(allQuestions, questionDetails, selectedTopics
     };
 
     localStorage.setItem("customExamData", JSON.stringify(customExamData));
+}
+
+const scrollBtn = document.getElementById('scrollDownBtn');
+const tolerance = 10;
+
+scrollBtn.addEventListener('click', () => {
+  window.scrollBy({
+    top: window.innerHeight / 1.5,
+    behavior: 'smooth'
+  });
+});
+
+window.addEventListener('scroll', () => {
+    const atBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - tolerance);
+    console.log(document.body.offsetHeight - (window.innerHeight + window.scrollY));
+    scrollBtn.classList.toggle('hidden', atBottom);
+  });
+  
+function checkIfAtBottom() {
+    const atBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - tolerance);
+    console.log(document.body.offsetHeight - (window.innerHeight + window.scrollY));
+    scrollBtn.classList.toggle('hidden', atBottom);
+    return atBottom;
 }

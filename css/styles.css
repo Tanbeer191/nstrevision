@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: fixed;
     background-color: #0073e6;
     color: white;
     padding: 1em 0 3em;
@@ -132,6 +132,15 @@ table {
     margin-left: 0;
 }
 
+
+#question {
+    padding-top: 3em;
+}
+
+#timer{
+    margin-top: 3em;
+}
+
 th, td {
     border: 1px solid #ddd;
     padding: 0.5em;
@@ -188,8 +197,30 @@ img {
     padding: 2em;
 }
 
-.instructions {
-    margin-bottom: 5em;
+.scroll-down-btn {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 9999px;
+    padding: 8px 14px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .scroll-down-btn.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+#instructions-page {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .instructions-table {

@@ -21,7 +21,6 @@
             "number": 1,
             "displayNumber": "Question 1)",
             "type": "prac",
-            "marks": 3,
             "topic": "microscopy",
             "content": [
                 "You have extracted RNA from leaves, stems and roots of a plant and want to quantify the amount of RNA in each sample using a spectrophotometer to measure the absorbance at 260 nm. However, the values you measure are much higher than expected. You wonder whether something is wrong with the spectrophotometer. Luckily, a colleague in the lab has a set of RNA samples with known concentrations that they previously measured with a different machine.",
@@ -74,7 +73,6 @@
             "number": 2,
             "displayNumber": "Question 1a) ii)",
             "type": "prac",
-            "marks": 3,
             "content": [
                 "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
                 "<br>",
@@ -108,7 +106,6 @@
             "number": 4,
             "displayNumber": "Question 1a) iv)",
             "type": "prac",
-            "marks": 3,
             "content": [
                 "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
                 "<br>",
@@ -125,7 +122,6 @@
             "number": 5,
             "displayNumber": "Question 1a) v)",
             "type": "prac",
-            "marks": 3,
             "content": [
                 "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
                 "<br>",
