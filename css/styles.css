@@ -157,6 +157,21 @@ img {
     display: block;
 }
 
+figure {
+    display: inline-block;
+    border: 1px dotted gray;
+    margin: 20px; 
+}
+figure img {
+    vertical-align: top;
+    max-width: 100%;
+}
+figure figcaption {
+    border: 1px dotted blue;
+    text-align: center;
+    padding: 5px;
+}
+
 .btn {
     padding: 0.5em 1em;
     margin: 0.2em;
