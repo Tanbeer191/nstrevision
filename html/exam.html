@@ -10,6 +10,7 @@
 <body>
     <header class="exam-header">
         <select id="question-dropdown" class="hidden"></select>
+        <div id="timer"></div>
         <div id="end-exam-container">
             <button id="end-exam" onclick="endExam()">End Exam</button>
         </div>
@@ -37,7 +38,7 @@
         <div id="exam-page" style="display: none;">
             </div>
             <div id="question">
-                <div id="timer"></div>
+                <br>
                 <div id="question-display">
                     <div id="question-origin"></div>
                     <h2 id="question-number"></h2>
@@ -45,12 +46,12 @@
                 <div id="sub-instructions"></div>
                 <div class="question-content">
                     <p id="question-content"></p>
+                    <div id="solution" class="hidden"></div>
                     <button class="scroll-down-btn" id="scrollDownBtn" aria-label="Scroll down">
                         ↓
                       </button>
                 </div>
             </div>
-            <div id="solution" class="hidden"></div>
         </div>
 
         <footer class="exam-footer">

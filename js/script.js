@@ -87,11 +87,11 @@ function loadQuestion(data, examType, examName) {
     MathJax.typeset()
 
     if (!instructionTooShort && currentQuestionIndex === 0) {
+        const questionContentDiv = document.querySelector(".question-content");
         const instructionDiv = document.getElementById("instruction-text");
         const button = instructionDiv.querySelector("button");
-        console.log("Button in questionDiv")
         if (button) {
-            contentDiv.appendChild(button);
+            questionContentDiv.appendChild(button);
         }
     }
     checkIfAtBottom()
@@ -265,13 +265,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 const questionContentDiv = document.querySelector(".question-content");
                 const instructionDiv = document.getElementById("instruction-text");
                 const button = questionContentDiv.querySelector("button");
-                console.log("button in instructionDIv");
                 if (button) {
                     instructionDiv.appendChild(button);
                 }
             } else {
                 instructionTooShort = true;
-                console.log("Instruction too short");
             }
 
             document.getElementById("marks-display").style.display = "none"; // Hide marks display initially
@@ -758,13 +756,11 @@ scrollBtn.addEventListener('click', () => {
 
 window.addEventListener('scroll', () => {
     const atBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - tolerance);
-    console.log(document.body.offsetHeight - (window.innerHeight + window.scrollY));
     scrollBtn.classList.toggle('hidden', atBottom);
   });
   
 function checkIfAtBottom() {
     const atBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - tolerance);
-    console.log(document.body.offsetHeight - (window.innerHeight + window.scrollY));
     scrollBtn.classList.toggle('hidden', atBottom);
     return atBottom;
 }

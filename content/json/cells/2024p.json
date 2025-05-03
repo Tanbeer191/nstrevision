@@ -39,6 +39,7 @@
             "number": 2,
             "displayNumber": "Question 1a) ii)",
             "type": "prac",
+            "topic": "microscopy",
             "marks": 3,
             "content": [
                 "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
@@ -56,6 +57,7 @@
             "number": 3,
             "displayNumber": "Question 1a) iii)",
             "type": "prac",
+            "topic": "microscopy",
             "marks": 3,
             "content": [
                 "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
@@ -73,6 +75,7 @@
             "number": 4,
             "displayNumber": "Question 1a) iv)",
             "type": "prac",
+            "topic": "microscopy",
             "marks": 3,
             "content": [
                 "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
@@ -90,6 +93,7 @@
             "number": 5,
             "displayNumber": "Question 1a) v)",
             "type": "prac",
+            "topic": "microscopy",
             "marks": 3,
             "content": [
                 "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
@@ -107,6 +111,7 @@
             "number": 6,
             "displayNumber": "Question 1a) vi)",
             "type": "prac",
+            "topic": "microscopy",
             "marks": 3,
             "content": [
                 "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
@@ -123,6 +128,7 @@
         {
             "number": 7,
             "displayNumber": "Question 1b) i)",
+            "topic": "microscopy",
             "type": "prac",
             "content": [
                 "Briefly describe how the Chara samples in (i) and hepatocyte samples in (ii) would be prepared for the respective microscopy techniques." 
@@ -135,6 +141,7 @@
             "number": 8,
             "displayNumber": "Question 1c",
             "type": "prac",
+            "topic": "microscopy",
             "content": [
                 "When would you use scanning electron microscopy and when would you use transmission electron microscopy to analyse a sample? For each method give an example of a specimen that could be examined."
             ]
