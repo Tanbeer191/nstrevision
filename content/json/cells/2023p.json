@@ -16,12 +16,15 @@
             "<ol><li>Quantifying Protein and Nucleic Acids</li><li>Protein Structure</li><li>Enzyme Activity</li><li>Photosynthesis and the Oxygen Electrode</li><li>Fungal Genetics</li><li>Bacterial Plasmids</li><li>PCR</li><li>Imaging Cell Division and Microscopy</li><li>The Embryological Zoo</li></ol>"
         ]
     },
+    "pdfUrl": "../content/pdf/cells/2023p.pdf",
     "questions": [
         {
             "number": 1,
             "displayNumber": "Question 1 - Quantifying Protein and Nucleic Acids",
             "type": "prac",
             "topic": "quantifying-protein-and-nucleic-acids",
+            "startPage": 3,
+            "endPage": 5,
             "content": [
                 "You have extracted RNA from leaves, stems and roots of a plant and want to quantify the amount of RNA in each sample using a spectrophotometer to measure the absorbance at 260 nm. However, the values you measure are much higher than expected. You wonder whether something is wrong with the spectrophotometer. Luckily, a colleague in the lab has a set of RNA samples with known concentrations that they previously measured with a different machine.",
                 "<br>",
@@ -171,6 +174,8 @@
             "displayNumber": "Question 2 - Protein Structure",
             "type": "prac",
             "topic": "protein-structure",
+            "startPage": 6,
+            "endPage": 7,
             "content": [
                 "The Ramachandran plot for a protein is shown in Figure 1:",
                 "<br>",
@@ -199,6 +204,8 @@
             "displayNumber": "Question 3 - Enzyme Activity",
             "type": "prac",
             "topic": "enzyme-activity",
+            "startPage": 8,
+            "endPage": 10,
             "content": [
                 "In a practical class, students were provided with a liquid culture of the Gram-positive bacterium Micrococcus luteus and a solution of lysozyme from hen egg white, in order to investigate the effect of lysozyme on M. luteu.",
                 "<br>",
@@ -250,6 +257,8 @@
             "displayNumber": "Question 4 - Photosynthesis and the Oxygen Electrode",
             "type": "prac",
             "topic": "photosynthesis-oxygen-electrode",
+            "startPage": 11,
+            "endPage": 12,
             "content": [
                 "You have grown Arabidopsis in two different conditions, low light and high light.",
                 "<br><br>",
@@ -335,6 +344,8 @@
             "displayNumber": "Question 5 - Analysis of a Genetic Cross",
             "topic": "analysis-genetic-cross",
             "type": "prac",
+            "startPage": 13,
+            "endPage": 15,
             "content": [
                 "You join a cell cycle lab that uses S. <i>cerevisiae</i> as a model organism. You are asked to follow up an observation made previously. The lab suspects the gene <i>TOM1</i> (for Termination Of Mitosis 1) is involved in completion of mitosis. Although a ∆<i>tom1</i> strain behaved indistinguishably from the parental WT strain, ∆<i>tom1</i> was synthetic lethal with a <i>cdc15ts</i> mutation (<i>CDC15</i> encodes an essential kinase required for the anaphase to telophase transition). Your supervisor asks you to confirm the observation. You are given a strain labelled 'MAT<strong>a</strong>, <i>ura3-53</i>, <i>leu2∆1</i> and <i>ade2-2</i> in which <i>TOM1</i> has been deleted using an <i>ADE2</i> cassette'.",
                 "<br><br>First, you confirm the strain's nutritional requirements using a replica-plating scheme. As expected, you find that the strain is unable to grow on plates lacking uracil or leucine. Against expectations however, the cells are unable to grow on plates lacking adenine but form white colonies when grown on medium containing a limiting amount of adenine.",
@@ -483,6 +494,8 @@
             "displayNumber": "Question 6 - Bacterial Plasmids",
             "topic": "bacterial-plasmids",
             "type": "prac",
+            "startPage": 16,
+            "endPage": 17,
             "content": [
                 "The plasmids for the Biology of Cells practical were unfortunately lost during the 2020-21 phase of the Covid-19 pandemic. However, in the depths of the freezers in the Department of Genetics, various vials have been found from previous 1A students’ work, along with some DH5α <i>E. coli</i> (which are plasmid-free). An attempt is made to transform the plasmid mixture into the <i>E. coli</i> cells following the BoC practical methodology.",
                 "<br><strong>(a)</strong> What is the effect of treating the E. coli with ice-cold calcium chloride before adding the plasmid DNA mix?",
@@ -503,6 +516,8 @@
             "displayNumber": "Question 7 - PCR",
             "topic": "pcr",
             "type": "prac",
+            "startPage": 18,
+            "endPage": 20,
             "content": [
                 "Figure 4 shows the time-temperature profile of a thermocycler during a PCR (polymerase chain reaction). The DNA polymerase used is Taq.",
                 "<br><figure><img src='../content/img/img12.jpg' height='630' width='510'><figcaption><strong>Figure 4:</strong> The time-temperature profile of a thermocycler during a PCR.</figcaption></figure>",
@@ -538,6 +553,8 @@
             "displayNumber": "Question 8 - Imaging Cell Division and Microscopy",
             "topic": "imaging-cell-division",
             "type": "prac",
+            "startPage": 21,
+            "endPage": 22,
             "content": [
                 "Figure 5 shows selected frames from a time-lapse series of an animal cell during the mitotic cycle. Panels are shown in a random order.",
                 "<br><figure><img src='../content/img/img13.jpg' height='630' width='510'><figcaption><strong>Figure 5:</strong> Microscopy images of a dividing cell.</figcaption></figure>",
@@ -557,6 +574,7 @@
             "displayNumber": "Question 9 - The Embryological Zoo",
             "topic": "embryological-zoo",
             "type": "prac",
+            "startPage": 23,
             "content": [
                 "<figure><img src='../content/img/img14.jpg' height='750' width='680'><figcaption><strong>Figure 6:</strong> Stages of embryonic development in different species.</figcaption></figure>",
                 "<br>Panels A-R in Figure 6 show representative images of stages of embryonic development from six different model organisms.",

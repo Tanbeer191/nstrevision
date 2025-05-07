@@ -11,139 +11,135 @@
             "<strong>Diagrams or other handwritten material:</strong>",
             "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
             "<strong>Candidates should not copy and paste figures or content from any other documents.</strong",
-            "<strong>SPECIAL REQUIREMENTS:</strong><br><em>Approved calculators</em><br><em>A ruler</em>"
+            "<strong>SPECIAL REQUIREMENTS:</strong><br><em>Approved calculators</em><br><em>A ruler</em>",
+            "<strong>For reference, a list of the questions is given below.</strong>",
+            "<ol><li>Microscopy</li><li>Quantifying Protein and Nucleic Acids</li><li>Enzyme Activity</li><li>Photosynthesis and the Oxygen Electrode</li><li>Drosophila Genetics</li><li>Bacterial Plasmids</li><li>PCR and Exploring DNA</li><li>Imaging Cell Division and Microscopy</li><li>The Embryological Zoo</li></ol>"
         ]
     },
+    "pdfUrl": "../content/pdf/cells/2024p.pdf",
     "questions": [
         {
             "number": 1,
-            "displayNumber": "Question 1a) i)",
+            "displayNumber": "Question 1 - Microscopy",
             "type": "prac",
-            "marks": 3,
+            "startPage": 3,
+            "endPage": 4,
             "topic": "microscopy",
             "content": [
-                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
-                "<br>",
-                "For each specimen state which microscopical technique you could use:",
-                "<br>",
-                "<em>Note: The marks are given for the entire question.</em>",
-                "<br>",
-                "<br>",
-                "<center>Cells of the giant algae, Chara, to determine the speed of cytoplasmic streaming.</center>"
             ],
             "solution": [
-                "Dark field light microscopy."
             ]
         },
         {
             "number": 2,
-            "displayNumber": "Question 1a) ii)",
+            "displayNumber": "Question 2 - Quantifying DNA and Protein Data Tables",
             "type": "prac",
-            "topic": "microscopy",
-            "marks": 3,
+            "topic": "quantifying-protein-and-nucleic-acids",
+            "startPage": 5,
+            "endPage": 6,
             "content": [
-                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
-                "<br>",
-                "For each specimen state which microscopical technique you could use:",
-                "<br>",
-                "<br>",
-                "<center>Mammalian hepatocytes, to estimate the width of the lumen of the rough endoplasmic reticulum.</center>"
-            ],
-            "solution": [
-                "Transmission electron microscopy."
+                "<strong>Table 1:</strong> DNA absorbance measurements.",
+                "<br><table class='question-table'>",
+                "<tr><th>Tube</th><th>1</th><th>2</th><th>3</th></tr>",
+                "<tr><td>Absorbance (at 260 nm)</td><td>0.054</td><td>0.012</td><td>0.030</td></tr>",
+                "<tr><td>Concentration (mg/mL)</td><td></td><td></td><td></td></tr>",
+                "</table>",
+                "<strong>Table 2:</strong> BSA standard curve absorbance measurements.",
+                "<br><table class='question-table'>",
+                "<tr><th>Tube</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th></tr>",
+                "<tr><td>BSA concentration (µg/mL)</td><td>0</td><td>100</td><td>200</td><td>300</td><td>400</td><td>500</td><td>600</td><td>700</td><td>800</td><td>900</td></tr>",
+                "<tr><td>Absorbance (at 595 nm)</td><td>0.01</td><td>0.11</td><td>0.22</td><td>0.34</td><td>0.43</td><td>0.50</td><td>0.55</td><td>0.58</td><td>0.60</td><td>0.61</td></tr>",
+                "</table>",
+                "<br>You are a summer student working with Arabidopsis plants and have extracted DNA from three different leaf samples using a protocol that you received from another lab member.",
+                "<br><strong>(a)</strong> You want to determine the DNA concentration in your samples using a spectrophotometer. For this, you add 10 µL of your sample to 990 µL water and measure the absorbance at 260 nm using a cuvette with a path length of 1 cm. The extinction coefficient for DNA is 20 litres cm<sup>-1</sup> g<sup>-1</sup>. Calculate the DNA concentrations in your samples given the absorbance values in <strong>Table 1</strong>, showing your workings.",
+                "<br><br>The protocol you used for DNA extraction looks different from other protocols you have used for this before. You are worried that your samples might be contaminated with substantial amounts of protein. You use a Bradford assay to test whether this is true. You first make a standard curve using a dilution series of bovine serum albumin (BSA) in phosphate-buffered saline (PBS) buffer. For each BSA sample, you mix 10 µL of the sample with 990 µL of Bradford reagent and measure the absorbance at 595 nm. The results are given in Table 2.",
+                "<br><strong>(b)</strong> What solution would you use to calibrate your spectrophotometer before measuring each BSA sample? Why?",
+                "<br><strong>(c)</strong> You mix 10 µL of your DNA samples with 990 µL of Bradford reagent and measure the absorbance at 595 nm. Assume that for one of your samples, you obtained an A<sub>595</sub> value of 0.27. Plot a standard curve with the BSA values given in Table 2 using the graph paper and calculate the protein concentration of this sample, expressed in mg/mL. Show your workings.",
+                "<br><strong>(d)</strong> You want to know how much protein is present in an Arabidopsis leaf. Describe how you would extract the total soluble protein."
             ]
         },
         {
             "number": 3,
-            "displayNumber": "Question 1a) iii)",
+            "displayNumber": "Question 3 - Enzyme Activity",
             "type": "prac",
-            "topic": "microscopy",
-            "marks": 3,
+            "topic": "enzyme-kinetics",
+            "startPage": 7,
+            "endPage": 9,
             "content": [
-                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
-                "<br>",
-                "For each specimen state which microscopical technique you could use:",
-                "<br>",
-                "<br>",
-                "<center>Rat pancreatic cells, to assess the distribution of nucleic acids.</center>"
             ],
             "solution": [
-                ""
             ]
         },
         {
             "number": 4,
-            "displayNumber": "Question 1a) iv)",
+            "displayNumber": "Question 4 - Photosynthesis and the Oxygen Electrode",
             "type": "prac",
-            "topic": "microscopy",
-            "marks": 3,
+            "topic": "photosynthesis-oxygen-electrode",
+            "startPage": 10,
+            "endPage": 12,
             "content": [
-                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
-                "<br>",
-                "For each specimen state which microscopical technique you could use:",
-                "<br>",
-                "<br>",
-                "<center>Chara cells, to study the localisation of the protein myosin fused to green fluorescent protein.</center>"
             ],
             "solution": [
-                ""
             ]
         },
         {
             "number": 5,
-            "displayNumber": "Question 1a) v)",
+            "displayNumber": "Question 5 - Drosophila Genetics",
             "type": "prac",
-            "topic": "microscopy",
-            "marks": 3,
+            "topic": "analysis-genetic-cross",
+            "startPage": 13,
+            "endPage": 15,
             "content": [
-                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
-                "<br>",
-                "For each specimen state which microscopical technique you could use:",
-                "<br>",
-                "<br>",
-                "<center>Living buccal epithelial cells, to estimate the number of cells in a sample of saliva.</center>"
             ],
             "solution": [
-                ""
             ]
         },
         {
             "number": 6,
-            "displayNumber": "Question 1a) vi)",
+            "displayNumber": "Question 6 - Bacterial Plasmids",
             "type": "prac",
-            "topic": "microscopy",
-            "marks": 3,
+            "topic": "bacterial-plasmids",
+            "startPage": 16,
+            "endPage": 17,
             "content": [
-                "You are given the specimens listed below (i-vi) and asked to obtain images that will provide answers to the experimental questions that follow.", 
-                "<br>",
-                "For each specimen state which microscopical technique you could use:",
-                "<br>",
-                "<br>",
-                "<center>An unknown virus, to determine its morphology.</center>"
+
             ],
             "solution": [
-                ""
+
             ]
         },
         {
             "number": 7,
-            "displayNumber": "Question 1b) i)",
-            "topic": "microscopy",
+            "displayNumber": "Question 7 - PCR and Exploring DNA",
             "type": "prac",
+            "topic": "pcr",
+            "startPage": 18,
+            "endPage": 23,
             "content": [
-                "Briefly describe how the Chara samples in (i) and hepatocyte samples in (ii) would be prepared for the respective microscopy techniques." 
             ],
             "solution": [
-                ""
             ]
         },
         {
             "number": 8,
-            "displayNumber": "Question 1c",
+            "displayNumber": "Question 8 - Imaging Cell Division and Microscopy",
             "type": "prac",
-            "topic": "microscopy",
+            "topic": "imaging-cell-division",
+            "startPage": 24,
+            "endPage": 25,
             "content": [
-                "When would you use scanning electron microscopy and when would you use transmission electron microscopy to analyse a sample? For each method give an example of a specimen that could be examined."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 9 - The Embryological Zoo",
+            "type": "prac",
+            "topic": "embryological-zoo",
+            "startPage": 26,
+            "endPage": 28,
+            "content": [
             ]
         }
     ]

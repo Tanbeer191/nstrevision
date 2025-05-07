@@ -17,12 +17,14 @@
             "This examination is <strong>closed</strong> book so access to the internet and use of mobile devices is prohibited."
         ]
     },
+    "pdfUrl": "../content/pdf/mathsbio/2023.pdf",
     "questions": [
         {
             "number": 1,
             "displayNumber": "Question A1) a)",
             "type": "maths",
             "topic": "probability",
+            "startPage": 3,
             "sub-instructions": [
                 "<div class=\"info\">\n<p>&#9432; Section A starts here.</p></div>"
             ],
@@ -45,6 +47,8 @@
             "displayNumber": "Question A1) b)",
             "type": "maths",
             "topic": "probability",
+            "startPage": 4,
+            "endPage": 5,
             "sub-instructions": [],
             "content": [
                 "A gardener sets up a challenge for visiting squirrels.",
@@ -77,7 +81,7 @@
             "displayNumber": "Question A2) a)",
             "type": "maths",
             "topic": "linear-algebra",
-            "sub-instructions": [],
+            "startPage": 6,
             "content": [
                 "A microfluidic mixing device has four inputs and four outputs, connected as follows:",
                 "<br>",
@@ -108,6 +112,7 @@
             "displayNumber": "Question A2) b)",
             "type": "maths",
             "topic": "linear-algebra",
+            "startPage": 7,
             "sub-instructions": [],
             "content": [
                 "<strong>b)</strong> Calculate a complete set of eigenvalues and eigenvectors for the following matrix: <strong>[~60% marks]</strong>",
@@ -121,6 +126,8 @@
             "displayNumber": "Question B3",
             "type": "maths",   
             "topic": "statistical-tests",
+            "startPage": 8,
+            "endPage": 10,
             "sub-instructions": [
                 "<div class=\"info\">\n<p>&#9432; Section B starts here.</p></div>"
             ],
@@ -212,6 +219,8 @@
             "displayNumber": "Question B4",
             "type": "maths",
             "topic": "linear-models",
+            "startPage": 11,
+            "endPage": 13,
             "sub-instructions": [],
             "content": [
                 "A geneticist wants to test whether genetic heterozygosity affects reproductive success. He collects data from pheasants, counting the number of hatched chicks as a measure of success. Besides measuring heterozygosity, he also collects data on laying date (given as the number of days since the 1st of March), and notes whether the hens were wild-bred or captive-bred. There were 67 nests in total.",
@@ -262,6 +271,7 @@
             "displayNumber": "Question C5) a)",
             "type": "maths",
             "topic": "calc",
+            "startPage": 14,
             "sub-instructions": [
                 "<div class=\"info\">\n<p>&#9432; Section C starts here.</p></div>"
             ],
@@ -275,7 +285,9 @@
             "number": 8,
             "displayNumber": "Question C5) b)",
             "type":"maths",
-            "topic": "diff-eq",
+            "topic": "disease-models",
+            "startPage": 15,
+            "endPage": 16,
             "sub-instructions": [],
             "content": [
                 "A certain species of fungus causes disease in wheat. This fungus persists in agricultural soil via hardened masses of hyphae called sclerotia. Mycelial growth from sclerotia can lead to infection of plants. Within a growing season, the fungus increases in density on the roots of infected plants. However, no new sclerotia are formed when the crop is present. It is harvesting the wheat crop that causes new sclerotia to be released to the soil. Secondary infection, i.e. the direct spread of the fungus from one wheat plant to another within a growing season, is so rare that it can reasonably be ignored.",
@@ -307,9 +319,11 @@
         },
         {
             "question": 9,
-            "displayNumber": "Question C6) a)",
+            "displayNumber": "Question C6)",
             "type": "maths",
-            "topic": "eqbm-anal",
+            "topic": "population-models",
+            "startPage": 17,
+            "endPage": 18,
             "content": [
                 "The differential equation",
                 "$$\\frac{dy}{dt} = F(Y)$$",
@@ -317,6 +331,52 @@
                 "<br>",
                 "<br>",
                 "<strong>(a)</strong> By considering the dynamics of a perturbation, \\(h(t)\\), with \\(Y(t)\\) = \\(\\bar{Y}\\) + \\(h(t)\\), and \\(h(0)\\) = \\(h_{0}\\), where \\(h_0\\) is very small, show how the stability of the equilibrium depends on the sign of \\(\\frac{dF}{dY}\\) evaluated at \\(Y\\) = \\(\\bar{Y}\\). <strong>[~25% marks]</strong>"
+            ]
+        },
+        {
+            "number": 10,
+            "displayNumber": "Question D7",
+            "type": "maths",
+            "topic": "diff-eq-systems",
+            "sub-instructions": [
+                "<div class=\"info\">\n<p>&#9432; Section D starts here.</p></div>"
+            ],
+            "startPage": 19,
+            "content": [
+
+            ]
+        },
+        {
+            "number": 11,
+            "displayNumber": "Question D8",
+            "type": "maths",
+            "topic": "disease-models",
+            "startPage": 20,
+            "endPage": 21,
+            "content": [
+            ]
+        },
+        {
+            "number": 12,
+            "displayNumber": "Question E9",
+            "type": "maths",
+            "topic": "reaction-kinetics",
+            "sub-instructions": [
+                "<div class=\"info\">\n<p>&#9432; Section E starts here.</p></div>"
+            ],
+            "startPage": 22,
+            "endPage": 23,
+            "content": [
+            ]
+        },
+        {
+            "number": 13,
+            "displayNumber": "Question E10",
+            "type": "maths",
+            "topic": "modelling",
+            "startPage": 24,
+            "endPage": 25,
+            "content": [
             ]
         }
     ]

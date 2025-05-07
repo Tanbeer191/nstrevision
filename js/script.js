@@ -1,6 +1,6 @@
-let currentQuestionIndex = 0;
 let timerInterval;
 let timerInitialized = false;
+let currentQuestionIndex = 0;
 
 function showSubject(subjectId) {
     document.querySelectorAll('.subject-content').forEach(content => {
@@ -80,12 +80,22 @@ function loadQuestion(data, examType, examName) {
         document.getElementById("question-number").textContent = question.displayNumber;
     }
 
-    const contentText = question.content;
-    const contentDiv = document.getElementById("question-content");
-    contentDiv.innerHTML = "";
-    contentDiv.innerHTML = contentText.join('');
-    MathJax.typeset()
+    if (question.type === "prac" || question.type === "maths") {
+        const pdfUrl = examType === "custom" ? question.pdfUrl : data.pdfUrl;
+        const startPage = question.startPage || 1;
+        const endPage = question.endPage || startPage;
+        const containerId = "pdf-container";
 
+        renderPDFPages(pdfUrl, containerId, startPage, endPage);
+    }
+    else {
+        const contentText = question.content;
+        const contentDiv = document.getElementById("question-content");
+        contentDiv.innerHTML = "";
+        contentDiv.innerHTML = contentText.join('');
+        MathJax.typeset()
+    }
+    
     if (!instructionTooShort && currentQuestionIndex === 0) {
         const questionContentDiv = document.querySelector(".question-content");
         const instructionDiv = document.getElementById("instruction-text");
@@ -136,7 +146,9 @@ function loadQuestion(data, examType, examName) {
         nextButton.textContent = "Next";
         nextButton.onclick = () => {
             currentQuestionIndex++;
-            loadQuestion(data, examType, examName);
+            if (firstRun === false) {
+                loadQuestion(data, examType, examName);
+            }
         };
     }
 
@@ -260,6 +272,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 instructionDiv.appendChild(p);
             });
 
+            if (examType === "custom") {
+                const customExamData = JSON.parse(localStorage.getItem("customExamData"));
+                if (customExamData && !document.getElementById("download-custom-exam-pdf")) {
+                    const btn = document.createElement("button")
+                    btn.id = "download-custom-exam-pdf";
+                    btn.textContent = "Download Exam";
+                    const header = document.querySelector(".exam-header")
+                    console.log("here1")
+                    if (header) {
+                        console.log("here2")
+                        header.appendChild(btn);
+                        btn.addEventListener("click", () => downloadCustomExamPDF(customExamData));
+                    }
+                }
+            }
+    
             if (!checkIfAtBottom()) {
                 instructionTooShort = false;
                 const questionContentDiv = document.querySelector(".question-content");
@@ -348,8 +376,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 setTimeout(() => {
                     checkIfAtBottom();
                 }, 1000);
-
-                loadQuestion(data, examType, examName);
+                
+                if (typeof firstRun === "undefined") {
+                    loadQuestion(data, examType, examName);
+                    firstRun = false;
+                }
 
                 const viewSolutionButton = document.getElementById("view-solution");
                 viewSolutionButton.classList.remove("hidden");
@@ -531,6 +562,11 @@ document.addEventListener("DOMContentLoaded", () => {
                                 fileData.questions.filter(q => q.topic).forEach(question => {
                                     question.sourceName = fileName; 
                                     question.fileName = jsonFileName;
+                                    if (question.type === "prac" || question.type === "maths") {
+                                        question.pdfUrl = fileData.pdfUrl;
+                                        question.startPage = question.startPage || 1;
+                                        question.endPage = question.endPage || question.startPage;
+                                    }
                                     allQuestions.push(question);
                                 });
                             });
@@ -763,4 +799,148 @@ function checkIfAtBottom() {
     const atBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - tolerance);
     scrollBtn.classList.toggle('hidden', atBottom);
     return atBottom;
+}
+
+let pdfLayout = "vertical"; 
+let pdfWidth = 65; 
+
+async function renderPDFPages(pdfUrl, containerId, startPage, endPage) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = "";
+
+    const oldControls = document.getElementById("pdf-controls");
+    if (oldControls) oldControls.remove();
+
+    const controls = document.createElement("div");
+    controls.id = "pdf-controls";
+    controls.style.marginBottom = "1em";
+    let buttonLabel = "Horizontal Page Layout";
+    if (pdfLayout === "horizontal") buttonLabel = "Grid Layout";
+    if (pdfLayout === "grid") buttonLabel = "Vertical Page Layout";
+    controls.innerHTML = `
+        <button id="download-pdf-btn" style="font-size: 0.9em; padding: 0.5em 0.5em;">Download PDF</button>
+        <button id="toggle-layout-btn" style="font-size: 0.9em; padding: 0.5em 0.5em;">
+            ${buttonLabel}
+        </button>
+        <label style="margin-left:1em;">
+            Page Width:
+            <input type="range" id="pdf-width-slider" min="1" max="100" value="${pdfLayout === "grid" ? 100 : pdfWidth}" style="vertical-align:middle;" ${pdfLayout === "grid" ? "disabled" : ""}>
+            <span id="pdf-width-value">${pdfLayout === "grid" ? 100 : pdfWidth}%</span>
+        </label>
+    `;
+    container.parentNode.insertBefore(controls, container);
+
+    // Remove all layout classes first
+    container.classList.remove("vertical", "horizontal", "grid");
+
+    // Apply the current layout
+    if (pdfLayout === "vertical") {
+        container.classList.add("vertical");
+        container.style.setProperty("--pdf-page-width", pdfWidth + "%");
+    } else if (pdfLayout === "horizontal") {
+        container.classList.add("horizontal");
+        container.style.setProperty("--pdf-page-width", pdfWidth + "%");
+    } else if (pdfLayout === "grid") {
+        container.classList.add("grid");
+        container.style.setProperty("--pdf-page-width", "100%");
+    }
+
+    document.getElementById("toggle-layout-btn").onclick = function() {
+        if (pdfLayout === "vertical") {
+            pdfLayout = "horizontal";
+        } else if (pdfLayout === "horizontal") {
+            pdfLayout = "grid";
+        } else {
+            pdfLayout = "vertical";
+        }
+        renderPDFPages(pdfUrl, containerId, startPage, endPage);
+    };
+
+    const widthSlider = document.getElementById("pdf-width-slider");
+    const widthValue = document.getElementById("pdf-width-value");
+    if (widthSlider) {
+        widthSlider.value = pdfLayout === "grid" ? 100 : pdfWidth;
+        widthSlider.disabled = pdfLayout === "grid";
+        widthValue.textContent = pdfLayout === "grid" ? "100%" : pdfWidth + "%";
+        widthSlider.oninput = function() {
+            pdfWidth = this.value;
+            container.style.setProperty("--pdf-page-width", pdfWidth + "%");
+            widthValue.textContent = pdfWidth + "%";
+        };
+    }
+
+    try {
+        const pdf = await pdfjsLib.getDocument({ url: pdfUrl }).promise;
+        for (let pageNumber = startPage; pageNumber <= endPage; pageNumber++) {
+            const page = await pdf.getPage(pageNumber);
+            const canvas = document.createElement("canvas");
+            const context = canvas.getContext("2d");
+            const scale = 10;
+            const viewport = page.getViewport({ scale });
+            canvas.width = viewport.width;
+            canvas.height = viewport.height;
+            canvas.style.width = `${viewport.width / scale}px`;
+            canvas.style.height = `${viewport.height / scale}px`;
+            await page.render({ canvasContext: context, viewport: viewport }).promise;
+            container.appendChild(canvas);
+        }
+    } catch (error) {
+        container.innerHTML = "<p>Failed to load PDF pages.</p>";
+        console.error("PDF rendering error:", error);
+    }
+
+    document.getElementById("download-pdf-btn").onclick = async function() {
+        const existingPdfBytes = await fetch(pdfUrl).then(res => res.arrayBuffer());
+        const pdfDoc = await PDFLib.PDFDocument.load(existingPdfBytes);
+        const newPdfDoc = await PDFLib.PDFDocument.create();
+        
+        const pagesToCopy = [];
+        for (let i = startPage; i <= endPage; i++) {
+            pagesToCopy.push(i - 1);
+        }
+        const copiedPages = await newPdfDoc.copyPages(pdfDoc, pagesToCopy);
+        copiedPages.forEach(page => newPdfDoc.addPage(page));
+
+        const pdfBytes = await newPdfDoc.save();
+        const blob = new Blob([pdfBytes], { type: "application/pdf"});
+        const url = URL.createObjectURL(blob);
+        window.open(url, "_blank")
+    };
+}
+
+async function downloadCustomExamPDF(customExamData) {
+    alert("Note: Only practical and Maths questions will be included in the PDF. Other question types will be skipped.");
+    const { questions } = customExamData;
+    const pdfCache = {};
+    const newPdfDoc = await PDFLib.PDFDocument.create();
+
+    for (const q of questions) {
+        if (!["prac", "maths"].includes(q.type)) continue;
+        if (!q.pdfUrl || !q.startPage || !q.endPage) continue;
+        if (!pdfCache[q.pdfUrl]) {
+            try {
+                const bytes = await fetch(q.pdfUrl).then(res => res.arrayBuffer());
+                pdfCache[q.pdfUrl] = await PDFLib.PDFDocument.load(bytes);
+            } catch (e) {
+                console.error(`Failed to load PDF: ${q.pdfUrl}`, e);
+                continue;
+            }
+        }
+        const srcPdf = pdfCache[q.pdfUrl];
+        const pageIndices = [];
+        for (let i = q.startPage; i <= q.endPage; i++) {
+            pageIndices.push(i - 1);
+        }
+        try {
+            const copiedPages = await newPdfDoc.copyPages(srcPdf, pageIndices);
+            copiedPages.forEach(page => newPdfDoc.addPage(page));
+        } catch (e) {
+            console.error(`Failed to copy page for question:`, q, e);
+        }
+    }
+
+    const pdfBytes = await newPdfDoc.save();
+    const blob = new Blob([pdfBytes], { type: "application/pdf" });
+    const url = URL.createObjectURL(blob);
+    window.open(url, "_blank")
 }

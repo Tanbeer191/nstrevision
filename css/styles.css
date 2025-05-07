@@ -259,6 +259,31 @@ figure figcaption {
     background-color: #f4f4f4;
 }
 
+#download-custom-exam-pdf {
+    position: relative;
+    margin-left: 1em;
+    margin-top: 0;
+    padding: 1.2em 1.5em; 
+    height: 42px;
+    background-color: green;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px; 
+    font-size: 1rem; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+#download-custom-exam-pdf:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#download-custom-exam-pdf:active {
+    transform: scale(1);
+}
 
 .exam-btn {
     background-color: white;
@@ -277,7 +302,7 @@ figure figcaption {
     text-align: left;
 }
 
-.question-content {
+#question-content {
     margin-bottom: 5em;
 }
 
@@ -300,7 +325,6 @@ figure figcaption {
     color: #004085;
     font-size: 0.9rem;
     line-height: 1.5;
-    position: relative;
     box-sizing: border-box;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     animation: subtleSlide 0.5s ease-out;
@@ -665,6 +689,50 @@ figure figcaption {
 
 #checkboxes label:hover {
     background-color: #ddd;
+}
+
+#pdf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align canvases to the left */
+    gap: 1rem;              /* Optional: space between pages */
+}
+
+#pdf-container.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#pdf-container.horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+    overflow-x: auto;
+}
+#pdf-container.horizontal canvas {
+    margin: 0;
+}
+#pdf-container.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    align-items: flex-start;
+}
+#pdf-container.grid canvas {
+    margin: 0;
+    width: 100% !important;
+    max-width: 100%;
+    height: auto !important;
+    display: block;
+}
+#pdf-container canvas {
+    width: var(--pdf-page-width, 65%) !important;
+    max-width: 100%;
+    height: auto !important;
+    display: block;
+    transition: width 0.2s;
 }
 
 /* Show the warning message on mobile devices */

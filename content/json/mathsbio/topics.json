@@ -4,7 +4,10 @@
         "linear-algebra": "Linear Algebra",
         "statistical-tests": "Statistical Tests",
         "linear-models": "Linear Models",
-        "diff-eq": "Differential Equations",
-        "eqbm-anal": "Equilibrium Analysis"
+        "diff-eq-systems": "Differential Equation Systems",
+        "eqbm-anal": "Equilibrium Analysis",
+        "disease-models": "Disease Modelling",
+        "population-models": "Population Modelling",
+        "modelling": "Modelling"
     }
 }
