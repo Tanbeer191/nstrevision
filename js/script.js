@@ -192,28 +192,21 @@ function toggleSolution(data, examType, examName) {
 
 function updateTotalCount() {
     const topicLists = document.querySelectorAll(".topic-list");
-    const totals = {};
-
     topicLists.forEach(list => {
         const questionType = list.getAttribute("data-question-type");
         const topicItems = list.querySelectorAll(".topic-item");
-        let totalSelected = 0;
-
+        let topicSum = 0;
         topicItems.forEach(item => {
-            const topicCount = parseInt(item.querySelector(".topic-count").value, 10);
-            if (!isNaN(topicCount)) {
-                totalSelected += topicCount;
-            }
+            const input = item.querySelector(".topic-count");
+            const topicCount = parseInt(input.value, 10) || 0;
+            topicSum += topicCount;
         });
-
+        // Update the type total box for this question type
         const questionCountInput = document.getElementById(`${questionType}-count`);
         if (questionCountInput) {
-            questionCountInput.value = totalSelected;
+            questionCountInput.value = topicSum;
         }
-        totals[questionType] = totalSelected;
     });
-
-    return totals;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -505,6 +498,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 div.classList.add("form-group");
                 div.innerHTML = `
                     <label>${questionTypeNames[detail.type]}</label>
+                    <input type="number" id="${detail.type}-count" class="type-total-count" min="0" value="0" style="margin-left:1em; width:60px;">
+                    <span style="font-size:0.9em; color:#888;"></span>
                 `;
                 summaryDiv.appendChild(div);
             });
@@ -643,11 +638,17 @@ document.addEventListener("DOMContentLoaded", () => {
                                 const selectedTopics = {};
                                 let errorMessages = [];
 
+                                const availableByType = {};
+                                Object.keys(topicsByType).forEach(type => {
+                                    availableByType[type] = Object.values(topicsByType[type]).reduce((a, b) => a + b, 0);
+                                });
+
                                 topicLists.forEach(list => {
                                     const questionType = list.getAttribute("data-question-type");
                                     selectedTopics[questionType] = [];
 
                                     const topicItems = list.querySelectorAll(".topic-item");
+                                    let topicSum = 0;
                                     topicItems.forEach(item => {
                                         const labelText = item.querySelector("label").textContent;
                                         const topicName = labelText.split(" (")[0];
@@ -660,8 +661,24 @@ document.addEventListener("DOMContentLoaded", () => {
                                         }
                                         if (topicCount > 0) {
                                             selectedTopics[questionType].push({ topic: topicNamesReverse[topicName], count: topicCount });
+                                            topicSum += topicCount;
                                         }
                                     });
+
+                                    if (selectedTopics[questionType].length === 0) {
+                                        const typeTotalInput = document.getElementById(`${questionType}-count`);
+                                        const typeTotal = typeTotalInput ? parseInt(typeTotalInput.value, 10) : 0;
+                                        if (typeTotal > 0) {
+                                            selectedTopics[questionType].push({ topic: null, count: typeTotal });
+                                            topicSum = typeTotal;
+                                        }
+                                    }
+
+                                    if (topicSum > (availableByType[questionType] || 0)) {
+                                        errorMessages.push(
+                                            `You requested ${topicSum} total for "${questionTypeNames[questionType]}" but only ${availableByType[questionType] || 0} are available.`
+                                        );
+                                    }
                                 });
 
                                 if (errorMessages.length > 0) {
@@ -673,6 +690,9 @@ document.addEventListener("DOMContentLoaded", () => {
                                 generateRandomQuestionSet(allQuestions, questionDetails, selectedTopics);
                                 window.location.href = "../html/exam.html?type=custom&name=custom";
                             });
+
+                            // Make updateTotalCount globally available if needed
+                            window.updateTotalCount = updateTotalCount;
                         });
                 })
                 .catch(error => {
@@ -694,12 +714,17 @@ function generateRandomQuestionSet(allQuestions, questionDetails, selectedTopics
 
         if (topics.length > 0) {
             topics.forEach(topicObj => {
-                const questionsOfTopic = questionsOfType.filter(q => q.topic === topicObj.topic);
-                const shuffled = questionsOfTopic.sort(() => Math.random() - 0.5);
-                selectedSet.push(...shuffled.slice(0, topicObj.count));
+                if (topicObj.topic === null && (topicObj.count === null || topicObj.count === 0)) {
+                    selectedSet.push(...questionsOfType);
+                } else if (topicObj.topic === null) {
+                    const shuffled = questionsOfType.sort(() => Math.random() - 0.5);
+                    selectedSet.push(...shuffled.slice(0, topicObj.count));
+                } else {
+                    const questionsOfTopic = questionsOfType.filter(q => q.topic === topicObj.topic);
+                    const shuffled = questionsOfTopic.sort(() => Math.random() - 0.5);
+                    selectedSet.push(...shuffled.slice(0, topicObj.count));
+                }
             });
-        } else {
-            selectedSet.push(...questionsOfType);
         }
     });
 
