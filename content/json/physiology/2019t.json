@@ -56,6 +56,7 @@
             "number": 4,
             "displayNumber": "Question B3",
             "type": "essay",
+            "topic": "animal-plant-comparison",
             "sub-instructions": [],
             "content": [
                 "What are the fundamental principles that govern fluid movement within organisms?"
@@ -67,6 +68,7 @@
             "number": 5,
             "displayNumber": "Question B4",
             "type": "essay",
+            "topic": "sensing-the-environment",
             "sub-instructions": [],
             "content": [
                 "Compare and contrast the mechanisms used by plants and animals to sense the dark/light cycle."

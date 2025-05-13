@@ -176,6 +176,7 @@
             "number": 4,
             "displayNumber": "Question C3",
             "type": "essay",
+            "topic": "animal-plant-comparison",
             "sub-instructions": [],
             "content": [
                 "Discuss how animals and plants would respond to increased CO2 levels in their local environment."
@@ -187,6 +188,7 @@
             "number": 5,
             "displayNumber": "Question C4",
             "type": "essay",
+            "topic": "sensing-the-environment",
             "sub-instructions": [],
             "content": [
                 "Compare and contrast how plants and animals sense and respond to light."
@@ -198,6 +200,7 @@
             "number": 6,
             "displayNumber": "Question C5",
             "type": "essay",
+            "topic": "plant-foundations",
             "sub-instructions": [],
             "content": [
                 "Discuss the advantages and disadvantages of having a cell wall."

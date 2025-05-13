@@ -1,0 +1,270 @@
+{
+    "name": "PHO/WP: Physiology of Organisms - Written Practical",
+    "date": "1st June 2022",
+    "time": 5400,
+    "displayTime": "1 hour 30 minutes",
+    "instructions": {
+        "table": {},
+        "text": [
+            "Answer <strong>ALL 30</strong> questions. This written practical paper (Section B of the exam) represents 25% of the total mark for Physiology of Organisms.",
+            "You have <strong>1.5 hours</strong> (plus any pre-agreed individual adjustment) to answer this paper. You must complete this paper within this time-period.",
+            "All candidates are permitted to use an approved calculator."
+        ]
+    },
+    "pdfUrl": "../content/pdf/physiology/2022pe.pdf",
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Questions 1-3",
+            "type": "prac",
+            "topic": "membrane-electrophysiology",
+            "startPage": 2,
+            "endPage": 3,
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Questions 4-6",
+            "type": "prac",
+            "topic": "earthworm-action-potential",
+            "startPage": 4,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Questions 7-9",
+            "type": "prac",
+            "topic": "muscle-physiology",
+            "startPage": 5,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 10",
+            "type": "prac",
+            "topic": "histology",
+            "startPage": 6,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 11-12",
+            "type": "prac",
+            "topic": "blood-pressure-ecg",
+            "startPage": 7,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 13",
+            "type": "prac",
+            "topic": "blood-pressure-ecg",
+            "startPage": 8,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 7,
+            "displayNumber": "Questions 14-15",
+            "type": "prac",
+            "topic": "respiration-exercise",
+            "startPage": 9,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question 16",
+            "type": "prac",
+            "topic": "respiration-exercise",
+            "startPage": 10,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 17",
+            "type": "prac",
+            "topic": "thermoregulation-water-loss",
+            "startPage": 11,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 10,
+            "displayNumber": "Question 18",
+            "type": "prac",
+            "topic": "thermoregulation-water-loss",
+            "startPage": 12,
+            "sub-instructions": [],
+            "content": [
+                "Briefly compare the challenges posed by gravity to fluid transport in plants and animals and how these are overcome."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 11,
+            "displayNumber": "Questions 19",
+            "type": "prac",
+            "topic": "thermoregulation-water-loss",
+            "startPage": 13,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 12,
+            "displayNumber": "Question 20",
+            "type": "prac",
+            "topic": "rat-dissection",
+            "startPage": 14,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 13,
+            "displayNumber": "Questions 21",
+            "type": "prac",
+            "topic": "body-size-physiology",
+            "startPage": 15,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 14,
+            "displayNumber": "Question 22",
+            "type": "prac",
+            "topic": "body-size-physiology",
+            "startPage": 16,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 15,
+            "displayNumber": "Question 23",
+            "type": "prac",
+            "topic": "nitrate-reductase",
+            "startPage": 17,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 16,
+            "displayNumber": "Question 24",
+            "type": "prac",
+            "topic": "nitrate-reductase",
+            "startPage": 18,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 17,
+            "displayNumber": "Question 25",
+            "type": "prac",
+            "topic": "nitrate-reductase",
+            "startPage": 19,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 18,
+            "displayNumber": "Question 26",
+            "type": "prac",
+            "topic": "nitrate-reductase",
+            "startPage": 20,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 19,
+            "displayNumber": "Questions 27-28",
+            "type": "prac",
+            "topic": "nitrate-reductase",
+            "startPage": 21,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 20,
+            "displayNumber": "Question 29",
+            "type": "prac",
+            "topic": "stomatal-physiology",
+            "startPage": 22,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 21,
+            "displayNumber": "Question 30",
+            "type": "prac",
+            "topic": "stomatal-physiology",
+            "startPage": 23,
+            "sub-instructions": [],
+            "content": [
+            ],
+            "solution": [
+            ]
+        }
+    ]
+}

@@ -16,7 +16,23 @@
         "osmoregulation": "Osmoregulation",
         "energy-exercise-metabolism": "Energy, Exercise and Metabolism",
         "thermoregulation": "Thermoregulation",
+        "plant-foundations": "Foundations of Plant Physiology",
+        "plant-hormones": "Plant Hormones",
+        "water-carbon-light": "Plant Physiology - Water, Carbon and Light",
+        "microbial-physiology": "Microbial Physiology",
         "comparative-physiology": "Comparative Physiology",
-        "sensing-the-environment": "Sensing the Environment"
+        "sensing-the-environment": "Sensing the Environment",
+        "animal-plant-comparison": "Animal/Plant Comparison (many topics)",
+        "membrane-electrophysiology": "Membrane Electrophysiology",
+        "earthworm-action-potential": "Earthworm Action Potentials",
+        "muscle-physiology": "Muscle Physiology",
+        "histology": "Histology",
+        "blood-pressure-ecg": "Blood Pressure and ECG",
+        "respiration-exercise": "Respiration and Exercise",
+        "thermoregulation-water-loss": "Thermoregulation and Water Loss",
+        "rat-dissection": "Rat Dissection",
+        "body-size-physiology": "Body Size and Physiology",
+        "nitrate-reductase" : "Nitrate Reductase Activity",
+        "stomatal-physiology" : "Stomatal Physiology and Guard Cell Metabolism"
     }
 }

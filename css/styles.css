@@ -303,7 +303,11 @@ figure figcaption {
 }
 
 #question-content {
-    margin-bottom: 5em;
+    margin-bottom: 3em;
+}
+
+#solution.hidden {
+    display: none;
 }
 
 #solution.hidden {
@@ -312,6 +316,7 @@ figure figcaption {
 
 #solution {
     padding: 10px;
+    margin-bottom: 5em;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     line-height: 1;

@@ -72,9 +72,10 @@
             "number": 5,
             "displayNumber": "Question C4A",
             "type": "essay",
+            "topic": "plant-hormones",
             "sub-instructions": [],
             "content": [
-                "“Auxin is the most important plant growth regulator.” Discuss."
+                "'Auxin is the most important plant growth regulator.' Discuss."
             ],
             "solution": [
             ]
@@ -84,6 +85,7 @@
             "displayNumber": "Question C4B",
             "type": "essay",
             "sub-instructions": [],
+            "topic": "microbial-physiology",
             "content": [
                 "Compare the strategies used by fungi and bacteria to acquire carbon and other nutrients."
             ],

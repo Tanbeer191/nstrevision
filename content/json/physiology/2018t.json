@@ -57,6 +57,7 @@
             "number": 4,
             "displayNumber": "Question B3",
             "type": "essay",
+            "topic": "comparaive-physiology",
             "sub-instructions": [],
             "content": [
                 "Discuss the diverse implications of Laplace's law for the 'design' of organisms."

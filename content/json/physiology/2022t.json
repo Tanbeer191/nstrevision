@@ -95,6 +95,7 @@
             "displayNumber": "Question 7",
             "type": "saq",
             "sub-instructions": [],
+            "topic": "water-carbon-light",
             "content": [
                 "Summarise the key features which distinguish C3, C4 and CAM pathways."
             ],
@@ -200,6 +201,7 @@
             "number": 6,
             "displayNumber": "Question C5",
             "type": "essay",
+            "topic": "comparative-physiology",
             "sub-instructions": [],
             "content": [
                 "Discuss how the structure of plant and animal biomaterials is related to their function."
