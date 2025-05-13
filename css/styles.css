@@ -243,6 +243,10 @@ figure figcaption {
     margin-bottom: 2em;
 }
 
+#instruction-text {
+    margin-bottom: 5em;
+}
+
 .instructions-table {
     width: 30%;
     margin: 1em 0;

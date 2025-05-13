@@ -497,7 +497,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const div = document.createElement("div");
                 div.classList.add("form-group");
                 div.innerHTML = `
-                    <label>${questionTypeNames[detail.type]}</label>
+                    <label>${questionTypeNames[detail.type]}:</label>
                     <input type="number" id="${detail.type}-count" class="type-total-count" min="0" value="0" style="margin-left:1em; width:60px;">
                     <span style="font-size:0.9em; color:#888;"></span>
                 `;

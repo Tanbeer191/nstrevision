@@ -8,6 +8,8 @@
         "eqbm-anal": "Equilibrium Analysis",
         "disease-models": "Disease Modelling",
         "population-models": "Population Modelling",
-        "modelling": "Modelling"
+        "modelling": "Modelling",
+        "interacting-species": "Models of Interacting Species",
+        "evolutionary-modelling": "Evolutionary Modelling"
     }
 }

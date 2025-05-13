@@ -1,0 +1,136 @@
+{
+    "name": "BOC/WP: Biology of Cells - Written Practical",
+    "date": "Thursday 10th June 2021",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "Answer <strong>all questions</strong>.",
+            "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
+            "<strong>Diagrams or other handwritten material:</strong>",
+            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
+            "<strong>Candidates should not copy and paste figures or content from any other documents.</strong",
+            "<strong>SPECIAL REQUIREMENTS:</strong><br><em>Approved calculators</em><br><em>A ruler</em>",
+            "<strong>For reference, a list of the questions is given below.</strong>",
+            "<ol><li>Microscopy</li><li>Protein Structure</li><li>Quantification of DNA and protein</li><li>Enzyme Activity</li><li>Photosynthesis and the Oxygen Electrode</li><li>Fungal genetics</li><li>Bacterial plasmids</li><li>PCR</li><li>The Embryological Zoo</li></ol>"
+        ]
+    },
+    "pdfUrl": "../content/pdf/cells/2021p.pdf",
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question 1 - Microscopy",
+            "type": "prac",
+            "topic": "microscopy",
+            "startPage": 3,
+            "endPage": 4,
+            "content" :[ 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question 2 - Protein Structure",
+            "type": "prac",
+            "topic": "protein-structure",
+            "startPage": 5,
+            "endPage": 6,
+            "content": [ 
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question 3 - Quantification of DNA and Protein",
+            "type": "prac",
+            "topic": "quantifying-protein-and-nucleic-acids",
+            "startPage": 7,
+            "endPage": 9,
+            "content": [ 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 4 - Enzyme Activity",
+            "type": "prac",
+            "topic": "enzyme-kinetics",
+            "startPage": 10,
+            "endPage": 11,
+            "content": [ 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 5 - Photosynthesis and the Oxygen Electrode",
+            "topic": "photosynthesis-oxygen-electrode",
+            "type": "prac",
+            "startPage": 12,
+            "endPage": 13,
+            "content": [ 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 6 - Fungal Genetics",
+            "topic": "fungal-genetics",
+            "type": "prac",
+            "startPage": 14,
+            "endPage": 15,
+            "content": [ 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question 7 - Drosophila Genetics",
+            "topic": "drosophila-genetics",
+            "type": "prac",
+            "startPage": 16,
+            "content": [ 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question 8 - PCR",
+            "topic": "pcr",
+            "type": "prac",
+            "startPage": 17,
+            "endPage": 19,
+            "content": [ 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 9 - The Embryological Zoo",
+            "topic": "embryological-zoo",
+            "type": "prac",
+            "startPage": 20,
+            "content": [ 
+            ],
+            "solution": [
+                ""
+            ]
+        }
+    ]
+}
