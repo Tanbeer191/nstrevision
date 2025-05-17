@@ -151,28 +151,7 @@
             "displayNumber": "Question E10",
             "type": "maths",
             "topic": "evolutionary-modelling",
-            "startPage": 20,
-            "endPage": 21,
-            "content": [
-            ]
-        },
-        {
-            "number": 12,
-            "displayNumber": "Question E9",
-            "type": "maths",
-            "topic": "reaction-kinetics",
-            "startPage": 22,
-            "endPage": 23,
-            "content": [
-            ]
-        },
-        {
-            "number": 13,
-            "displayNumber": "Question E10",
-            "type": "maths",
-            "topic": "modelling",
-            "startPage": 24,
-            "endPage": 25,
+            "startPage": 19,
             "content": [
             ]
         }

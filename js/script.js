@@ -907,3 +907,22 @@ async function downloadCustomExamPDF(customExamData) {
     const url = URL.createObjectURL(blob);
     window.open(url, "_blank")
 }
+
+document.addEventListener("keydown", function(e) {
+    const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+    const nextBtn = document.getElementById("next-button");
+    const prevBtn = document.getElementById("prev-button");
+
+    if ((isMac ? e.metaKey : e.ctrlKey) && e.key === "ArrowRight") {
+        if (nextBtn && !nextBtn.disabled && nextBtn.offsetParent !== null) {
+            e.preventDefault();
+            nextBtn.click();
+        }
+    }
+    if ((isMac ? e.metaKey : e.ctrlKey) && e.key === "ArrowLeft") {
+        if (prevBtn && !prevBtn.disabled && prevBtn.offsetParent !== null) {
+            e.preventDefault();
+            prevBtn.click();
+        }
+    }
+});
