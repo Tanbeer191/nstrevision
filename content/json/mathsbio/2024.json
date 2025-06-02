@@ -1,0 +1,173 @@
+{
+    "name": "MBO/1: Mathematical Biology - Written",
+    "date": "Friday 7th June 2024",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "You have <strong>three hours</strong> to answer this paper (plus any pre-agreed individual adjustments).",
+            "<strong>You must answer eight questions, including at least one question from each of Sections A to E.</strong>",
+            "All questions carry equal weight. Indicative proportions of marks are given for each question part.",
+            "You may use an approved calculator and the Mathematical Biology Formula Booklet.",
+            "Begin each paper on a <strong>separate</strong> blank page.",
+            "Answers should be <strong>hand-written</strong>, either electronically on a tablet or on paper and then uploaded to Inspera. Make sure that your handwriting and any diagrams or equations are clear and legible in your submitted files.",
+            "Where relevant, formulae, equations, diagrams, graphs and sketches should be drawn by hand, not prepared using a computer. Do not copy and paste any figures from other documents.",
+            "For full credit, calculation steps must be shown where necessary to explain your answers.",
+            "This examination is <strong>closed</strong> book so access to the internet and use of mobile devices is prohibited."
+        ]
+    },
+    "pdfUrl": "../content/pdf/mathsbio/2024e.pdf",
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question A1) a)",
+            "type": "maths",
+            "topic": "probability",
+            "startPage": 2,
+            "sub-instructions": [
+                "<div class=\"info\">\n<p>&#9432; Section A starts here.</p></div>"
+            ],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question A1) b)",
+            "type": "maths",
+            "topic": "probability",
+            "startPage": 3,
+            "sub-instructions": [],
+            "content": [                               
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question A1) c)",
+            "type": "maths",
+            "topic": "probability",
+            "startPage": 4,
+            "content": [
+                ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question A2",
+            "type": "maths",
+            "topic": "linear-algebra",
+            "startPage": 5,
+            "sub-instructions": [
+            ],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question B3",
+            "type": "maths",   
+            "topic": "linear-models",
+            "startPage": 6,
+            "endPage": 8,
+            "sub-instructions": [
+                "<div class=\"info\">\n<p>&#9432; Section B starts here.</p></div>"
+            ],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question B4",
+            "type": "maths",
+            "topic": "linear-models",
+            "startPage": 9,
+            "endPage": 10,
+            "sub-instructions": [
+            ],
+            "content": [
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question C5",
+            "type": "maths",
+            "topic": "population-models",
+            "startPage": 11,
+            "content": [
+                "<div class=\"info\">\n<p>&#9432; Section C starts here.</p></div>"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question C6",
+            "type": "maths",
+            "topic": "population-models",
+            "startPage": 12,
+            "sub-instructions": [
+            ],  
+            "content": [
+            ]
+        },
+        {
+            "question": 9,
+            "displayNumber": "Question D7",
+            "type": "maths",
+            "topic": "diff-eq-systems",
+            "sub-instructions": [
+                "<div class=\"info\">\n<p>&#9432; Section D starts here.</p></div>"
+            ],
+            "startPage": 13,
+            "content": [
+            ]
+        },
+        {
+            "number": 10,
+            "displayNumber": "Question D8",
+            "type": "maths",
+            "sub-instructions": [
+            ],
+            "topic": "interacting-species",
+            "startPage": 14,
+            "content": [
+
+            ]
+        },
+        {
+            "number": 11,
+            "displayNumber": "Question E9",
+            "type": "maths",
+            "topic": "reaction-kinetics",
+            "startPage": 15,
+            "endPage": 16,
+            "sub-instructions": [
+                "<div class=\"info\">\n<p>&#9432; Section E starts here.</p></div>"
+            ],
+            "content": [
+            ]
+        },
+        {
+            "number": 12,
+            "displayNumber": "Question E10",
+            "type": "maths",
+            "topic": "evolutionary-modelling",
+            "startPage": 17,
+            "sub-instructions": [
+            ],
+            "content": [
+            ]
+        }
+    ]
+}
