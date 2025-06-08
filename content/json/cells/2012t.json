@@ -80,6 +80,8 @@
         {
             "number": 7,
             "displayNumber": "Question 1g",
+            "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Describe briefly two experimental observations made by geneticists during the first half of the 20th century that appeared to contradict Mendel’s view of inheritance. In each case state clearly which specific aspect of Mendel’s hypothesis is being challenged."
             ],
@@ -89,6 +91,7 @@
             "number": 8,
             "displayNumber": "Question 1h",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Which two pieces of experimental evidence were instrumental to the development of Watson and Crick’s model of B-form DNA?"
             ],
@@ -98,6 +101,7 @@
             "number": 9,
             "displayNumber": "Question 1i",
             "type": "saq",
+            "topic": "dna-replication",
             "content": [
                 "Describe the “loop” (also known as the “trombone”) model for DNA replication in *E. coli*."
             ],
@@ -154,6 +158,7 @@
             "number": 15,
             "displayNumber": "Question 1o",
             "type": "saq",
+            "topic": "cell-signalling",
             "content": [
                 "How are pseudopodia localized appropriately in the *Dictyostelium* chemotaxis response?"
             ],
@@ -243,7 +248,7 @@
             "displayNumber": "Section B - Essay 9",
             "type": "essay",
             "content": [
-                "Describe in detail two signaling pathways leading to the regulation of eukaryotic gene expression. Use as your examples one pathway in which inactivation of a negative regulator is the primary signaling event and another pathway in which upregulation of an activator is central."
+                "Describe in detail two signalling pathways leading to the regulation of eukaryotic gene expression. Use as your examples one pathway in which inactivation of a negative regulator is the primary signalling event and another pathway in which upregulation of an activator is central."
             ],
             "solution": []
         }        

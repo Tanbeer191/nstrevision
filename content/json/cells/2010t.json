@@ -83,6 +83,7 @@
             "number": 7,
             "displayNumber": "Question 1g",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Pre-Mendelian theories suggested that inheritance involved either irreversible mixing of the characteristics of the two parents (Hippocrates), or that information came from the male and raw materials from the female (Aristotle). Describe experiments performed by Mendel which demonstrated that both theories were wrong."
             ],

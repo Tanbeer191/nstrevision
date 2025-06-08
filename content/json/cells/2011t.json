@@ -80,6 +80,7 @@
             "number": 7,
             "displayNumber": "Question 1g",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Pre-Mendelian theories suggested that inheritance involved either irreversible mixing of the characteristics of the two parents (Hippocrates), or that information came from the male and raw materials from the female (Aristotle). Describe experiments performed by Mendel which demonstrated that both theories were wrong."
             ],
@@ -89,6 +90,7 @@
             "number": 8,
             "displayNumber": "Question 1h",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Describe, with the help of diagrams, how errors in (i) meiosis I and (ii) meiosis II could give rise to aneuploidy."
             ],
@@ -98,6 +100,7 @@
             "number": 9,
             "displayNumber": "Question 1i",
             "type": "saq",
+            "topic": "dna-transcription",
             "content": [
                 "Briefly outline the post-transcriptional processing events that take place during the generation of eukaryotic mRNA."
             ],
@@ -107,6 +110,7 @@
             "number": 10,
             "displayNumber": "Question 1j",
             "type": "saq",
+            "topic": "genetic-revolution",
             "content": [
                 "How can DNA microarrays contribute to the study of human diseases?"
             ],
@@ -116,6 +120,7 @@
             "number": 11,
             "displayNumber": "Question 1k",
             "type": "saq",
+            "topic": "cell-cycle",
             "content": [
                 "Outline the role of protein kinases in mitotic control."
             ],
@@ -154,6 +159,7 @@
             "number": 15,
             "displayNumber": "Question 1o",
             "type": "saq",
+            "topic": "cell-signalling",
             "content": [
                 "Describe an abscisic acid receptor of plants."
             ],

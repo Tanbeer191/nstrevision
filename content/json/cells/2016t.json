@@ -89,6 +89,7 @@
             "number": 7,
             "displayNumber": "Question 1g",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Explain how experiments performed by Gregor Mendel refute each of the following assertions:",
                 "<br>",
@@ -103,6 +104,7 @@
             "number": 8,
             "displayNumber": "Question 1h",
             "type": "saq",
+            "topic": "dna-repair",
             "content": [
                 "Briefly describe the key elements of nucleotide excision repair."
             ],
@@ -113,6 +115,7 @@
             "number": 9,
             "displayNumber": "Question 1i",
             "type": "saq",
+            "topic": "genetic-revolution",
             "content": [
                 "What has changed in genome sequencing technologies since the human genome sequence was published? How is this impacting on the understanding of human biology?"
             ],
@@ -123,6 +126,7 @@
             "number": 10,
             "displayNumber": "Question 1j",
             "type": "saq",
+            "topic": "genetic-revolution",
             "content": [
                 "What are Single Nucleotide Polymorphisms and how are they used to help characterize human disease?"
             ],
@@ -143,6 +147,7 @@
             "number": 12,
             "displayNumber": "Question 1l",
             "type": "saq",
+            "topic": "cancer",
             "content": [
                 "How can a mutation in one of the two alleles of p53 contribute to an increased risk of cancer?"
             ],
@@ -153,6 +158,7 @@
             "number": 13,
             "displayNumber": "Question 1m",
             "type": "saq",
+            "topic": "cell-signalling",
             "content": [
                 "Describe the intracellular signalling pathway that occurs in the signal relay between Dictyostelium cells during aggregation."
             ],

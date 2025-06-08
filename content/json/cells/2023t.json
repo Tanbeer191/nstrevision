@@ -89,6 +89,7 @@
             "number": 7,
             "displayNumber": "Question 1g",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Why is the maximum genetic distance between any two genes 50 centiMorgan(cM)?"
             ],
@@ -99,6 +100,7 @@
             "number": 8,
             "displayNumber": "Question 1h",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Explain the genetic basis of the rapid spread of multiple drug resistance in bacteria."
             ],
@@ -109,6 +111,7 @@
             "number": 9,
             "displayNumber": "Question 1i",
             "type": "saq",
+            "topic": "dna-replication",
             "content": [
                 "How do eukaryotic cells ensure that origins of DNA replication are used only once per cell cycle?"
             ],
@@ -119,6 +122,7 @@
             "number": 10,
             "displayNumber": "Question 1j",
             "type": "saq",
+            "topic": "dna-repair",
             "content": [
                 "Describe the mechanism of DNA mismatch repair in prokaryotes."
             ],
@@ -129,6 +133,7 @@
             "number": 11,
             "displayNumber": "Question 1k",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Describe the process for carrying out a Southern blot on genomic DNA."
             ],
@@ -139,6 +144,7 @@
             "number": 12,
             "displayNumber": "Question 1l",
             "type": "saq",
+            "topic": "genetic-revolution",
             "content": [
                 "Briefly describe how to perform a whole-genome QTL scan."
             ],
@@ -148,7 +154,7 @@
         {
             "number": 13,
             "displayNumber": "Question 1m",
-            "type": "saq",
+            "type": "cancer",
             "content": [
                 "What is the Philadelphia chromosome? Why was its discovery regarded as a significant milestone in cancer research? "
             ],
@@ -159,6 +165,7 @@
             "number": 14,
             "displayNumber": "Question 1n",
             "type": "saq",
+            "topic": "cell-signalling",
             "content": [
                 "What is the role of cyclic AMP in the aggregation of Dictyostelium?"
             ],

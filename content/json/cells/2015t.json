@@ -87,6 +87,7 @@
             "number": 7,
             "displayNumber": "Question 1g",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "What are restriction endonucleases and why are they produced by bacteria? Explain briefly how they have been exploited in the biosciences."
             ],
@@ -97,6 +98,7 @@
             "number": 8,
             "displayNumber": "Question 1h",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Cite two pieces of experimental evidence, obtained after the rediscovery of Mendel’s work, contradicting Mendel’s assertion that reciprocal crosses give the same result."
             ],
@@ -107,6 +109,7 @@
             "number": 9,
             "displayNumber": "Question 1i",
             "type": "saq",
+            "topic": "dna-replication",
             "content": [
                 "With the aid of a diagram, briefly describe the key experiment performed to demonstrate that DNA replication is semi-conservative."
             ],
@@ -117,6 +120,7 @@
             "number": 10,
             "displayNumber": "Question 1j",
             "type": "saq",
+            "topic": "genetic-revolution",
             "content": [
                 "What are microarrays, and how can they be used to improve our understanding of biology and disease?"
             ],
@@ -127,6 +131,7 @@
             "number": 11,
             "displayNumber": "Question 1k",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "What are the main differences in the transmission of human dominant X-linked and recessive X-linked mutations?"
             ],
@@ -137,6 +142,7 @@
             "number": 12,
             "displayNumber": "Question 1l",
             "type": "saq",
+            "topic": "cell-signalling",
             "content": [
                 "Outline the Notch signalling pathway."
             ],
@@ -147,6 +153,7 @@
             "number": 13,
             "displayNumber": "Question 1m",
             "type": "saq",
+            "topic": "cancer",
             "content": [
                 "Describe three types of genetic alterations that can create oncogenes. Give an example for each alteration."
             ],

@@ -100,6 +100,7 @@
             "number": 8,
             "displayNumber": "Question 1h",
             "type": "saq",
+            "topic": "cell-cycle",
             "content": [
                 "Explain the principles of the screen for cell division cycle (cdc) mutations in yeast. Provide two examples of classes of proteins that were identified in this screen."
             ],
@@ -110,6 +111,7 @@
             "number": 9,
             "displayNumber": "Question 1i",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Name and briefly describe three mechanisms of horizontal gene transfer (HGT) that operate among bacteria. Which of these processes is potentially reduced in efficiency by the action of restriction endonucleases?"
             ],
@@ -120,6 +122,7 @@
             "number": 10,
             "displayNumber": "Question 1j",
             "type": "saq",
+            "topic": "dna-replication",
             "content": [
                 "What is the “end replication problem” for linear chromosomes and how is this problem overcome?"
             ],
@@ -130,6 +133,7 @@
             "number": 11,
             "displayNumber": "Question 1k",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Aristotle’s theory of human reproduction stated that the male provides the information, while the female provides the raw materials. Use your knowledge of Mendel’s pea breeding experiments to explain why this idea is not generally true. Describe one example of inheritance in eukaryotes where information is indeed transmitted from the male alone."
             ],
@@ -140,6 +144,7 @@
             "number": 12,
             "displayNumber": "Question 1l",
             "type": "saq",
+            "topic": "dna-transcription",
             "content": [
                 "What are the three main RNA processing steps that are needed to generate mRNA from RNA Polymerase II primary transcripts, and why are they needed?"
             ],
@@ -150,6 +155,7 @@
             "number": 13,
             "displayNumber": "Question 1m",
             "type": "saq",
+            "topic": "cell-signalling",
             "content": [
                 "What is the role of the inositol (1,4,5) tris phosphate receptor (IP3R) in the fertilisation of star fish eggs?"
             ],
@@ -160,6 +166,7 @@
             "number": 14,
             "displayNumber": "Question 1n",
             "type": "saq",
+            "topic": "cell-signalling",
             "content": [
                 "How is ubiquitin important in plant hormone signalling?"
             ],

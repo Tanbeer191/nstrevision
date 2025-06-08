@@ -82,6 +82,7 @@
             "number": 7,
             "displayNumber": "Question 1g",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Describe three mechanisms of horizontal gene transfer in bacteria (i.e. mechanisms by which genes can be transferred, directly or indirectly, from one bacterium to another). Which is likely to be the most efficient in the natural environment? Justify your answer."
             ],
@@ -91,6 +92,7 @@
             "number": 8,
             "displayNumber": "Question 1h",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Give TWO examples of how the study of bacteriophages contributed to our understanding of genetics in the second half of the twentieth century."
             ],
@@ -100,6 +102,7 @@
             "number": 9,
             "displayNumber": "Question 1i",
             "type": "saq",
+            "topic": "dna-replication",
             "content": [
                 "Describe the structure of the nucleosome."
             ],
@@ -109,6 +112,7 @@
             "number": 10,
             "displayNumber": "Question 1j",
             "type": "saq",
+            "topic": "genetic-revolution",
             "content": [
                 "How are hybridisation techniques used in the analysis of nucleic acids?"
             ],
@@ -118,6 +122,7 @@
             "number": 11,
             "displayNumber": "Question 1k",
             "type": "saq",
+            "topic": "cell-cycle",
             "content": [
                 "How is entry into mitosis regulated in eukaryotic cells?"
             ],
@@ -156,6 +161,7 @@
             "number": 15,
             "displayNumber": "Question 1o",
             "type": "saq",
+            "topic": "cell-signalling",
             "content": [
                 "What are DELLA proteins?"
             ],

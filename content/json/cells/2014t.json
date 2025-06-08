@@ -88,6 +88,7 @@
             "number": 7,
             "displayNumber": "Question 1g",
             "type": "saq",
+            "topic": "hunting-the-gene",
             "content": [
                 "Petite mutants in yeast can be nuclear or cytoplasmic. What pattern of inheritance would you expect in the case of (i) nuclear and (ii) cytoplasmic mutations?"
             ],
@@ -98,6 +99,7 @@
             "number": 8,
             "displayNumber": "Question 1h",
             "type": "saq",
+            "topic": "chromosome-biology",
             "content": [
                 "How does a eukaryotic cell pack two metres of DNA into the nucleus?"
             ],
@@ -108,6 +110,7 @@
             "number": 9,
             "displayNumber": "Question 1i",
             "type": "saq",
+            "topic": "dna-transcription",
             "content": [
                 "Describe the role of sigma factors in promoter recognition in prokaryotes."
             ],
@@ -118,6 +121,7 @@
             "number": 10,
             "displayNumber": "Question 1j",
             "type": "saq",
+            "topic": "genetic-revolution",
             "content": [
                 "Explain how DNA fingerprinting works."
             ],
@@ -128,6 +132,7 @@
             "number": 11,
             "displayNumber": "Question 1k",
             "type": "saq",
+            "topic": "cancer",
             "content": [
                 "How does p53 function as a tumour suppressor?"
             ],
@@ -159,6 +164,7 @@
             "number": 14,
             "displayNumber": "Question 1n",
             "type": "saq",
+            "topic": "cell-signalling",
             "content": [
                 "Describe how quorum sensing controls bioluminescence in Vibrio fischeri."
             ],
@@ -169,6 +175,7 @@
             "number": 15,
             "displayNumber": "Question 1o",
             "type": "saq",
+            "topic": "cell-structure",
             "content": [
                 "Briefly describe two examples of signalling processes in eukaryotes that use cytosolic receptor proteins to detect the initial stimulus molecule."
             ],
