@@ -1,0 +1,133 @@
+{
+    "name": "BOC/WP: Biology of Cells - Written Practical",
+    "date": "Thursday 8th June 2019",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "Answer <strong>all questions</strong>.",
+            "You have 3 hours (plus any pre-agreed individual adjustment) to answer this paper.",
+            "<strong>Diagrams or other handwritten material:</strong>",
+            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>",
+            "<strong>Candidates should not copy and paste figures or content from any other documents.</strong",
+            "<strong>SPECIAL REQUIREMENTS:</strong><br><em>Approved calculators</em><br><em>A ruler</em>",
+            "<strong>For reference, a list of the questions is given below.</strong>",
+            "<ol><li>Microscopy </li><li>Protein Structure</li><li>Enzyme Activity</li><li>Photosynthesis and the Oxygen Electrode</li><li>Fungal Genetics</li><li>Bacterial Plasmids</li><li>PCR</li><li>Imaging Cell Division and Microscopy</li><li>The Embryological Zoo</li></ol>"
+        ]
+    },
+    "pdfUrl": "../content/pdf/cells/2019p.pdf",
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question 1 - Microscopy",
+            "type": "prac",
+            "topic": "microscopy",
+            "startPage": 3,
+            "content" :[ 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question 2 - Protein Structure",
+            "type": "prac",
+            "topic": "protein-structure",
+            "startPage": 4,
+            "content": [ 
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question 3 - Enzyme Activity",
+            "type": "prac",
+            "topic": "enzyme-kinetics",
+            "startPage": 5,
+            "endPage": 6,
+            "content": [ 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 4 - Photosynthesis and the Oxygen Electrode",
+            "topic": "photosynthesis-oxygen-electrode",
+            "type": "prac",
+            "startPage": 7,
+            "endPage": 8,
+            "content": [ 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 5 - Fungal Genetics",
+            "topic": "fungal-genetics",
+            "type": "prac",
+            "startPage": 9,
+            "endPage": 10,
+            "content": [ 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 6 - Bacterial Plasmids",
+            "topic": "drosophila-genetics",
+            "type": "prac",
+            "startPage": 11,
+            "content": [ 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question 7 - PCR",
+            "topic": "pcr",
+            "type": "prac",
+            "startPage": 12,
+            "endPage": 14,
+            "content": [ 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 8 - Imaging Cell Division",
+            "topic": "imaging-cell-division",
+            "type": "prac",
+            "startPage": 15,
+            "content": [ 
+            ],
+            "solution": [
+                ""
+            ]
+        },
+        {
+            "number": 10,
+            "displayNumber": "Question 9 - The Embryological Zoo",
+            "topic": "embryological-zoo",
+            "type": "prac",
+            "startPage": 16 ,
+            "content": [ 
+            ],
+            "solution": [
+                ""
+            ]
+        }
+    ]
+}
