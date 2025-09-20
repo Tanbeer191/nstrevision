@@ -60,6 +60,23 @@ main {
     flex: 1;
 }
 
+#other-website-btn {
+    position: absolute;
+    top: 1.2em;
+    left: 1.2em;
+    background-color: aqua;
+    color: black;
+    text-decoration: none;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s;
+}
+
+#other-website-btn:hover {
+    background-color: #00e6e6;
+}
+
+
 .hidden {
     display: none;
 }
