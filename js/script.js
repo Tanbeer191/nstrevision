@@ -208,12 +208,15 @@ function updateTotalCount() {
         }
     });
 }
-
 document.addEventListener("DOMContentLoaded", () => {
     const currentPage = window.location.pathname;
+    const currentFile = currentPage.split("/").pop();
 
     if (document.querySelector(".exam-section")) {
-        const defaultSubjectID = "cells";
+        let defaultSubjectID = "cells";
+        if (currentFile === "ib.html") {
+            defaultSubjectID = "bod";
+        }
         if (document.getElementById(defaultSubjectID)) {
             showSubject(defaultSubjectID);
         } else {

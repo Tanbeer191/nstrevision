@@ -1,0 +1,36 @@
+{
+    "name": "BIO/1: Biology of Disease - Essay",
+    "date": "Friday 24 May 2024",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "You have <strong>three hours</strong> (plus any pre-agreed individual adjustment) to complete the paper.",
+            "<strong>Answer four essay questions, TWO from Section A and TWO from Section B.</strong>",
+            "Each essay question carries the same number of marks.",
+            "Candidates are advised to devote equal time to each question.",
+            "There is no word limit.",
+            "<strong>This is a closed book exam.</strong><br>Candidates should not copy and paste images from any other documents.",
+            "<strong>Diagrams or other handwritten material:</strong>",
+            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>"
+        ]
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question A1",
+            "type": "essay",
+            "topic": "",
+            "sub-instructions": [
+                "<div class=\"info\">\n<p>&#9432; Answer <strong><strong>TWO</strong></strong> questions from <strong>SECTION A</strong> and <strong>TWO</strong> questions from <strong>SECTION B</strong>.</p></div>",
+                "<div class=\"info\">\n<p>&#9432; Section A begins here.</p></div>"
+            ],
+            "content": [
+                "What bonds stabilize alpha-helices and beta-sheets and what is the consequence of these bonds for protein structure?"
+            ],
+            "solution": [
+            ]
+        }
+    ]
+}
