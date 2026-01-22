@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=ia.html">
     <link rel="stylesheet" href="css/styles.css">
     <script>
-        window.location.href = "ia.html";
+        // Redirect to last visited page or default to ia.html
+        const lastVisitedPage = localStorage.getItem('lastVisitedPage') || 'ia.html';
+        window.location.href = lastVisitedPage;
     </script>
 </head>
 <body>

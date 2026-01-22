@@ -1,0 +1,10 @@
+{
+    "topics": {
+        "immunology": "Immunology",
+        "virology": "Virology",
+        "parasitology": "Parasitology",
+        "bacteriology": "Bacteriology",
+        "cancer": "Cancer",
+        "cardiovascular": "Cardiovascular"
+    }
+}
