@@ -1,6 +1,6 @@
 {
     "name": "BIO/1: Biology of Disease - Essay",
-    "date": "Friday 30 May 2025",
+    "date": "Friday 27 May 2022",
     "time": 10800,
     "displayTime": "3 hours",
     "instructions": {
@@ -11,9 +11,8 @@
             "Each essay question carries the same number of marks.",
             "Candidates are advised to devote equal time to each question.",
             "There is no word limit.",
-            "<strong>This is a closed book exam.</strong><br>Candidates should not copy and paste images from any other documents.",
-            "<strong>Diagrams or other handwritten material:</strong>",
-            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided.</em>"
+            "<strong>This is an open book exam.</strong><br>Candidates should not copy and paste images from any other documents.",
+            "Strictly observe the <strong>word limit of 1125 words per essay</strong>."
         ]
     },
     "questions": [
@@ -27,7 +26,7 @@
                 "<div class=\"info\">\n<p>&#9432; Section A begins here.</p></div>"
             ],
             "content": [
-                "How do T cells facilitate an effective antibody response?"
+                "Discuss the roles played by innate lymphoid cells (ILC1, ILC2, ILC3 and NK cells) in controlling infection."
             ],
             "solution": [
             ]
@@ -38,7 +37,7 @@
             "type": "essay",
             "topic": "immunology",
             "content": [
-                "Describe the role of pattern recognition receptors in the initiation and polarisation of an immune reaction. What are the risks and advantages of pattern recognition receptors being activated by damage-associated molecular patterns in addition to  pathogen-associated molecular patterns?"
+                "Discuss how thymic T cell development balances the need to recognise diverse pathogens while minimising potential for autoimmunity."
             ],
             "solution": [
             ]
@@ -49,7 +48,7 @@
             "type": "essay",
             "topic": "virology",
             "content": [
-                "Chronic virus infections are worse than acute virus infections for the host – discuss."
+                "Using examples from both chronic and acute infections, describe how viruses evade detection by their human and animal hosts."
             ],
             "solution": [
             ]
@@ -60,7 +59,7 @@
             "type": "essay",
             "topic": "virology",
             "content": [
-                "Using examples, describe how viruses subvert host cells to promote their replication. "
+                "Discuss the factors affecting the transmission of viruses between hosts."
             ],
             "solution": [
             ]
@@ -69,12 +68,12 @@
             "number": 5,
             "displayNumber": "Question B1",
             "type": "essay",
-            "topic": "parasitology",
+            "topic": "bacteriology",
             "sub-instructions": [
                 "<div class=\"info\">\n<p>&#9432; Section B begins here.</p></div>"
             ],
             "content": [
-                "Describe the processes that generate antibody diversity. How is self-reactivity avoided during these processes?"
+                "Using specific diseases as examples, discuss how evasion of host defences by pathogenic bacteria can lead to chronic infection."
             ],
             "solution": [
             ]
@@ -83,9 +82,9 @@
             "number": 6,
             "displayNumber": "Question B2",
             "type": "essay",
-            "topic": "bacteriology",
+            "topic": "parasitology",
             "content": [
-                "Discuss how extracellular bacterial pathogens evade host immune responses."
+                "Compare and contrast the historical and regional differences in treatment, control and elimination of schistosomiasis and malaria."
             ],
             "solution": [
             ]
@@ -94,9 +93,9 @@
             "number": 7,
             "displayNumber": "Question B3",
             "type": "essay",
-            "topic": "cancer",
+            "topic": "cardiovascular",
             "content": [
-                "Describe the mechanisms that govern cell cycle progression and how they are disrupted in cancer cells."
+                "How does inflammation contribute to atherogenesis and the spectrum of atheromatous disease? "
             ],
             "solution": [
             ]
@@ -105,9 +104,9 @@
             "number": 8,
             "displayNumber": "Question B4",
             "type": "essay",
-            "topic": "cardiovascular",
+            "topic": "cancer",
             "content": [
-                "Discuss how intrinsic red blood cell abnormalities may lead to anaemia."
+                "Describe how carcinogens cause cancer."
             ],
             "solution": [
             ]

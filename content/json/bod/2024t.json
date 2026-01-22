@@ -1,6 +1,6 @@
 {
     "name": "BIO/1: Biology of Disease - Essay",
-    "date": "Friday 30 May 2025",
+    "date": "Friday 24 May 2024",
     "time": 10800,
     "displayTime": "3 hours",
     "instructions": {
@@ -27,7 +27,7 @@
                 "<div class=\"info\">\n<p>&#9432; Section A begins here.</p></div>"
             ],
             "content": [
-                "How do T cells facilitate an effective antibody response?"
+                "Explain how transplantation experiments helped unravel the mechanisms of immunological tolerance."
             ],
             "solution": [
             ]
@@ -38,7 +38,7 @@
             "type": "essay",
             "topic": "immunology",
             "content": [
-                "Describe the role of pattern recognition receptors in the initiation and polarisation of an immune reaction. What are the risks and advantages of pattern recognition receptors being activated by damage-associated molecular patterns in addition to  pathogen-associated molecular patterns?"
+                "Describe how antigens are presented on class I and class II major histocompatibility complexes (MHC) and discuss consequences of MHC polymorphism."
             ],
             "solution": [
             ]
@@ -49,7 +49,7 @@
             "type": "essay",
             "topic": "virology",
             "content": [
-                "Chronic virus infections are worse than acute virus infections for the host – discuss."
+                "Using examples, describe how viruses evade host immune responses."
             ],
             "solution": [
             ]
@@ -60,7 +60,7 @@
             "type": "essay",
             "topic": "virology",
             "content": [
-                "Using examples, describe how viruses subvert host cells to promote their replication. "
+                "Describe the replication cycle of influenza virus. How do avian influenza viruses adapt to spread in human populations?"
             ],
             "solution": [
             ]
@@ -69,12 +69,12 @@
             "number": 5,
             "displayNumber": "Question B1",
             "type": "essay",
-            "topic": "parasitology",
+            "topic": "bacteriology",
             "sub-instructions": [
                 "<div class=\"info\">\n<p>&#9432; Section B begins here.</p></div>"
             ],
             "content": [
-                "Describe the processes that generate antibody diversity. How is self-reactivity avoided during these processes?"
+                "Using examples, describe how bacterial virulence effector protein injection systems contribute to pathogenesis."
             ],
             "solution": [
             ]
@@ -83,9 +83,9 @@
             "number": 6,
             "displayNumber": "Question B2",
             "type": "essay",
-            "topic": "bacteriology",
+            "topic": "parasitology",
             "content": [
-                "Discuss how extracellular bacterial pathogens evade host immune responses."
+                "With reference to parasite biology and host responses, discuss the challenges in developing vaccines to prevent malaria (Plasmodium falciparum) and river blindness (Onchocerca volvulus)."
             ],
             "solution": [
             ]
@@ -94,9 +94,9 @@
             "number": 7,
             "displayNumber": "Question B3",
             "type": "essay",
-            "topic": "cancer",
+            "topic": "cardiovascular",
             "content": [
-                "Describe the mechanisms that govern cell cycle progression and how they are disrupted in cancer cells."
+                "“Atherogenesis is a chronic inflammatory process”. Discuss."
             ],
             "solution": [
             ]
@@ -105,9 +105,9 @@
             "number": 8,
             "displayNumber": "Question B4",
             "type": "essay",
-            "topic": "cardiovascular",
+            "topic": "cancer",
             "content": [
-                "Discuss how intrinsic red blood cell abnormalities may lead to anaemia."
+                "Discuss how environmental mutagens lead to cancer development. How is this process influenced by other contributory factors, including inflammation?"
             ],
             "solution": [
             ]

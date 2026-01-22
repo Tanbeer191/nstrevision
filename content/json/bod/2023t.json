@@ -1,6 +1,6 @@
 {
     "name": "BIO/1: Biology of Disease - Essay",
-    "date": "Friday 30 May 2025",
+    "date": "Friday 26 May 2023",
     "time": 10800,
     "displayTime": "3 hours",
     "instructions": {
@@ -27,7 +27,7 @@
                 "<div class=\"info\">\n<p>&#9432; Section A begins here.</p></div>"
             ],
             "content": [
-                "How do T cells facilitate an effective antibody response?"
+                "Discuss how B cell receptor (BCR) diversity is generated both before and after encounter with antigen."
             ],
             "solution": [
             ]
@@ -38,7 +38,7 @@
             "type": "essay",
             "topic": "immunology",
             "content": [
-                "Describe the role of pattern recognition receptors in the initiation and polarisation of an immune reaction. What are the risks and advantages of pattern recognition receptors being activated by damage-associated molecular patterns in addition to  pathogen-associated molecular patterns?"
+                "Compare and contrast the adaptive immune response to intracellular and extracellular pathogens."
             ],
             "solution": [
             ]
@@ -49,7 +49,7 @@
             "type": "essay",
             "topic": "virology",
             "content": [
-                "Chronic virus infections are worse than acute virus infections for the host – discuss."
+                "Using examples, describe how viruses modify host cells to benefit the virus."
             ],
             "solution": [
             ]
@@ -60,7 +60,7 @@
             "type": "essay",
             "topic": "virology",
             "content": [
-                "Using examples, describe how viruses subvert host cells to promote their replication. "
+                "Discuss mechanisms of virus transmission and intervention strategies to prevent virus spread between hosts."
             ],
             "solution": [
             ]
@@ -74,7 +74,7 @@
                 "<div class=\"info\">\n<p>&#9432; Section B begins here.</p></div>"
             ],
             "content": [
-                "Describe the processes that generate antibody diversity. How is self-reactivity avoided during these processes?"
+                "Why can different degrees of disease severity be observed in infections caused by the same parasite? Use a range of parasites to illustrate your answer."
             ],
             "solution": [
             ]
@@ -85,7 +85,7 @@
             "type": "essay",
             "topic": "bacteriology",
             "content": [
-                "Discuss how extracellular bacterial pathogens evade host immune responses."
+                "How do bacteria that cause chronic infections colonise and survive in mammalian hosts?"
             ],
             "solution": [
             ]
@@ -94,9 +94,9 @@
             "number": 7,
             "displayNumber": "Question B3",
             "type": "essay",
-            "topic": "cancer",
+            "topic": "cardiovascular",
             "content": [
-                "Describe the mechanisms that govern cell cycle progression and how they are disrupted in cancer cells."
+                "How does ischaemia damage cells and how is the damage reflected in morphological and functional changes of cells and tissues?"
             ],
             "solution": [
             ]
@@ -105,9 +105,9 @@
             "number": 8,
             "displayNumber": "Question B4",
             "type": "essay",
-            "topic": "cardiovascular",
+            "topic": "cancer",
             "content": [
-                "Discuss how intrinsic red blood cell abnormalities may lead to anaemia."
+                "Discuss the hallmarks of cancer and their underlying molecular mechanisms."
             ],
             "solution": [
             ]

@@ -1,6 +1,6 @@
 {
     "name": "BIO/1: Biology of Disease - Essay",
-    "date": "Friday 30 May 2025",
+    "date": "Tuesday 29 May 2018",
     "time": 10800,
     "displayTime": "3 hours",
     "instructions": {
@@ -27,7 +27,7 @@
                 "<div class=\"info\">\n<p>&#9432; Section A begins here.</p></div>"
             ],
             "content": [
-                "How do T cells facilitate an effective antibody response?"
+                "Discuss complement activation and regulation."
             ],
             "solution": [
             ]
@@ -36,9 +36,9 @@
             "number": 2,
             "displayNumber": "Question A2",
             "type": "essay",
-            "topic": "immunology",
+            "topic": "virology",
             "content": [
-                "Describe the role of pattern recognition receptors in the initiation and polarisation of an immune reaction. What are the risks and advantages of pattern recognition receptors being activated by damage-associated molecular patterns in addition to  pathogen-associated molecular patterns?"
+                "How do viruses modify host cells to their advantage?"
             ],
             "solution": [
             ]
@@ -47,9 +47,9 @@
             "number": 3,
             "displayNumber": "Question A3",
             "type": "essay",
-            "topic": "virology",
+            "topic": "bacteriology",
             "content": [
-                "Chronic virus infections are worse than acute virus infections for the host – discuss."
+                "Discuss the nature and action of bacterial toxins."
             ],
             "solution": [
             ]
@@ -58,9 +58,9 @@
             "number": 4,
             "displayNumber": "Question A4",
             "type": "essay",
-            "topic": "virology",
+            "topic": "cardiovascular",
             "content": [
-                "Using examples, describe how viruses subvert host cells to promote their replication. "
+                "Discuss how anaemia may be caused by impaired generation of red blood cells or their constituents."
             ],
             "solution": [
             ]
@@ -69,12 +69,12 @@
             "number": 5,
             "displayNumber": "Question B1",
             "type": "essay",
-            "topic": "parasitology",
+            "topic": "immunology",
             "sub-instructions": [
                 "<div class=\"info\">\n<p>&#9432; Section B begins here.</p></div>"
             ],
             "content": [
-                "Describe the processes that generate antibody diversity. How is self-reactivity avoided during these processes?"
+                "Discuss central and peripheral tolerance in T and B cells."
             ],
             "solution": [
             ]
@@ -83,9 +83,9 @@
             "number": 6,
             "displayNumber": "Question B2",
             "type": "essay",
-            "topic": "bacteriology",
+            "topic": "virology",
             "content": [
-                "Discuss how extracellular bacterial pathogens evade host immune responses."
+                "Using examples, discuss control measures that can be used to limit viral disease."
             ],
             "solution": [
             ]
@@ -96,7 +96,7 @@
             "type": "essay",
             "topic": "cancer",
             "content": [
-                "Describe the mechanisms that govern cell cycle progression and how they are disrupted in cancer cells."
+                "Discuss how environmental factors contribute to cancer."
             ],
             "solution": [
             ]
@@ -105,9 +105,9 @@
             "number": 8,
             "displayNumber": "Question B4",
             "type": "essay",
-            "topic": "cardiovascular",
+            "topic": "parasitology",
             "content": [
-                "Discuss how intrinsic red blood cell abnormalities may lead to anaemia."
+                "Compare the rôles of invertebrate vectors in leishmaniasis, malaria and schistosomiasis."
             ],
             "solution": [
             ]
