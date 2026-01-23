@@ -1,0 +1,12 @@
+{
+    "topics": {
+        "synaptic-pharmacology": "Synaptic Pharmacology",
+        "drug-discovery": "Drug Discovery",
+        "antimicrobials": "Antimicrobials",
+        "anti-cancer": "Anti-Cancer Therapies",
+        "inflammation-immunosuppression-pain": "Inflammation, Immunosuppression, and Pain",
+        "cardiovascular-renal": "Cardiovascular and Renal Pharmacology",
+        "endocrinology": "Endocrinology",
+        "neuropharmacology": "Neuropharmacology"
+    }
+}
