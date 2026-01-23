@@ -1,14 +1,14 @@
 {
-    "name": "PHA/1: Pharmacology - Extended Answer (Paper 1)",
-    "date": "Wednesday 07 June 2023",
+    "name": "PHA/2: Pharmacology - Extended Answer Paper",
+    "date": "Friday 28 May 2021",
     "time": 10800,
     "displayTime": "3 hours",
     "instructions": {
         "table": {},
         "text": [
             "All candidates must provide <strong>one answer</strong> for <strong>each question</strong> from the choice of a or b. You therefore need to provide <strong>six</strong> answers in total.",
-            "<strong>Diagrams or other handwritten material:</strong>",
-            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write or draw on the Inspera paper provided. You should not copy and paste images from any other documents.</em>"
+            "<strong>Word limit:</strong> 750 words per answer",
+            "<strong>You may hand draw figures (or draw using a tablet), scan or photograph them, and then embed into the corresponding answer document at a suitable point. Clearly label them e.g. \"Figure 1\".</strong>"
         ]
     },
     "questions": [
@@ -21,7 +21,7 @@
                 "<div class=\"info\">\n<p>&#9432; Answer <strong><strong>ONE</strong></strong> from <strong>either</strong> a or b for <strong>each</strong> question."
             ],
             "content": [
-                "Discuss the similarities and differences of neuromuscular blocking agents."
+                "How are presynaptic nerve termini targeted by naturally occurring agents that modulate neurotransmitter release?"
             ],
             "solution": [
             ]
@@ -33,9 +33,9 @@
             "sub-instructions": [
                 "<div class=\"info\">\n<p>&#9432; Answer <strong><strong>ONE</strong></strong> from <strong>either</strong> a or b for <strong>each</strong> question."
             ],
-            "topic": "endocrinology",
+            "topic": "inflammation-immunosuppression-pain",
             "content": [
-                "Compare and contrast the different pharmacological interventions for infertility."
+                "How do clinically useful drugs relax smooth muscle cells to alter tissue responses in the periphery?"
             ],
             "solution": [
             ]
@@ -44,12 +44,12 @@
             "number": 3,
             "displayNumber": "Question 2a",
             "type": "essay",
-            "topic": "anti-cancer",
+            "topic": "antimicrobials",
             "sub-instructions": [
                 "<div class=\"info\">\n<p>&#9432; Answer <strong><strong>ONE</strong></strong> from <strong>either</strong> a or b for <strong>each</strong> question."
             ],
             "content": [
-                "Discuss the role of protein phosphorylation and other post-translational modifications in Growth Factor signalling."
+                "Describe, with examples, how mechanisms of bacterial resistance to pharmacological agents frequently relate to the mechanisms of action of those agents."
             ],
             "solution": [
             ]
@@ -58,12 +58,12 @@
             "number": 4,
             "displayNumber": "Question 2b",
             "type": "essay",
-            "topic": "drug-discovery",
+            "topic": "antimicrobials",
             "sub-instructions": [
                 "<div class=\"info\">\n<p>&#9432; Answer <strong><strong>ONE</strong></strong> from <strong>either</strong> a or b for <strong>each</strong> question."
             ],
             "content": [
-                "The initial small molecule hits in a typical drug discovery initiative often need to be further optimised – discuss."
+                "Compare and contrast the mechanisms of action of antimetabolites in antibacterial, antiviral and antiprotozoal chemotherapy."
             ],
             "solution": [
             ]
@@ -72,12 +72,12 @@
             "number": 5,
             "displayNumber": "Question 3a",
             "type": "essay",
-            "topic": "antimicrobials",
+            "topic": "endocrinology",
             "sub-instructions": [
                 "<div class=\"info\">\n<p>&#9432; Answer <strong><strong>ONE</strong></strong> from <strong>either</strong> a or b for <strong>each</strong> question."
             ],
             "content": [
-                "Compare and contrast the mechanisms of action of antiviral drugs."
+                "Compare the different mechanisms used by drugs to lower blood sugar levels in diabetes mellitus patients."
             ],
             "solution": [
             ]
@@ -86,12 +86,12 @@
             "number": 6,
             "displayNumber": "Question 3b",
             "type": "essay",
-            "topic": "antimicrobials",
+            "topic": "anti-cancer",
             "sub-instructions": [
                 "<div class=\"info\">\n<p>&#9432; Answer <strong><strong>ONE</strong></strong> from <strong>either</strong> a or b for <strong>each</strong> question."
             ],
             "content": [
-                "Discuss the mechanisms of action of antimalarial drugs."
+                "How are monoclonal antibodies used to treat cancer, and what challenges are associated with this type of therapy?"
             ],
             "solution": [
             ]
@@ -105,7 +105,7 @@
                 "<div class=\"info\">\n<p>&#9432; Answer <strong><strong>ONE</strong></strong> from <strong>either</strong> a or b for <strong>each</strong> question."
             ],
             "content": [
-                "With reference to specific examples, discuss how the synthesis and signalling of lipid mediators derived from arachidonic acid can be targeted to treat disease."
+                "Compare and contrast the mechanisms of action of analgesics."
             ],
             "solution": [
             ]
@@ -119,7 +119,7 @@
                 "<div class=\"info\">\n<p>&#9432; Answer <strong><strong>ONE</strong></strong> from <strong>either</strong> a or b for <strong>each</strong> question."
             ],
             "content": [
-                "Using specific examples, discuss the mechanisms of action of different immunosuppressive drugs."
+                "Compare and contrast the mechanisms of action of drugs used in the prophylactic treatment of asthma."
             ],
             "solution": [
             ]
@@ -133,7 +133,7 @@
                 "<div class=\"info\">\n<p>&#9432; Answer <strong><strong>ONE</strong></strong> from <strong>either</strong> a or b for <strong>each</strong> question."
             ],
             "content": [
-                "Compare and contrast the therapies used to treat chronic heart failure."
+                "Justify whether hypertension is best treated by drugs that primarily act upon the heart and blood vessels, or the kidney, or on the central nervous system?"
             ],
             "solution": [
             ]
@@ -142,12 +142,12 @@
             "number": 10,
             "displayNumber": "Question 5b",
             "type": "essay",
-            "topic": "neuropharmacology",
+            "topic": "cardiovascular-renal",
             "sub-instructions": [
                 "<div class=\"info\">\n<p>&#9432; Answer <strong><strong>ONE</strong></strong> from <strong>either</strong> a or b for <strong>each</strong> question."
             ],
             "content": [
-                "Compare and contrast the mechanisms of action of drugs that target voltage-gated Na+ channels and voltage-gated Ca2+ channels in treating diseases."
+                "Compare and contrast the mechanisms of action of drugs used to reduce the incidence of myocardial infarction."
             ],
             "solution": [
             ]
@@ -161,7 +161,7 @@
                 "<div class=\"info\">\n<p>&#9432; Answer <strong><strong>ONE</strong></strong> from <strong>either</strong> a or b for <strong>each</strong> question."
             ],
             "content": [
-                "Compare the mechanisms of action of drugs targeting neurotransmitter reuptake transporters versus neurotransmitter receptors for treating neurological disorders."
+                "Compare and contrast the therapeutic strategies used to treat Parkinson's versus Alzheimer's disease."
             ],
             "solution": [
             ]
@@ -175,7 +175,7 @@
                 "<div class=\"info\">\n<p>&#9432; Answer <strong><strong>ONE</strong></strong> from <strong>either</strong> a or b for <strong>each</strong> question."
             ],
             "content": [
-                "Compare how drugs target serotonergic versus dopaminergic signalling to treat neurological disorders."
+                "Evaluate the pros and cons of the different therapeutics that treat depression."
             ],
             "solution": [
             ]
