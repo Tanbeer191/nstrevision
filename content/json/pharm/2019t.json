@@ -1,0 +1,123 @@
+{
+    "name": "PHA/2: Pharmacology (2)",
+    "date": "Thursday 30 May 2019",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "<strong>Answer five questions.</strong>",
+            "<strong>Start each question in a new booklet</strong>"
+        ]
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question 1",
+            "type": "essay",
+            "topic": "synaptic-pharmacology",
+            "sub-instructions": [],
+            "content": [
+                "Compare and contrast the pathways through which two different intracellular messengers signal."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question 2",
+            "type": "essay",
+            "topic": "synaptic-pharmacology",
+            "sub-instructions": [],
+            "content": [
+                "How can the neuromuscular junction be modulated pharmacologically?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question 3",
+            "type": "essay",
+            "topic": "antimicrobials",
+            "sub-instructions": [],
+            "content": [
+                "How do antibiotics target DNA replication, repair and gene expression?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 4",
+            "type": "essay",
+            "topic": "anti-cancer",
+            "sub-instructions": [],
+            "content": [
+                "Using examples, discuss the benefits of targeted cancer therapies."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 5",
+            "type": "essay",
+            "topic": "drug-discovery",
+            "sub-instructions": [],
+            "content": [
+                "\"Biologics, as a class of therapeutics, are more complex to discover and develop than small molecule drugs.\" Discuss."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 6",
+            "type": "essay",
+            "topic": "endocrinology",
+            "sub-instructions": [],
+            "content": [
+                "Describe with examples, the pharmacological approaches used to treat type II diabetes mellitus."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question 7",
+            "type": "essay",
+            "topic": "cardiovascular-renal",
+            "sub-instructions": [],
+            "content": [
+                "How can drugs be used to control cardiac dysrhythmias?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question 8",
+            "type": "essay",
+            "topic": "inflammation-immunosuppression-pain",
+            "sub-instructions": [],
+            "content": [
+                "Discuss the different mechanisms of actions of drugs used to treat inflammation."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 9",
+            "type": "essay",
+            "topic": "neuropharmacology",
+            "sub-instructions": [],
+            "content": [
+                "Discusses the causes of schizophrenia and therapeutic intervention."
+            ],
+            "solution": [
+            ]
+        }
+    ]
+}
