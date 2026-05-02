@@ -1,14 +1,15 @@
 {
     "topics": {
         "electrical-signalling": "Electrical Signalling",
-        "gpcr-signalling": "GPCR Signalling",
-        "nociceptive-pathways": "Nociceptive Pathways",
-        "auditory-localisation": "Auditory Localisation",
-        "visual-cortex": "Visual Cortex",
-        "growth-cones-axon-guidance": "Growth Cones and Axon Guidance",
-        "feedforward-motor-control": "Feedforward Motor Control",
-        "ltp-learning-memory": "LTP, Learning, and Memory",
-        "emotional-learning-motivation": "Emotional Learning and Motivation",
-        "language-lesions-neuroimaging": "Language: Lesions and Neuroimaging"
+        "synaptic-transmission": "Synaptic Transmission",
+        "somatosensation-pain": "Somatosensation and Pain",
+        "hearing": "Hearing",
+        "vision": "Vision",
+        "chemosensation": "Chemosensation",
+        "development": "Neural Development",
+        "motor-systems": "Motor Systems",
+        "memory": "Memory and Plasticity",
+        "motivation-emotion": "Motivation and Emotion",
+        "higher-functions": "Higher Functions"
     }
 }

@@ -1,0 +1,130 @@
+{
+    "name": "NB/1: Neurobiology - Essay",
+    "date": "Thursday 24 June 2021",
+    "time": 10800,
+    "displayTime": "3 hours",
+    "instructions": {
+        "table": {},
+        "text": [
+            "Answer <strong>FOUR</strong> of the ten essay questions.",
+            "There is a limit of 1125 words per essay.",
+            "<strong>Diagrams or other handwritten material:</strong>",
+            "<em>Where appropriate (e.g. for formulae, equations, or diagrams) you may hand write and submit scans or photographs of your answers. Candidates should not copy and paste figures from any other documents.</em>"
+        ]
+    },
+    "questions": [
+        {
+            "number": 1,
+            "displayNumber": "Question 1",
+            "type": "essay",
+            "topic": "electrical-signalling",
+            "sub-instructions": [
+                "<div class=\"info\">\n<p>&#9432; Answer <strong>FOUR</strong> of the ten essays.</p></div>"
+            ],
+            "content": [
+                "What have we learned from molecular cloning and electrophysiology about the structure and function of ion channels?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 2,
+            "displayNumber": "Question 2",
+            "type": "essay",
+            "topic": "synaptic-transmission",
+            "content": [
+                "What is known about the neurotransmitter changes underlying Parkinson's Disease and what treatments can be used to correct them?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 3,
+            "displayNumber": "Question 3",
+            "type": "essay",
+            "topic": "hearing",
+            "content": [
+                "Discuss the similarities and differences in touch and hearing for stimulus localisation."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 4,
+            "displayNumber": "Question 4",
+            "type": "essay",
+            "topic": "chemosensation",
+            "content": [
+                "Compare and contrast the transduction, encoding and analysis of colour and odour."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 5,
+            "displayNumber": "Question 5",
+            "type": "essay",
+            "topic": "motor-systems",
+            "content": [
+                "Discuss the role of feedback in motor systems."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 6,
+            "displayNumber": "Question 6",
+            "type": "essay",
+            "topic": "development",
+            "content": [
+                "Describe and compare neural induction during gastrulation in vertebrate and invertebrate embryos."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 7,
+            "displayNumber": "Question 7",
+            "type": "essay",
+            "topic": "development",
+            "content": [
+                "By chance you discover that the Muscle-Specific Kinase (MuSK) gene is also expressed in the central nervous system (CNS) of zebrafish. Discuss experiments you would undertake to study its function in the CNS."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 8,
+            "displayNumber": "Question 8",
+            "type": "essay",
+            "topic": "memory",
+            "content": [
+                "What evidence would you require to conclude that learning and memory is causally related to a specific type of synaptic plasticity? To what extent is such evidence available for any type of learning and memory?"
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 9,
+            "displayNumber": "Question 9",
+            "type": "essay",
+            "topic": "motivation-emotion",
+            "content": [
+                "Compare and contrast the contributions of the hypothalamus to the regulation of feeding and sexual behaviours."
+            ],
+            "solution": [
+            ]
+        },
+        {
+            "number": 10,
+            "displayNumber": "Question 10",
+            "type": "essay",
+            "topic": "memory",
+            "content": [
+                "Does it make sense to think of the hippocampus as a cognitive map?"
+            ],
+            "solution": [
+            ]
+        }
+    ]
+}
